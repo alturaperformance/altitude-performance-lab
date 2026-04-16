@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm run:*)",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(sed -i '' 's|href=\"\"tools\\\\.html\"\"|href=\"\"calculator/dist/index.html\"\"|g' /Users/danielmosko/altitudeperformancelab/$f)",
+      "Bash(done)"
+    ]
+  }
+}

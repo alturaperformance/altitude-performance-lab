@@ -6,7 +6,8 @@
       "Bash(for f:*)",
       "Bash(do)",
       "Bash(sed -i '' 's|href=\"\"tools\\\\.html\"\"|href=\"\"calculator/dist/index.html\"\"|g' /Users/danielmosko/altitudeperformancelab/$f)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(grep -n \"redirect\\\\|location\\\\|calculator\" /Users/danielmosko/altitudeperformancelab/js/*.js)"
     ]
   }
 }

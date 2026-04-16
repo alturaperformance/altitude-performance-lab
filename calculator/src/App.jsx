@@ -229,7 +229,7 @@ export default function App() {
     setRouteData({});
   };
 
-  const BASE = '../../';
+  const BASE = '/';
 
   return (
     <>

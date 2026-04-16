@@ -70,9 +70,36 @@ export default function Dashboard({ calc, risk, activityData, profileData, route
     userInfo.lastName.trim().length > 0 &&
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userInfo.email);
 
-  const handleUnlock = (e) => {
+  const handleUnlock = async (e) => {
     e.preventDefault();
-    if (gateValid) setUnlocked(true);
+    if (!gateValid) return;
+
+    const encode = (data) =>
+      Object.keys(data)
+        .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k] ?? ''))
+        .join('&');
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': 'altitude-calculator-lead',
+          'bot-field': '',
+          firstName: userInfo.firstName.trim(),
+          lastName: userInfo.lastName.trim(),
+          email: userInfo.email.trim(),
+          activity: activityData?.activity ?? '',
+          targetElevation: profileData?.targetElevation ?? '',
+          homeElevation: profileData?.homeElevation ?? '',
+        }),
+      });
+    } catch (err) {
+      // Don't block the user if the submission fails
+      console.error('Netlify form submission error:', err);
+    }
+
+    setUnlocked(true);
   };
 
   const handleDownloadPDF = async () => {

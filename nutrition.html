@@ -97,19 +97,19 @@
   </section>
 
 
-  <!-- NUTRITION CALCULATOR -->
-  <section class="section" style="padding-top: 48px;" aria-labelledby="nutr-calc-heading">
+  <!-- HUB LAYOUT: Calculator + Guides side by side -->
+  <section class="section" style="padding-top: 40px;" aria-labelledby="nutr-calc-heading">
     <div class="container">
 
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
-        <span class="badge badge--success">Live</span>
-        <h2 id="nutr-calc-heading" style="font-size: 1.375rem; margin: 0;">Altitude Nutrition & Hydration Calculator</h2>
-      </div>
+      <div style="display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: start;">
 
-      <div class="calculator-layout">
-
-        <!-- FORM -->
+        <!-- LEFT: Calculator -->
         <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+            <span class="badge badge--success">Live Tool</span>
+            <h2 id="nutr-calc-heading" style="font-size: 1.25rem; margin: 0;">Altitude Nutrition &amp; Hydration Calculator</h2>
+          </div>
+
           <div class="calculator-form">
             <div class="calculator-form__header">
               <div class="calculator-form__header-left">
@@ -137,7 +137,6 @@
                 </div>
               </div>
 
-              <!-- Body weight with unit toggle -->
               <div class="form-group">
                 <label class="form-label" for="nutr-weight">
                   Body weight <span style="color: var(--danger)">*</span>
@@ -186,7 +185,7 @@
           </div>
 
           <!-- Key micronutrients callout -->
-          <div style="margin-top: 24px; padding: 20px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+          <div style="margin-top: 20px; padding: 18px 20px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
             <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;">KEY MICRONUTRIENTS AT ALTITUDE</div>
             <div style="display: flex; flex-direction: column; gap: 10px;">
               <div style="display: flex; gap: 10px; align-items: flex-start;">
@@ -207,144 +206,97 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- RESULTS -->
-        <div class="results-panel">
+          <!-- Results (below form) -->
+          <div class="results-panel" style="margin-top: 24px;">
 
-          <div class="results-placeholder" id="nutr-placeholder">
-            <div class="results-placeholder__icon">🥗</div>
-            <h3>Your nutrition targets will appear here</h3>
-            <p>Enter your altitude, body weight, and training load to get personalized hydration, caloric, and micronutrient targets.</p>
-          </div>
+            <div class="results-placeholder" id="nutr-placeholder">
+              <div class="results-placeholder__icon">🥗</div>
+              <h3>Your nutrition targets will appear here</h3>
+              <p>Enter your altitude, body weight, and training load to get personalized hydration, caloric, and micronutrient targets.</p>
+            </div>
 
-          <div id="nutr-results-container"></div>
+            <div id="nutr-results-container"></div>
 
-          <!-- Lead Gate (shown after Calculate, before results) -->
-          <div class="report-gate" id="nutr-report-gate" style="display:none;" aria-live="polite">
-            <div class="report-gate__icon">🥗</div>
-            <div class="report-gate__title">Your nutrition targets are ready</div>
-            <div class="report-gate__sub">Enter your name and email to unlock your personalized hydration, caloric, and micronutrient targets.</div>
-            <form id="nutr-gate-form" novalidate style="display:flex; flex-direction:column; gap:12px; max-width:420px; margin:0 auto; text-align:left;">
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-                <div>
-                  <label class="form-label" for="nutr-first-name">First name</label>
-                  <input type="text" id="nutr-first-name" class="form-input" placeholder="Jane" required>
+            <!-- Lead Gate -->
+            <div class="report-gate" id="nutr-report-gate" style="display:none;" aria-live="polite">
+              <div class="report-gate__icon">🥗</div>
+              <div class="report-gate__title">Your nutrition targets are ready</div>
+              <div class="report-gate__sub">Enter your name and email to unlock your personalized hydration, caloric, and micronutrient targets.</div>
+              <form id="nutr-gate-form" novalidate style="display:flex; flex-direction:column; gap:12px; max-width:420px; margin:0 auto; text-align:left;">
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                  <div>
+                    <label class="form-label" for="nutr-first-name">First name</label>
+                    <input type="text" id="nutr-first-name" class="form-input" placeholder="Jane" required>
+                  </div>
+                  <div>
+                    <label class="form-label" for="nutr-last-name">Last name</label>
+                    <input type="text" id="nutr-last-name" class="form-input" placeholder="Smith" required>
+                  </div>
                 </div>
                 <div>
-                  <label class="form-label" for="nutr-last-name">Last name</label>
-                  <input type="text" id="nutr-last-name" class="form-input" placeholder="Smith" required>
+                  <label class="form-label" for="nutr-email">Email address</label>
+                  <input type="email" id="nutr-email" class="form-input" placeholder="jane@example.com" required>
                 </div>
-              </div>
-              <div>
-                <label class="form-label" for="nutr-email">Email address</label>
-                <input type="email" id="nutr-email" class="form-input" placeholder="jane@example.com" required>
-              </div>
-              <button type="submit" class="btn btn--primary" style="width:100%;">Unlock My Results →</button>
-            </form>
-            <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
+                <button type="submit" class="btn btn--primary" style="width:100%;">Unlock My Results →</button>
+              </form>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
+            </div>
+
           </div>
 
+          <!-- Methodology -->
+          <div style="margin-top: 24px; padding: 16px 20px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+            <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin: 0;">
+              <strong style="color: var(--text-secondary);">Methodology:</strong>
+              Hydration calculations are based on baseline recommendations (0.5 oz/lb bodyweight) adjusted for altitude-induced respiratory moisture loss (~6% per 1,000m above 1,000m), training load, and temperature. Caloric adjustments reflect altitude-driven BMR increases. Iron recommendations reflect the additional demand for EPO-stimulated erythropoiesis above 1,500m. These are estimates — individual variation is significant. Consult a sports dietitian for clinical guidance.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Methodology -->
-      <div style="margin-top: 40px; padding: 20px 24px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
-        <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin: 0;">
-          <strong style="color: var(--text-secondary);">Methodology:</strong>
-          Hydration calculations are based on baseline recommendations (0.5 oz/lb bodyweight) adjusted for altitude-induced respiratory moisture loss (~6% per 1,000m above 1,000m), training load, and temperature. Caloric adjustments reflect altitude-driven BMR increases. Iron recommendations reflect the additional demand for EPO-stimulated erythropoiesis above 1,500m. These are estimates — individual variation is significant. Consult a sports dietitian for clinical guidance.
-        </p>
-      </div>
-    </div>
-  </section>
+        <!-- RIGHT: Research & Guides sidebar -->
+        <div>
+          <div style="position: sticky; top: calc(var(--nav-height) + 24px);">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <span class="label">Research &amp; Guides</span>
+            </div>
+            <h2 style="font-size: 1.125rem; margin-bottom: 6px;">Eat and Drink Differently At Altitude</h2>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 20px;">What to eat, how much to drink, and which supplements actually have evidence behind them — whether you're racing or just trying to feel human above 5,000 ft.</p>
 
+            <div style="display: flex; flex-direction: column; gap: 2px;">
 
-  <!-- NUTRITION ARTICLES -->
-  <section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border);" aria-labelledby="nutrition-articles-heading">
-    <div class="container">
-      <div class="section-header">
-        <span class="label">Research &amp; Guides</span>
-        <h2 id="nutrition-articles-heading">Altitude Nutrition Guides</h2>
-        <p>What to eat, how much to drink, and which supplements actually have evidence behind them at elevation.</p>
-      </div>
+              <a href="resources.html" style="display: block; padding: 14px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius) var(--radius) 0 0; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='var(--bg-tertiary)'" onmouseout="this.style.background='var(--bg-secondary)'">
+                <div style="font-size: 0.8rem; color: var(--success); font-weight: 600; margin-bottom: 4px;">🌱 BEGINNER</div>
+                <div style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; line-height: 1.4; margin-bottom: 6px;">Why You Feel Terrible the First Day (And How Eating Helps)</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);">6 min read →</div>
+              </a>
 
-      <div class="grid-2">
+              <a href="resources.html" style="display: block; padding: 14px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-top: none; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='var(--bg-tertiary)'" onmouseout="this.style.background='var(--bg-secondary)'">
+                <div style="font-size: 0.8rem; color: var(--accent); font-weight: 600; margin-bottom: 4px;">🥗 NUTRITION</div>
+                <div style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; line-height: 1.4; margin-bottom: 6px;">Hydration at Altitude: Why You're Losing More Than You Think</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);">6 min read →</div>
+              </a>
 
-        <article class="article-card" data-category="nutrition">
-          <div class="article-card__body">
-            <div class="article-card__category"><span>🥗</span> Nutrition</div>
-            <h3>Iron, EPO, and Altitude: Why Your Nutrition Needs Change Above 5,000 ft</h3>
-            <p>Altitude triggers your body's EPO response — but only if you have the iron stores to support it. What to eat and supplement before your trip.</p>
-            <div class="article-card__meta">
-              <span class="article-card__read-time">7 min read</span>
-              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+              <a href="resources.html" style="display: block; padding: 14px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-top: none; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='var(--bg-tertiary)'" onmouseout="this.style.background='var(--bg-secondary)'">
+                <div style="font-size: 0.8rem; color: var(--accent); font-weight: 600; margin-bottom: 4px;">🥗 NUTRITION</div>
+                <div style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; line-height: 1.4; margin-bottom: 6px;">What to Eat Before, During, and After Training at Altitude</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);">9 min read →</div>
+              </a>
+
+              <a href="resources.html" style="display: block; padding: 14px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-top: none; border-radius: 0 0 var(--radius) var(--radius); text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='var(--bg-tertiary)'" onmouseout="this.style.background='var(--bg-secondary)'">
+                <div style="font-size: 0.8rem; color: var(--accent); font-weight: 600; margin-bottom: 4px;">🥗 NUTRITION</div>
+                <div style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; line-height: 1.4; margin-bottom: 6px;">The Altitude Supplement Stack: What Works and What Doesn't</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);">11 min read →</div>
+              </a>
+
+            </div>
+
+            <div style="margin-top: 16px;">
+              <a href="resources.html" class="btn btn--ghost" style="width: 100%; text-align: center; display: block;">Browse All Guides →</a>
             </div>
           </div>
-        </article>
-
-        <article class="article-card" data-category="nutrition">
-          <div class="article-card__body">
-            <div class="article-card__category"><span>🥗</span> Nutrition</div>
-            <h3>Hydration at Altitude: Why You're Losing More Than You Think</h3>
-            <p>Cold, dry mountain air pulls moisture from your lungs with every breath. Most athletes arrive dehydrated before their first workout. Here's how to stay ahead.</p>
-            <div class="article-card__meta">
-              <span class="article-card__read-time">6 min read</span>
-              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="article-card" data-category="nutrition">
-          <div class="article-card__body">
-            <div class="article-card__category"><span>🥗</span> Nutrition</div>
-            <h3>What to Eat Before, During, and After Training at Altitude</h3>
-            <p>Altitude raises your basal metabolic rate and blunts appetite. A complete pre-, intra-, and post-workout nutrition guide for high-elevation training.</p>
-            <div class="article-card__meta">
-              <span class="article-card__read-time">9 min read</span>
-              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="article-card" data-category="nutrition">
-          <div class="article-card__body">
-            <div class="article-card__category"><span>🥗</span> Nutrition</div>
-            <h3>The Altitude Supplement Stack: What Works and What Doesn't</h3>
-            <p>Iron, beetroot, acetazolamide, antioxidants — a research-backed breakdown of which supplements have real evidence for altitude performance.</p>
-            <div class="article-card__meta">
-              <span class="article-card__read-time">11 min read</span>
-              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-      <div style="text-align: center; margin-top: 32px;">
-        <a href="resources.html" class="btn btn--ghost">Browse All Nutrition Guides →</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- EMAIL CAPTURE -->
-  <section class="section section--sm" aria-labelledby="nutrition-report-heading">
-    <div class="container">
-      <div class="email-capture">
-        <div class="email-capture__inner">
-          <span class="label email-capture__label">Free Personalized Report</span>
-          <h2 id="nutrition-report-heading">Fuel right before you even land</h2>
-          <p>A personalized report covering your altitude nutrition protocol — hydration targets, iron loading schedule, caloric adjustments, and supplement guidance.</p>
-          <form class="email-capture__form section-email-form" novalidate>
-            <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
-            <button type="submit" class="btn btn--primary">Get My Report</button>
-          </form>
-          <div class="success-msg" style="justify-content: center;">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#3FB950"/><path d="M5 8l2 2 4-4" stroke="#0D1117" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Your report is on its way. Check your inbox!
-          </div>
-          <p class="email-capture__disclaimer">No spam. Unsubscribe anytime.</p>
         </div>
+
       </div>
     </div>
   </section>
@@ -376,12 +328,13 @@
           <ul class="footer__links">
             <li><a href="resources.html">All Articles</a></li>
             <li><a href="calculator/dist/index.html">Performance Calculator</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
         <span class="footer__copyright">© 2026 Altitude Performance Lab. All rights reserved.</span>
-        <span class="footer__copyright">Built for athletes who take altitude seriously.</span>
+        <span class="footer__copyright"><a href="terms.html" style="color: var(--text-muted); text-decoration: none;">Terms of Use</a></span>
       </div>
     </div>
   </footer>

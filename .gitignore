@@ -2,6 +2,6 @@
 node_modules/
 _site/
 # Eleventy-generated output (built by Netlify at deploy time)
-articles/
+/articles/
 feed.xml
 sitemap.xml

@@ -232,22 +232,22 @@
             <div class="report-gate__icon">🏔️</div>
             <div class="report-gate__title">Your zones are ready</div>
             <div class="report-gate__sub">Enter your name and email to unlock your altitude-adjusted training zones.</div>
-            <form class="report-gate__form" id="tz-gate-form" novalidate>
-              <div class="form-group" style="margin:0;">
-                <label class="form-label" for="tz-first-name">First name</label>
-                <input type="text" id="tz-first-name" class="form-input" placeholder="Jane" required>
+            <form id="tz-gate-form" novalidate style="display:flex; flex-direction:column; gap:12px; max-width:420px; margin:0 auto; text-align:left;">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                <div>
+                  <label class="form-label" for="tz-first-name">First name</label>
+                  <input type="text" id="tz-first-name" class="form-input" placeholder="Jane" required>
+                </div>
+                <div>
+                  <label class="form-label" for="tz-last-name">Last name</label>
+                  <input type="text" id="tz-last-name" class="form-input" placeholder="Smith" required>
+                </div>
               </div>
-              <div class="form-group" style="margin:0;">
-                <label class="form-label" for="tz-last-name">Last name</label>
-                <input type="text" id="tz-last-name" class="form-input" placeholder="Smith" required>
-              </div>
-              <div class="report-gate__email">
+              <div>
                 <label class="form-label" for="tz-email">Email address</label>
                 <input type="email" id="tz-email" class="form-input" placeholder="jane@example.com" required>
               </div>
-              <div class="report-gate__submit">
-                <button type="submit" class="btn btn--primary" style="width:100%;">Unlock My Zones →</button>
-              </div>
+              <button type="submit" class="btn btn--primary" style="width:100%;">Unlock My Zones →</button>
             </form>
             <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
           </div>

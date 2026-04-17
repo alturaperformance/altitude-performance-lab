@@ -32,6 +32,16 @@
 </head>
 <body>
 
+  <!-- Netlify Forms detection -->
+  <form name="nutrition-calculator-lead" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" />
+    <input type="text" name="lastName" />
+    <input type="email" name="email" />
+    <input type="text" name="targetAlt" />
+    <input type="text" name="trainingLoad" />
+    <input type="text" name="bot-field" />
+  </form>
+
   <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
@@ -210,29 +220,29 @@
 
           <div id="nutr-results-container"></div>
 
-          <!-- Report Gate -->
-          <div class="report-gate" id="nutr-report-gate" aria-live="polite">
-            <div class="report-gate__header">
-              <span class="label" style="margin-bottom: 8px; display: block;">Free Deep-Dive Report</span>
-              <h3>Get your complete altitude nutrition guide</h3>
-              <p>Your targets above are the foundation. Your free report builds the full protocol.</p>
-            </div>
-            <div class="report-gate__features">
-              <div class="report-gate__feature">Day-by-day nutrition plan for each acclimatization phase</div>
-              <div class="report-gate__feature">Pre-altitude iron loading protocol (4-week plan)</div>
-              <div class="report-gate__feature">Pre-, intra-, and post-workout fueling at elevation</div>
-              <div class="report-gate__feature">Supplement stack review — what the research actually supports</div>
-            </div>
-            <form class="report-gate__form" id="nutr-report-form" novalidate>
-              <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
-              <button type="submit" class="btn btn--primary">Send My Report →</button>
+          <!-- Lead Gate (shown after Calculate, before results) -->
+          <div class="report-gate" id="nutr-report-gate" style="display:none;" aria-live="polite">
+            <div class="report-gate__icon">🥗</div>
+            <div class="report-gate__title">Your nutrition targets are ready</div>
+            <div class="report-gate__sub">Enter your name and email to unlock your personalized hydration, caloric, and micronutrient targets.</div>
+            <form class="report-gate__form" id="nutr-gate-form" novalidate>
+              <div class="form-group" style="margin:0;">
+                <label class="form-label" for="nutr-first-name">First name</label>
+                <input type="text" id="nutr-first-name" class="form-input" placeholder="Jane" required>
+              </div>
+              <div class="form-group" style="margin:0;">
+                <label class="form-label" for="nutr-last-name">Last name</label>
+                <input type="text" id="nutr-last-name" class="form-input" placeholder="Smith" required>
+              </div>
+              <div class="report-gate__email">
+                <label class="form-label" for="nutr-email">Email address</label>
+                <input type="email" id="nutr-email" class="form-input" placeholder="jane@example.com" required>
+              </div>
+              <div class="report-gate__submit">
+                <button type="submit" class="btn btn--primary" style="width:100%;">Unlock My Results →</button>
+              </div>
             </form>
-            <div id="nutr-report-success" style="display: none; text-align: center; padding: 16px 0;">
-              <div style="font-size: 2rem; margin-bottom: 12px;">🎉</div>
-              <h4 style="margin-bottom: 8px;">Report sent!</h4>
-              <p style="font-size: 0.875rem;">Check your inbox for your altitude nutrition guide.</p>
-            </div>
-            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
           </div>
 
         </div>

@@ -578,6 +578,7 @@ const AcclimatizationUI = {
 const TrainingZoneUI = {
 
   state: { unit: 'ft', metricType: 'ftp' },
+  pendingResult: null,
 
   init() {
     this.bindUnitToggle();
@@ -624,24 +625,42 @@ const TrainingZoneUI = {
   },
 
   bindReportGate() {
-    const form = document.getElementById('tz-report-form');
+    const form = document.getElementById('tz-gate-form');
     if (!form) return;
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
       e.preventDefault();
-      const email = form.querySelector('input[type="email"]')?.value;
-      if (!email || !email.includes('@')) return;
-      form.style.display = 'none';
-      const success = document.getElementById('tz-report-success');
-      if (success) success.style.display = 'block';
+      const firstName = document.getElementById('tz-first-name')?.value.trim();
+      const lastName  = document.getElementById('tz-last-name')?.value.trim();
+      const email     = document.getElementById('tz-email')?.value.trim();
+      if (!firstName || !lastName || !email || !email.includes('@')) return;
+
+      const encode = d => Object.keys(d).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(d[k] ?? '')).join('&');
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': 'performance-calculator-lead',
+            'bot-field': '',
+            firstName, lastName, email,
+            targetAlt: document.getElementById('tz-target-alt')?.value || '',
+            sport: document.getElementById('tz-sport')?.value || '',
+          }),
+        });
+      } catch (err) { console.error('Form error:', err); }
+
+      const gate = document.getElementById('tz-report-gate');
+      if (gate) gate.style.display = 'none';
+      if (this.pendingResult) this.renderResults(this.pendingResult);
     });
   },
 
   run() {
-    const targetAlt   = parseFloat(document.getElementById('tz-target-alt')?.value) || 0;
-    const homeAlt     = parseFloat(document.getElementById('tz-home-alt')?.value)   || 0;
-    const sport       = document.getElementById('tz-sport')?.value   || 'cycling';
-    const fitnessLevel = document.getElementById('tz-fitness')?.value || 'intermediate';
-    const errorEl = document.getElementById('tz-error');
+    const targetAlt    = parseFloat(document.getElementById('tz-target-alt')?.value) || 0;
+    const homeAlt      = parseFloat(document.getElementById('tz-home-alt')?.value)   || 0;
+    const sport        = document.getElementById('tz-sport')?.value    || 'cycling';
+    const fitnessLevel = document.getElementById('tz-fitness')?.value  || 'intermediate';
+    const errorEl      = document.getElementById('tz-error');
 
     let metricValue;
     if (this.state.metricType === 'ftp') {
@@ -666,13 +685,17 @@ const TrainingZoneUI = {
     }
     if (errorEl) errorEl.style.display = 'none';
 
-    const result = TrainingZoneScience.calculate({
+    this.pendingResult = TrainingZoneScience.calculate({
       targetAltFt: targetAlt, homeAltFt: homeAlt,
       sport, metricType: this.state.metricType, metricValue,
       fitnessLevel, unit: this.state.unit,
     });
 
-    this.renderResults(result);
+    // Show gate — results render after lead is captured
+    const placeholder = document.getElementById('tz-placeholder');
+    if (placeholder) placeholder.style.display = 'none';
+    const gate = document.getElementById('tz-report-gate');
+    if (gate) { gate.style.display = 'block'; gate.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
   },
 
   renderResults(r) {
@@ -741,6 +764,7 @@ const TrainingZoneUI = {
 const NutritionUI = {
 
   state: { unit: 'ft', weightUnit: 'lbs' },
+  pendingResult: null,
 
   init() {
     this.bindUnitToggle();
@@ -777,24 +801,42 @@ const NutritionUI = {
   },
 
   bindReportGate() {
-    const form = document.getElementById('nutr-report-form');
+    const form = document.getElementById('nutr-gate-form');
     if (!form) return;
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
       e.preventDefault();
-      const email = form.querySelector('input[type="email"]')?.value;
-      if (!email || !email.includes('@')) return;
-      form.style.display = 'none';
-      const success = document.getElementById('nutr-report-success');
-      if (success) success.style.display = 'block';
+      const firstName = document.getElementById('nutr-first-name')?.value.trim();
+      const lastName  = document.getElementById('nutr-last-name')?.value.trim();
+      const email     = document.getElementById('nutr-email')?.value.trim();
+      if (!firstName || !lastName || !email || !email.includes('@')) return;
+
+      const encode = d => Object.keys(d).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(d[k] ?? '')).join('&');
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': 'nutrition-calculator-lead',
+            'bot-field': '',
+            firstName, lastName, email,
+            targetAlt: document.getElementById('nutr-target-alt')?.value || '',
+            trainingLoad: document.getElementById('nutr-training')?.value || '',
+          }),
+        });
+      } catch (err) { console.error('Form error:', err); }
+
+      const gate = document.getElementById('nutr-report-gate');
+      if (gate) gate.style.display = 'none';
+      if (this.pendingResult) this.renderResults(this.pendingResult);
     });
   },
 
   run() {
-    const targetAlt = parseFloat(document.getElementById('nutr-target-alt')?.value) || 0;
-    let weight      = parseFloat(document.getElementById('nutr-weight')?.value) || 0;
-    const trainingLoad = document.getElementById('nutr-training')?.value  || 'moderate';
-    const temperature  = document.getElementById('nutr-temp')?.value      || 'moderate';
-    const errorEl = document.getElementById('nutr-error');
+    const targetAlt    = parseFloat(document.getElementById('nutr-target-alt')?.value) || 0;
+    let weight         = parseFloat(document.getElementById('nutr-weight')?.value) || 0;
+    const trainingLoad = document.getElementById('nutr-training')?.value || 'moderate';
+    const temperature  = document.getElementById('nutr-temp')?.value    || 'moderate';
+    const errorEl      = document.getElementById('nutr-error');
 
     if (targetAlt <= 0) {
       if (errorEl) { errorEl.textContent = 'Please enter your target altitude.'; errorEl.style.display = 'block'; }
@@ -806,15 +848,18 @@ const NutritionUI = {
     }
     if (errorEl) errorEl.style.display = 'none';
 
-    // Convert to lbs if needed
     if (this.state.weightUnit === 'kg') weight = weight * 2.205;
 
-    const result = NutritionScience.calculate({
+    this.pendingResult = NutritionScience.calculate({
       targetAltFt: targetAlt, bodyWeightLbs: weight,
       trainingLoad, temperature, unit: this.state.unit,
     });
 
-    this.renderResults(result);
+    // Show gate — results render after lead is captured
+    const placeholder = document.getElementById('nutr-placeholder');
+    if (placeholder) placeholder.style.display = 'none';
+    const gate = document.getElementById('nutr-report-gate');
+    if (gate) { gate.style.display = 'block'; gate.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
   },
 
   renderResults(r) {

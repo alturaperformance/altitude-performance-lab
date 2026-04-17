@@ -32,6 +32,16 @@
 </head>
 <body>
 
+  <!-- Netlify Forms detection -->
+  <form name="performance-calculator-lead" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" />
+    <input type="text" name="lastName" />
+    <input type="email" name="email" />
+    <input type="text" name="targetAlt" />
+    <input type="text" name="sport" />
+    <input type="text" name="bot-field" />
+  </form>
+
   <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
@@ -217,29 +227,29 @@
 
           <div id="tz-results-container"></div>
 
-          <!-- Report Gate -->
-          <div class="report-gate" id="tz-report-gate" aria-live="polite">
-            <div class="report-gate__header">
-              <span class="label" style="margin-bottom: 8px; display: block;">Free Deep-Dive Report</span>
-              <h3>Get your complete altitude training plan</h3>
-              <p>Zone adjustments are a start. Your report covers the full training prescription.</p>
-            </div>
-            <div class="report-gate__features">
-              <div class="report-gate__feature">Week-by-week training volume and intensity roadmap</div>
-              <div class="report-gate__feature">Workout-by-workout modifications for the adaptation trough</div>
-              <div class="report-gate__feature">Recovery protocols to amplify the altitude training stimulus</div>
-              <div class="report-gate__feature">Race-day pacing strategy and warm-up adjustments</div>
-            </div>
-            <form class="report-gate__form" id="tz-report-form" novalidate>
-              <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
-              <button type="submit" class="btn btn--primary">Send My Report →</button>
+          <!-- Lead Gate (shown after Calculate, before results) -->
+          <div class="report-gate" id="tz-report-gate" style="display:none;" aria-live="polite">
+            <div class="report-gate__icon">🏔️</div>
+            <div class="report-gate__title">Your zones are ready</div>
+            <div class="report-gate__sub">Enter your name and email to unlock your altitude-adjusted training zones.</div>
+            <form class="report-gate__form" id="tz-gate-form" novalidate>
+              <div class="form-group" style="margin:0;">
+                <label class="form-label" for="tz-first-name">First name</label>
+                <input type="text" id="tz-first-name" class="form-input" placeholder="Jane" required>
+              </div>
+              <div class="form-group" style="margin:0;">
+                <label class="form-label" for="tz-last-name">Last name</label>
+                <input type="text" id="tz-last-name" class="form-input" placeholder="Smith" required>
+              </div>
+              <div class="report-gate__email">
+                <label class="form-label" for="tz-email">Email address</label>
+                <input type="email" id="tz-email" class="form-input" placeholder="jane@example.com" required>
+              </div>
+              <div class="report-gate__submit">
+                <button type="submit" class="btn btn--primary" style="width:100%;">Unlock My Zones →</button>
+              </div>
             </form>
-            <div id="tz-report-success" style="display: none; text-align: center; padding: 16px 0;">
-              <div style="font-size: 2rem; margin-bottom: 12px;">🎉</div>
-              <h4 style="margin-bottom: 8px;">Report sent!</h4>
-              <p style="font-size: 0.875rem;">Check your inbox for your altitude training plan.</p>
-            </div>
-            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
           </div>
 
         </div>

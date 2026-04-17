@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17.
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (5 articles published 2026-04-17)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -20,11 +20,11 @@
 
 | # | target_keyword | secondary_keywords | intent | title | file_name | status |
 |---|---|---|---|---|---|---|
-| 1 | altitude training benefits | altitude training for endurance, training at elevation, high altitude workouts | informational | The Science-Backed Benefits of Altitude Training for Endurance Athletes | altitude-training-benefits-endurance-athletes.md | QUEUED |
-| 2 | how to acclimatize to altitude | altitude acclimatization tips, adjusting to high altitude, altitude adaptation | informational | How to Acclimatize to Altitude: A Step-by-Step Guide for Athletes | how-to-acclimatize-to-altitude-athletes.md | QUEUED |
-| 3 | live high train low protocol | LHTL altitude training, live high train low benefits, altitude tent training | informational | Live High, Train Low: The Gold-Standard Protocol for Altitude Training | live-high-train-low-protocol-guide.md | QUEUED |
-| 4 | VO2 max altitude training | improve VO2 max at altitude, altitude VO2 max effects, aerobic capacity altitude | informational | How Altitude Training Improves VO2 Max (And What the Research Says) | altitude-training-vo2-max-improvement.md | QUEUED |
-| 5 | altitude sickness prevention | how to prevent altitude sickness, acute mountain sickness prevention, AMS athletes | informational | Altitude Sickness Prevention: What Every Athlete Needs to Know Before Going High | altitude-sickness-prevention-athletes.md | QUEUED |
+| 1 | altitude training benefits | altitude training for endurance, training at elevation, high altitude workouts | informational | The Science-Backed Benefits of Altitude Training for Endurance Athletes | altitude-training-benefits-endurance-athletes.md | PUBLISHED 2026-04-17 |
+| 2 | how to acclimatize to altitude | altitude acclimatization tips, adjusting to high altitude, altitude adaptation | informational | How to Acclimatize to Altitude: A Step-by-Step Guide for Athletes | how-to-acclimatize-to-altitude-athletes.md | PUBLISHED 2026-04-17 |
+| 3 | live high train low protocol | LHTL altitude training, live high train low benefits, altitude tent training | informational | Live High, Train Low: The Gold-Standard Protocol for Altitude Training | live-high-train-low-protocol-guide.md | PUBLISHED 2026-04-17 |
+| 4 | VO2 max altitude training | improve VO2 max at altitude, altitude VO2 max effects, aerobic capacity altitude | informational | How Altitude Training Improves VO2 Max (And What the Research Says) | altitude-training-vo2-max-improvement.md | PUBLISHED 2026-04-17 |
+| 5 | altitude sickness prevention | how to prevent altitude sickness, acute mountain sickness prevention, AMS athletes | informational | Altitude Sickness Prevention: What Every Athlete Needs to Know Before Going High | altitude-sickness-prevention-athletes.md | PUBLISHED 2026-04-17 |
 | 6 | hypoxic training benefits | intermittent hypoxic training, normobaric hypoxia, hypoxic tent benefits | informational | Hypoxic Training 101: Benefits, Methods, and How to Get Started | hypoxic-training-benefits-methods.md | QUEUED |
 | 7 | blood oxygen levels athletes | SpO2 for athletes, optimal blood oxygen saturation, oxygen saturation training | informational | Blood Oxygen Levels for Athletes: What Your SpO2 Readings Actually Mean | blood-oxygen-levels-athletes-spo2.md | QUEUED |
 | 8 | altitude training camps | best altitude training locations, altitude training camps for runners, high altitude training destinations | informational | The Best Altitude Training Camps for Endurance Athletes (Ranked by Elevation & Accessibility) | best-altitude-training-camps-endurance-athletes.md | QUEUED |
@@ -47,7 +47,13 @@
 
 ## PUBLISHED Articles
 
-_None yet — pipeline not yet live._
+| # | title | file_name | published |
+|---|---|---|---|
+| 1 | The Science-Backed Benefits of Altitude Training for Endurance Athletes | src/articles/altitude-training-benefits-endurance-athletes.md | 2026-04-17 |
+| 2 | How to Acclimatize to Altitude: A Step-by-Step Guide for Athletes | src/articles/how-to-acclimatize-to-altitude-athletes.md | 2026-04-17 |
+| 3 | Live High, Train Low: The Gold-Standard Protocol for Altitude Training | src/articles/live-high-train-low-protocol-guide.md | 2026-04-17 |
+| 4 | How Altitude Training Improves VO2 Max (And What the Research Says) | src/articles/altitude-training-vo2-max-improvement.md | 2026-04-17 |
+| 5 | Altitude Sickness Prevention: What Every Athlete Needs to Know Before Going High | src/articles/altitude-sickness-prevention-athletes.md | 2026-04-17 |
 
 ---
 

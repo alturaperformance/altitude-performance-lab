@@ -1,0 +1,20 @@
+{
+  "name": "altitudeperformancelab",
+  "version": "1.0.0",
+  "description": "Altitude Performance Lab — evidence-based training science for athletes",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve --watch"
+  },
+  "keywords": [],
+  "author": "Altitude Performance Lab",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
+  }
+}

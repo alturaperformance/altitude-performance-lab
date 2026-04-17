@@ -1,0 +1,124 @@
+{% extends "base.njk" %}
+
+{% block jsonld %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "{{ site.url }}{{ page.url }}#article",
+      "headline": {{ title | dump | safe }},
+      "description": {{ description | dump | safe }},
+      "datePublished": "{{ date | dateISO }}",
+      "dateModified": "{{ updated | dateISO if updated else date | dateISO }}",
+      "author": {
+        "@type": "Organization",
+        "@id": "{{ site.url }}#organization",
+        "name": {{ site.name | dump | safe }}
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "{{ site.url }}#organization",
+        "name": {{ site.name | dump | safe }},
+        "url": "{{ site.url }}"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+      }{% if ogImage %},
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{ ogImage }}"
+      }{% endif %}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ site.url }}{{ page.url }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.url }}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Articles",
+          "item": "{{ site.url }}/articles/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ title | dump | safe }},
+          "item": "{{ site.url }}{{ page.url }}"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<article class="article-page">
+  <div class="container">
+
+    {# Breadcrumb nav #}
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li aria-current="page">{{ title }}</li>
+      </ol>
+    </nav>
+
+    <header class="article-header">
+      {% if category %}
+      <p class="article-category">{{ category }}</p>
+      {% endif %}
+
+      <h1>{{ title }}</h1>
+
+      {% if description %}
+      <p class="article-description">{{ description }}</p>
+      {% endif %}
+
+      <div class="article-meta">
+        <time datetime="{{ date | dateISO }}">{{ date | dateDisplay }}</time>
+        {% if readingTime %}
+        <span class="reading-time">{{ readingTime }} min read</span>
+        {% endif %}
+      </div>
+
+      {% if tags and tags.length %}
+      <ul class="article-tags" aria-label="Article tags">
+        {% for tag in tags %}
+        {% if tag != "articles" %}
+        <li><a href="/tags/{{ tag | slug }}/">{{ tag }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </header>
+
+    {# Table of Contents placeholder — can be auto-generated via plugin later #}
+    {% if toc %}
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Table of Contents</h2>
+      {{ toc | safe }}
+    </nav>
+    {% endif %}
+
+    <div class="article-body prose">
+      {{ content | safe }}
+    </div>
+
+    <footer class="article-footer">
+      <p>Published by <strong>{{ site.name }}</strong></p>
+    </footer>
+
+  </div>
+</article>
+{% endblock %}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+  {# Open Graph #}
+  <meta property="og:type" content="{{ ogType or 'website' }}" />
+  <meta property="og:site_name" content="{{ site.name }}" />
+  <meta property="og:title" content="{{ title or site.name }}" />
+  <meta property="og:description" content="{{ description or site.description }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  {% if ogImage %}
+  <meta property="og:image" content="{{ site.url }}{{ ogImage }}" />
+  <meta property="og:image:alt" content="{{ ogImageAlt or title }}" />
+  {% endif %}
+
+  {# Twitter Card #}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="{{ site.social.twitter }}" />
+  <meta name="twitter:title" content="{{ title or site.name }}" />
+  <meta name="twitter:description" content="{{ description or site.description }}" />
+  {% if ogImage %}
+  <meta name="twitter:image" content="{{ site.url }}{{ ogImage }}" />
+  {% endif %}
+
+  {# RSS #}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} RSS Feed" href="{{ site.url }}/feed.xml" />
+
+  {# Favicon #}
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+  {# Performance: preconnect for fonts if needed #}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  {# Core styles #}
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  {# JSON-LD structured data #}
+  {% block jsonld %}{% endblock %}
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="site-logo">
+        <strong>{{ site.name }}</strong>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="/articles/">Articles</a></li>
+          <li><a href="/tools/">Tools</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ site.buildYear }} {{ site.name }}. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

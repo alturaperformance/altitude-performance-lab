@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Altitude Training Zone Adjuster | Tools & Guides | Altitude Performance Lab</title>
+  <meta name="description" content="Recalibrate your training zones for altitude. Enter your FTP or threshold pace and get altitude-adjusted targets for power, pace, and heart rate.">
+  <meta name="keywords" content="altitude training zones, FTP at altitude, running pace altitude adjustment, altitude training calculator, heart rate at altitude">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://altitudeperformancelab.com/training.html">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Altitude Training Zone Adjuster | Altitude Performance Lab">
+  <meta property="og:description" content="Free calculator: recalibrate your FTP and running paces for altitude. Know exactly how to train at elevation without overreaching.">
+  <meta property="og:url"         content="https://altitudeperformancelab.com/training.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Altitude Training Zone Adjuster",
+    "url": "https://altitudeperformancelab.com/training.html",
+    "description": "Free calculator that adjusts FTP, threshold pace, and all training zones for altitude performance.",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Altitude Performance Lab home">
+        <div class="nav__logo-mark">APL</div>
+        <span class="nav__logo-text">Altitude<span>Performance</span>Lab</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="acclimatization.html">Acclimatization</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="calculator/dist/index.html" class="btn btn--primary btn--sm">Try the Calculator →</a>
+      </div>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="acclimatization.html">Acclimatization</a>
+    <a href="training.html">Training</a>
+    <a href="nutrition.html">Nutrition</a>
+    <a href="resources.html">Resources</a>
+    <a href="calculator/dist/index.html" class="btn btn--primary" style="margin-top: 8px;">Try the Calculator →</a>
+  </div>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="training-page-heading">
+    <div class="container">
+      <div class="page-hero__inner">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <span style="font-size: 1.5rem;">🏃</span>
+          <span class="label">Training Hub</span>
+        </div>
+        <h1 id="training-page-heading" style="margin-bottom: 16px;">
+          Recalibrate Your Training at Altitude
+        </h1>
+        <p style="font-size: 1.0625rem; max-width: 600px;">
+          Your sea-level FTP and threshold paces are wrong at altitude.
+          Get sport-specific zone adjustments so you train at the right intensity from day one.
+        </p>
+        <div class="topic-nav" style="margin-top: 28px;">
+          <a href="acclimatization.html" class="topic-nav__item">🏔️ Acclimatization</a>
+          <a href="training.html"        class="topic-nav__item active">🏃 Training</a>
+          <a href="nutrition.html"       class="topic-nav__item">🥗 Nutrition</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TRAINING ZONE CALCULATOR -->
+  <section class="section" style="padding-top: 48px;" aria-labelledby="tz-calc-heading">
+    <div class="container">
+
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
+        <span class="badge badge--success">Live</span>
+        <h2 id="tz-calc-heading" style="font-size: 1.375rem; margin: 0;">Training Zone Adjuster</h2>
+      </div>
+
+      <div class="calculator-layout">
+
+        <!-- FORM -->
+        <div>
+          <div class="calculator-form">
+            <div class="calculator-form__header">
+              <div class="calculator-form__header-left">
+                <div class="calculator-form__icon">🏃</div>
+                <div>
+                  <div class="calculator-form__title">Zone Calibration</div>
+                  <div class="calculator-form__subtitle">Enter your training data below</div>
+                </div>
+              </div>
+              <div class="unit-toggle" id="tz-unit-toggle" role="group" aria-label="Altitude unit">
+                <button type="button" class="active" data-unit="ft">ft</button>
+                <button type="button" data-unit="m">m</button>
+              </div>
+            </div>
+
+            <form id="training-zone-form" class="calculator-form__body" novalidate>
+
+              <div class="form-group">
+                <label class="form-label" for="tz-target-alt">
+                  Target altitude <span style="color: var(--danger)">*</span>
+                </label>
+                <div class="input-with-unit">
+                  <input type="number" id="tz-target-alt" class="form-input" placeholder="e.g. 8000" min="0" max="29032" aria-required="true">
+                  <span class="input-unit tz-unit">ft</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="tz-home-alt">Home / training altitude</label>
+                <div class="input-with-unit">
+                  <input type="number" id="tz-home-alt" class="form-input" placeholder="e.g. 0 (sea level)" min="0" value="0">
+                  <span class="input-unit tz-unit">ft</span>
+                </div>
+              </div>
+
+              <!-- Metric type toggle -->
+              <div class="form-group">
+                <label class="form-label">Training metric</label>
+                <div style="display: flex; gap: 8px;">
+                  <button type="button" class="metric-toggle-btn active" data-metric="ftp"
+                    style="flex: 1; padding: 10px; background: var(--accent-dim); border: 1px solid var(--accent); border-radius: var(--radius); color: var(--accent); font-size: 0.875rem; font-weight: 600; cursor: pointer;">
+                    ⚡ Cycling FTP
+                  </button>
+                  <button type="button" class="metric-toggle-btn" data-metric="pace"
+                    style="flex: 1; padding: 10px; background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text-secondary); font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+                    🏃 Running Pace
+                  </button>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 6px;">Select your primary training metric</p>
+              </div>
+
+              <!-- FTP input (shown by default) -->
+              <div class="form-group" id="ftp-group">
+                <label class="form-label" for="tz-ftp">Current FTP (watts)</label>
+                <input type="number" id="tz-ftp" class="form-input" placeholder="e.g. 280" min="50" max="600">
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Your functional threshold power at home altitude</p>
+              </div>
+
+              <!-- Pace input (hidden by default) -->
+              <div class="form-group" id="pace-group" style="display: none;">
+                <label class="form-label" for="tz-pace">Threshold pace (min:sec per mile)</label>
+                <input type="text" id="tz-pace" class="form-input" placeholder="e.g. 7:30" pattern="\d{1,2}:\d{2}">
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Your 1-hour race pace or lactate threshold pace at home altitude</p>
+              </div>
+
+              <!-- Sport (auto-set by metric toggle but editable) -->
+              <div class="form-group">
+                <label class="form-label" for="tz-sport">Sport</label>
+                <select id="tz-sport" class="form-select">
+                  <option value="cycling">🚴 Cycling</option>
+                  <option value="running">🏃 Running</option>
+                  <option value="skiing">⛷️ Nordic Skiing</option>
+                  <option value="general">💪 General Endurance</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="tz-fitness">Fitness level</label>
+                <select id="tz-fitness" class="form-select">
+                  <option value="recreational">Recreational</option>
+                  <option value="intermediate" selected>Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                  <option value="competitive">Competitive</option>
+                  <option value="elite">Elite</option>
+                </select>
+              </div>
+
+              <div id="tz-error" style="display: none; padding: 10px 14px; background: var(--danger-dim); border: 1px solid rgba(248,81,73,0.3); border-radius: var(--radius); font-size: 0.875rem; color: var(--danger);" role="alert"></div>
+
+              <div class="calculator-form__footer">
+                <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+                  Adjust My Training Zones →
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Note on HR -->
+          <div style="margin-top: 24px; padding: 16px 20px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+            <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.7; margin: 0;">
+              <strong style="color: var(--text-primary);">Heart rate at altitude:</strong>
+              HR zones (in BPM) don't shift — your max HR stays the same. But HR runs <em>higher</em> for equivalent effort, especially above 8,000 ft. Use power or pace to set intensity, and treat elevated HR as a warning sign to back off.
+            </p>
+          </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="results-panel">
+
+          <div class="results-placeholder" id="tz-placeholder">
+            <div class="results-placeholder__icon">🏃</div>
+            <h3>Your adjusted zones will appear here</h3>
+            <p>Enter your altitude, metric type, and current training values to get altitude-calibrated zones.</p>
+          </div>
+
+          <div id="tz-results-container"></div>
+
+          <!-- Report Gate -->
+          <div class="report-gate" id="tz-report-gate" aria-live="polite">
+            <div class="report-gate__header">
+              <span class="label" style="margin-bottom: 8px; display: block;">Free Deep-Dive Report</span>
+              <h3>Get your complete altitude training plan</h3>
+              <p>Zone adjustments are a start. Your report covers the full training prescription.</p>
+            </div>
+            <div class="report-gate__features">
+              <div class="report-gate__feature">Week-by-week training volume and intensity roadmap</div>
+              <div class="report-gate__feature">Workout-by-workout modifications for the adaptation trough</div>
+              <div class="report-gate__feature">Recovery protocols to amplify the altitude training stimulus</div>
+              <div class="report-gate__feature">Race-day pacing strategy and warm-up adjustments</div>
+            </div>
+            <form class="report-gate__form" id="tz-report-form" novalidate>
+              <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
+              <button type="submit" class="btn btn--primary">Send My Report →</button>
+            </form>
+            <div id="tz-report-success" style="display: none; text-align: center; padding: 16px 0;">
+              <div style="font-size: 2rem; margin-bottom: 12px;">🎉</div>
+              <h4 style="margin-bottom: 8px;">Report sent!</h4>
+              <p style="font-size: 0.875rem;">Check your inbox for your altitude training plan.</p>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Methodology -->
+      <div style="margin-top: 40px; padding: 20px 24px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+        <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin: 0;">
+          <strong style="color: var(--text-secondary);">Methodology:</strong>
+          Performance reductions are calculated using VO₂ max reduction models (Wehrlin &amp; Hallen, 2006) applied to sport-specific aerobic dependency factors. Zone boundaries use the 5-zone Coggan/Allen model for cycling and equivalent lactate-threshold zones for running. Training volume recommendations are based on ACSM altitude training guidelines.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TRAINING ARTICLES -->
+  <section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border);" aria-labelledby="training-articles-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Research &amp; Guides</span>
+        <h2 id="training-articles-heading">Altitude Training Guides</h2>
+        <p>Evidence-based frameworks for structuring training blocks, adjusting intensity, and racing smart at elevation.</p>
+      </div>
+
+      <div class="grid-2">
+
+        <article class="article-card" data-category="training">
+          <div class="article-card__body">
+            <div class="article-card__category"><span>🏃</span> Training</div>
+            <h3>Live High, Train Low: Does It Actually Work?</h3>
+            <p>The LHTL protocol is used by the world's best endurance athletes. Here's what the evidence says, who benefits most, and how to apply it practically.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">11 min read</span>
+              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="training">
+          <div class="article-card__body">
+            <div class="article-card__category"><span>🏃</span> Training</div>
+            <h3>How to Adjust Your Training Zones at Altitude</h3>
+            <p>Your HR zones and power targets from sea level are wrong at altitude. Here's how to recalibrate so you're actually training at the right intensity.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">8 min read</span>
+              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="training">
+          <div class="article-card__body">
+            <div class="article-card__category"><span>🏃</span> Training</div>
+            <h3>Altitude Training for Endurance Athletes: A Science-Backed Framework</h3>
+            <p>A practical guide to structuring an altitude training block — from camp selection to workout design to recovery protocols.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">14 min read</span>
+              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="training">
+          <div class="article-card__body">
+            <div class="article-card__category"><span>🏃</span> Training</div>
+            <h3>Racing at Altitude: Pacing Strategy and Effort Calibration</h3>
+            <p>Going out at sea-level effort is the number one mistake at altitude events. A data-driven approach to race-day pacing above 5,000 ft.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">7 min read</span>
+              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="resources.html" class="btn btn--ghost">Browse All Training Guides →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EMAIL CAPTURE -->
+  <section class="section section--sm" aria-labelledby="training-report-heading">
+    <div class="container">
+      <div class="email-capture">
+        <div class="email-capture__inner">
+          <span class="label email-capture__label">Free Personalized Report</span>
+          <h2 id="training-report-heading">Get your altitude training prescription</h2>
+          <p>A personalized report covering your adjusted zones, week-by-week training plan, and race-day pacing strategy for your altitude and sport.</p>
+          <form class="email-capture__form section-email-form" novalidate>
+            <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
+            <button type="submit" class="btn btn--primary">Get My Report</button>
+          </form>
+          <div class="success-msg" style="justify-content: center;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#3FB950"/><path d="M5 8l2 2 4-4" stroke="#0D1117" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Your report is on its way. Check your inbox!
+          </div>
+          <p class="email-capture__disclaimer">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="Altitude Performance Lab home">
+            <div class="footer__logo-mark">APL</div>
+            <span class="footer__logo-text">Altitude<span>Performance</span>Lab</span>
+          </a>
+          <p>Science-backed tools and resources to help athletes understand and conquer altitude's impact on performance.</p>
+          <a href="https://alturaperformance.com" class="footer__powered" target="_blank" rel="noopener">
+            <span class="footer__powered-label">Powered by</span>Altura Performance
+          </a>
+        </div>
+        <div>
+          <div class="footer__col-title">Topic Hubs</div>
+          <ul class="footer__links">
+            <li><a href="acclimatization.html">Acclimatization</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Resources</div>
+          <ul class="footer__links">
+            <li><a href="resources.html">All Articles</a></li>
+            <li><a href="calculator/dist/index.html">Performance Calculator</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2026 Altitude Performance Lab. All rights reserved.</span>
+        <span class="footer__copyright">Built for athletes who take altitude seriously.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/calculators.js"></script>
+</body>
+</html>

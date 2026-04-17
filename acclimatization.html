@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Altitude Acclimatization Planner | Tools & Guides | Altitude Performance Lab</title>
+  <meta name="description" content="Plan your altitude acclimatization with science-backed tools. Calculate adaptation timelines, understand each phase, and get a personalized strategy for your event.">
+  <meta name="keywords" content="altitude acclimatization planner, acclimatization timeline calculator, altitude adaptation, high altitude preparation, acclimatization schedule">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://altitudeperformancelab.com/acclimatization.html">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Altitude Acclimatization Planner | Altitude Performance Lab">
+  <meta property="og:description" content="Free acclimatization planner: understand each phase of altitude adaptation and get a personalized strategy for your event.">
+  <meta property="og:url"         content="https://altitudeperformancelab.com/acclimatization.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Altitude Acclimatization Planner",
+    "url": "https://altitudeperformancelab.com/acclimatization.html",
+    "description": "Free calculator that maps your altitude adaptation phases and builds a personalized acclimatization strategy.",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Altitude Performance Lab home">
+        <div class="nav__logo-mark">APL</div>
+        <span class="nav__logo-text">Altitude<span>Performance</span>Lab</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="acclimatization.html">Acclimatization</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="calculator/dist/index.html" class="btn btn--primary btn--sm">Try the Calculator →</a>
+      </div>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="acclimatization.html">Acclimatization</a>
+    <a href="training.html">Training</a>
+    <a href="nutrition.html">Nutrition</a>
+    <a href="resources.html">Resources</a>
+    <a href="calculator/dist/index.html" class="btn btn--primary" style="margin-top: 8px;">Try the Calculator →</a>
+  </div>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="acclim-page-heading">
+    <div class="container">
+      <div class="page-hero__inner">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <span style="font-size: 1.5rem;">🏔️</span>
+          <span class="label">Acclimatization Hub</span>
+        </div>
+        <h1 id="acclim-page-heading" style="margin-bottom: 16px;">
+          Plan Your Perfect Acclimatization
+        </h1>
+        <p style="font-size: 1.0625rem; max-width: 600px;">
+          Every adaptation phase has a purpose — and every timing mistake has a cost.
+          Understand what's happening inside your body and build a strategy that works for your timeline.
+        </p>
+        <!-- Topic nav -->
+        <div class="topic-nav" style="margin-top: 28px;">
+          <a href="acclimatization.html" class="topic-nav__item active">🏔️ Acclimatization</a>
+          <a href="training.html"        class="topic-nav__item">🏃 Training</a>
+          <a href="nutrition.html"       class="topic-nav__item">🥗 Nutrition</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ACCLIMATIZATION PLANNER CALCULATOR -->
+  <section class="section" style="padding-top: 48px;" aria-labelledby="acclim-calc-heading">
+    <div class="container">
+
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
+        <span class="badge badge--success">Live</span>
+        <h2 id="acclim-calc-heading" style="font-size: 1.375rem; margin: 0;">Acclimatization Planner</h2>
+      </div>
+
+      <div class="calculator-layout">
+
+        <!-- FORM -->
+        <div>
+          <div class="calculator-form">
+            <div class="calculator-form__header">
+              <div class="calculator-form__header-left">
+                <div class="calculator-form__icon">🏔️</div>
+                <div>
+                  <div class="calculator-form__title">Acclimatization Strategy</div>
+                  <div class="calculator-form__subtitle">Enter your altitude &amp; timeline</div>
+                </div>
+              </div>
+              <div class="unit-toggle" id="acclim-unit-toggle" role="group" aria-label="Altitude unit">
+                <button type="button" class="active" data-unit="ft">ft</button>
+                <button type="button" data-unit="m">m</button>
+              </div>
+            </div>
+
+            <form id="acclimatization-form" class="calculator-form__body" novalidate>
+
+              <div class="form-group">
+                <label class="form-label" for="acclim-target-alt">
+                  Target altitude <span style="color: var(--danger)">*</span>
+                </label>
+                <div class="input-with-unit">
+                  <input type="number" id="acclim-target-alt" class="form-input" placeholder="e.g. 8000" min="0" max="29032" aria-required="true">
+                  <span class="input-unit acclim-unit">ft</span>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Where you'll be training or competing</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="acclim-home-alt">Home / training altitude</label>
+                <div class="input-with-unit">
+                  <input type="number" id="acclim-home-alt" class="form-input" placeholder="e.g. 0 (sea level)" min="0" max="29032" value="0">
+                  <span class="input-unit acclim-unit">ft</span>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Where you currently live and train (default: sea level)</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="acclim-days">Days available at altitude before your event</label>
+                <select id="acclim-days" class="form-select" aria-label="Days available">
+                  <option value="1">0–1 days (arrive and compete)</option>
+                  <option value="2">2 days</option>
+                  <option value="4" selected>3–5 days</option>
+                  <option value="7">6–7 days (1 week)</option>
+                  <option value="10">8–10 days</option>
+                  <option value="14">11–14 days (2 weeks)</option>
+                  <option value="21">3 weeks</option>
+                  <option value="28">4 weeks</option>
+                  <option value="42">6+ weeks</option>
+                </select>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Include travel time and pre-event preparation</p>
+              </div>
+
+              <div id="acclim-error" style="display: none; padding: 10px 14px; background: var(--danger-dim); border: 1px solid rgba(248,81,73,0.3); border-radius: var(--radius); font-size: 0.875rem; color: var(--danger);" role="alert"></div>
+
+              <div class="calculator-form__footer">
+                <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+                  Plan My Acclimatization →
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Altitude Zone Reference -->
+          <div class="altitude-zones mt-24">
+            <div class="altitude-zones__title">Altitude Zone Reference</div>
+            <div class="altitude-zone"><div class="altitude-zone__dot" style="background: var(--success)"></div><span class="altitude-zone__label">Low Altitude</span><span class="altitude-zone__range">&lt; 5,000 ft / 1,500 m</span></div>
+            <div class="altitude-zone"><div class="altitude-zone__dot" style="background: var(--warning)"></div><span class="altitude-zone__label">Moderate Altitude</span><span class="altitude-zone__range">5,000–8,200 ft / 1,500–2,500 m</span></div>
+            <div class="altitude-zone"><div class="altitude-zone__dot" style="background: #F0A741"></div><span class="altitude-zone__label">High Altitude</span><span class="altitude-zone__range">8,200–11,500 ft / 2,500–3,500 m</span></div>
+            <div class="altitude-zone"><div class="altitude-zone__dot" style="background: var(--danger)"></div><span class="altitude-zone__label">Very High Altitude</span><span class="altitude-zone__range">11,500–18,000 ft / 3,500–5,500 m</span></div>
+            <div class="altitude-zone"><div class="altitude-zone__dot" style="background: #8B0000"></div><span class="altitude-zone__label">Extreme Altitude</span><span class="altitude-zone__range">&gt; 18,000 ft / 5,500 m</span></div>
+          </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="results-panel">
+
+          <div class="results-placeholder" id="acclim-placeholder">
+            <div class="results-placeholder__icon">🏔️</div>
+            <h3>Your acclimatization plan will appear here</h3>
+            <p>Enter your target altitude and available days to get a phase-by-phase adaptation strategy.</p>
+          </div>
+
+          <div id="acclim-results-container"></div>
+
+          <!-- Report Gate -->
+          <div class="report-gate" id="acclim-report-gate" aria-live="polite">
+            <div class="report-gate__header">
+              <span class="label" style="margin-bottom: 8px; display: block;">Free Deep-Dive Report</span>
+              <h3>Get your complete acclimatization guide</h3>
+              <p>Your plan above covers the phases. Your free report goes deeper.</p>
+            </div>
+            <div class="report-gate__features">
+              <div class="report-gate__feature">Day-by-day training prescription for each adaptation phase</div>
+              <div class="report-gate__feature">Sleep optimization protocols for altitude-disrupted nights</div>
+              <div class="report-gate__feature">Altitude sickness prevention and early warning signs</div>
+              <div class="report-gate__feature">Nutrition and iron loading schedule around acclimatization</div>
+            </div>
+            <form class="report-gate__form" id="acclim-report-form" novalidate>
+              <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
+              <button type="submit" class="btn btn--primary">Send My Report →</button>
+            </form>
+            <div id="acclim-report-success" style="display: none; text-align: center; padding: 16px 0;">
+              <div style="font-size: 2rem; margin-bottom: 12px;">🎉</div>
+              <h4 style="margin-bottom: 8px;">Report sent!</h4>
+              <p style="font-size: 0.875rem;">Check your inbox for your personalized acclimatization guide.</p>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Methodology -->
+      <div style="margin-top: 40px; padding: 20px 24px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+        <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin: 0;">
+          <strong style="color: var(--text-secondary);">Methodology:</strong>
+          Acclimatization timelines are based on peer-reviewed research including Bartsch &amp; Saltin (2008), Fulco et al. (1998), and ACSM altitude performance guidelines. The "arrive and compete" vs. "full acclimatization" strategies reflect the well-documented biphasic response to altitude exposure. Individual responses vary significantly based on altitude history, genetics, and health status.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ACCLIMATIZATION ARTICLES -->
+  <section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border);" aria-labelledby="acclim-articles-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Research &amp; Guides</span>
+        <h2 id="acclim-articles-heading">Acclimatization Deep Dives</h2>
+        <p>Science-backed guides on every phase of altitude adaptation — from arrival day jitters to full hematological response.</p>
+      </div>
+
+      <div class="grid-2">
+
+        <article class="article-card" data-category="acclimatization">
+          <div class="article-card__body">
+            <div class="article-card__category"><span>🏔️</span> Acclimatization</div>
+            <h3>The Complete Athlete's Guide to Altitude Acclimatization</h3>
+            <p>From arriving 48 hours early to a full 4-week pre-camp — exactly how to structure your altitude lead-up for peak race-day performance.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">12 min read</span>
+              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="acclimatization">
+          <div class="article-card__body">
+            <div class="article-card__category"><span>🏔️</span> Acclimatization</div>
+            <h3>How Long Does It Take to Acclimatize? What the Research Actually Says</h3>
+            <p>The "3-day rule" is oversimplified. Real adaptation happens in waves over weeks. A science-based breakdown of each phase and what to expect.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">9 min read</span>
+              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="acclimatization">
+          <div class="article-card__body">
+            <div class="article-card__category"><span>🏔️</span> Acclimatization</div>
+            <h3>Altitude Sickness vs. Normal Fatigue: How to Tell the Difference</h3>
+            <p>Feeling rough on day two? Know how to distinguish typical altitude adjustment from early AMS — and when to descend immediately.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">6 min read</span>
+              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="acclimatization">
+          <div class="article-card__body">
+            <div class="article-card__category"><span>🏔️</span> Acclimatization</div>
+            <h3>Staging Your Ascent: The Optimal Acclimatization Schedule for High-Altitude Events</h3>
+            <p>Racing above 10,000 ft? The timing of your arrival relative to the start gun makes a bigger difference than most athletes realize.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">10 min read</span>
+              <a href="resources.html" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="resources.html" class="btn btn--ghost">Browse All Acclimatization Guides →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EMAIL CAPTURE -->
+  <section class="section section--sm" aria-labelledby="acclim-report-heading">
+    <div class="container">
+      <div class="email-capture">
+        <div class="email-capture__inner">
+          <span class="label email-capture__label">Free Personalized Report</span>
+          <h2 id="acclim-report-heading">Know your acclimatization window before you land</h2>
+          <p>Enter your email for a personalized altitude performance report — covering your adaptation timeline, training adjustments, and nutrition strategy.</p>
+          <form class="email-capture__form section-email-form" novalidate>
+            <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
+            <button type="submit" class="btn btn--primary">Get My Report</button>
+          </form>
+          <div class="success-msg" style="justify-content: center;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#3FB950"/><path d="M5 8l2 2 4-4" stroke="#0D1117" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Your report is on its way. Check your inbox!
+          </div>
+          <p class="email-capture__disclaimer">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="Altitude Performance Lab home">
+            <div class="footer__logo-mark">APL</div>
+            <span class="footer__logo-text">Altitude<span>Performance</span>Lab</span>
+          </a>
+          <p>Science-backed tools and resources to help athletes understand and conquer altitude's impact on performance.</p>
+          <a href="https://alturaperformance.com" class="footer__powered" target="_blank" rel="noopener">
+            <span class="footer__powered-label">Powered by</span>Altura Performance
+          </a>
+        </div>
+        <div>
+          <div class="footer__col-title">Topic Hubs</div>
+          <ul class="footer__links">
+            <li><a href="acclimatization.html">Acclimatization</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Resources</div>
+          <ul class="footer__links">
+            <li><a href="resources.html">All Articles</a></li>
+            <li><a href="calculator/dist/index.html">Performance Calculator</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2026 Altitude Performance Lab. All rights reserved.</span>
+        <span class="footer__copyright">Built for athletes who take altitude seriously.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/calculators.js"></script>
+</body>
+</html>

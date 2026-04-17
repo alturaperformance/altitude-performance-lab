@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Altitude Performance Lab | Perform Better Above 5,000 ft</title>
+  <meta name="description" content="Free expert-curated tools, research, and training insights to help athletes perform at their best above 5,000 ft. Understand how altitude affects your body and performance.">
+  <meta name="keywords" content="altitude training, altitude performance calculator, VO2 max altitude, acclimatization, high altitude athletics, altitude running, altitude cycling">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://altitudeperformancelab.com/">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Altitude Performance Lab | Perform Better Above 5,000 ft">
+  <meta property="og:description" content="Free tools, research, and training insights to help you perform at your best at altitude.">
+  <meta property="og:url"         content="https://altitudeperformancelab.com/">
+  <meta property="og:site_name"   content="Altitude Performance Lab">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Altitude Performance Lab">
+  <meta name="twitter:description" content="Free tools and science-backed insights for athletes training at altitude.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Altitude Performance Lab",
+    "url": "https://altitudeperformancelab.com",
+    "description": "Free expert-curated tools, research, and training insights to help athletes perform at their best above 5,000 ft.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://altitudeperformancelab.com/resources.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Netlify Forms detection -->
+  <form name="altitude-calculator-lead" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" /><input type="text" name="lastName" /><input type="email" name="email" />
+    <input type="text" name="activity" /><input type="text" name="targetElevation" /><input type="text" name="homeElevation" />
+    <input type="text" name="bot-field" />
+  </form>
+  <form name="performance-calculator-lead" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" /><input type="text" name="lastName" /><input type="email" name="email" />
+    <input type="text" name="targetAlt" /><input type="text" name="sport" /><input type="text" name="bot-field" />
+  </form>
+  <form name="nutrition-calculator-lead" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" /><input type="text" name="lastName" /><input type="email" name="email" />
+    <input type="text" name="targetAlt" /><input type="text" name="trainingLoad" /><input type="text" name="bot-field" />
+  </form>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Altitude Performance Lab home">
+        <div class="nav__logo-mark">APL</div>
+        <span class="nav__logo-text">Altitude<span>Performance</span>Lab</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="performance.html">Performance</a>
+    <a href="nutrition.html">Nutrition</a>
+    <a href="resources.html">Resources</a>
+    <a href="calculator/dist/index.html" class="btn btn--primary" style="margin-top: 8px;">Try the Calculator →</a>
+  </div>
+
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <div class="hero__inner">
+
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <div class="hero__eyebrow-dot"></div>
+            <span>Altitude hits different — whether you're racing or just trying to enjoy the hike.</span>
+          </div>
+
+          <h1 id="hero-heading">
+            Know Your<br><span>Altitude</span>
+          </h1>
+
+          <p class="hero__sub">
+            Free tools to help you understand how altitude affects your body — whether you're racing, hiking, or just visiting.
+          </p>
+
+          <div class="hero__actions">
+            <a href="calculator/dist/index.html" class="btn btn--primary" style="display:inline-flex; align-items:center; gap:8px;">
+              Open the Performance Calculator
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <p style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">
+              Free &nbsp;·&nbsp; Takes 2 minutes &nbsp;·&nbsp; No account needed
+            </p>
+            <p style="font-size:0.75rem; color:var(--text-muted); margin-top:6px;">
+              Used by runners, cyclists, skiers, and weekend hikers
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Visual — calculator output preview -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="calc-preview">
+
+            <div class="calc-preview__header">
+              <span class="calc-preview__label">ALTITUDE PERFORMANCE RESULTS</span>
+              <span class="calc-preview__meta">8,200 ft · Running · Vail, CO</span>
+            </div>
+
+            <!-- 5 metric cards -->
+            <div class="calc-preview__grid">
+
+              <div class="calc-preview__card">
+                <div class="calc-preview__card-label">ALTITUDE SICKNESS RISK</div>
+                <div class="calc-preview__card-value" style="font-size:0.85rem;">
+                  <span class="calc-preview__badge calc-preview__badge--moderate">Moderate</span>
+                </div>
+                <div class="calc-preview__card-hint">Headache &amp; poor sleep likely in first 48 hrs.</div>
+              </div>
+
+              <div class="calc-preview__card">
+                <div class="calc-preview__card-label">O₂ AVAILABILITY</div>
+                <div class="calc-preview__card-value" style="color:#D29922;">15.4%</div>
+                <div class="calc-preview__card-sub">vs. 20.9% at home</div>
+                <div class="calc-preview__card-hint">Each breath delivers 26% less oxygen than at home.</div>
+              </div>
+
+              <div class="calc-preview__card">
+                <div class="calc-preview__card-label">PERFORMANCE IMPACT</div>
+                <div class="calc-preview__card-value" style="color:#D29922;">−9.6%</div>
+                <div class="calc-preview__card-sub">+8% HR at altitude</div>
+                <div class="calc-preview__card-hint">Easy effort at home feels moderate here.</div>
+              </div>
+
+              <div class="calc-preview__card">
+                <div class="calc-preview__card-label">HYDRATION TARGET</div>
+                <div class="calc-preview__card-value" style="color:#3FB950;">104 oz</div>
+                <div class="calc-preview__card-sub">3.1 L / day at rest</div>
+                <div class="calc-preview__card-hint">Altitude air is drier — you lose water fast.</div>
+              </div>
+
+              <div class="calc-preview__card">
+                <div class="calc-preview__card-label">ACCLIMATIZATION</div>
+                <div class="calc-preview__card-value" style="color:#D29922; font-size:1.1rem;">7–10 days</div>
+                <div class="calc-preview__card-sub">Optimal arrival window</div>
+                <div class="calc-preview__card-hint">Avoid arriving 2–6 days before — the worst window.</div>
+              </div>
+
+            </div>
+
+            <!-- Locked section teaser -->
+            <div class="calc-preview__gate">
+              <div class="calc-preview__gate-blur">
+                <div class="calc-preview__gate-row"></div>
+                <div class="calc-preview__gate-row" style="width:75%;"></div>
+                <div class="calc-preview__gate-row" style="width:55%;"></div>
+              </div>
+              <div class="calc-preview__gate-label">
+                🔒 Pacing plan, HR zones &amp; timeline unlock after entering your data
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- TOPIC HUBS -->
+  <section class="section" aria-labelledby="topics-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Explore by Topic</span>
+        <h2 id="topics-heading">Everything you need, organized by topic</h2>
+        <p>Each hub pairs an interactive calculator with deep-dive research guides — so you can act on the science immediately.</p>
+      </div>
+
+      <div class="grid-3">
+
+        <a href="performance.html" class="topic-hub-card">
+          <div class="topic-hub-card__icon">🏃</div>
+          <div class="topic-hub-card__label">Performance</div>
+          <h3>Recalibrate Your Zones</h3>
+          <p>Adjust your FTP, threshold pace, and all 5 training zones for altitude. Know exactly how hard to push — and when to back off. Includes the Zone Adjuster.</p>
+          <div class="topic-hub-card__tools">
+            <span class="badge badge--success" style="font-size: 0.7rem;">Zone Adjuster</span>
+            <span class="badge badge--muted" style="font-size: 0.7rem;">4 Guides</span>
+          </div>
+          <div class="topic-hub-card__cta">
+            Explore Performance
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </a>
+
+        <a href="nutrition.html" class="topic-hub-card">
+          <div class="topic-hub-card__icon">🥗</div>
+          <div class="topic-hub-card__label">Nutrition</div>
+          <h3>Fuel the Adaptation</h3>
+          <p>Calculate your altitude hydration needs, caloric adjustments, and iron targets. Altitude nutrition done right is the difference between adapting and stalling.</p>
+          <div class="topic-hub-card__tools">
+            <span class="badge badge--success" style="font-size: 0.7rem;">Nutrition Calculator</span>
+            <span class="badge badge--muted" style="font-size: 0.7rem;">4 Guides</span>
+          </div>
+          <div class="topic-hub-card__cta">
+            Explore Nutrition
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </a>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="resources.html" class="btn btn--ghost">Browse All Articles &amp; Guides →</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="Altitude Performance Lab home">
+            <div class="footer__logo-mark">APL</div>
+            <span class="footer__logo-text">Altitude<span>Performance</span>Lab</span>
+          </a>
+          <p>Science-backed tools and resources to help athletes understand and conquer altitude's impact on performance.</p>
+          <a href="https://alturaperformance.com" class="footer__powered" target="_blank" rel="noopener">
+            <span class="footer__powered-label">Powered by</span>Altura Performance
+          </a>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Topic Hubs</div>
+          <ul class="footer__links">
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Resources</div>
+          <ul class="footer__links">
+            <li><a href="resources.html">All Articles</a></li>
+            <li><a href="calculator/dist/index.html">Performance Calculator</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2026 Altitude Performance Lab. All rights reserved.</span>
+        <span class="footer__copyright"><a href="terms.html" style="color: var(--text-muted); text-decoration: none;">Terms of Use</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/calculators.js"></script>
+</body>
+</html>

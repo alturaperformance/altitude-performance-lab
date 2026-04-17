@@ -3,9 +3,6 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
-  // Pass through static assets
-  eleventyConfig.addPassthroughCopy("src/assets");
-
   // Collections
   eleventyConfig.addCollection("articles", function (collectionApi) {
     return collectionApi
@@ -26,10 +23,17 @@ export default function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("slugify", (str) => {
+    return str
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+  });
+
   return {
     dir: {
       input: "src",
-      output: "_site",
+      output: ".",        // Output to repo root — Netlify serves from "."
       includes: "_includes",
       data: "_data",
     },

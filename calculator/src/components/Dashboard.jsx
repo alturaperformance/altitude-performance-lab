@@ -267,9 +267,13 @@ export default function Dashboard({ calc, risk, activityData, profileData, route
         {/* Card 4: Hydration */}
         <MetricCard
           label="Hydration Target"
-          value={`${Math.round(calc.hydrationOz)} oz`}
+          value={units === 'imperial'
+            ? `${Math.round(calc.hydrationOz)} oz`
+            : `${(calc.hydrationOz * 0.0295735).toFixed(1)} L`}
           valueClass={hydColor}
-          sub={`${(calc.hydrationOz * 0.0295735).toFixed(1)} L / day at rest`}
+          sub={units === 'imperial'
+            ? `${(calc.hydrationOz * 0.0295735).toFixed(1)} L / day at rest`
+            : `${Math.round(calc.hydrationOz)} oz / day at rest`}
           hint={hints.hydration}
         />
 

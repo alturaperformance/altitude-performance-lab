@@ -211,6 +211,38 @@ export default function App() {
     return { ...result, level: result.risk.charAt(0).toUpperCase() + result.risk.slice(1) };
   }, [calc, phase, profileData, routeData, activityData, units]);
 
+  const handleSetUnits = (newUnit) => {
+    if (newUnit === units) return;
+
+    // Convert stored elevation values so the same number isn't re-interpreted as a different unit
+    const convertElev = (val) => {
+      const num = parseFloat(val);
+      if (!val || isNaN(num)) return val;
+      return newUnit === 'metric'
+        ? String(Math.round(num * 0.3048))   // ft → m
+        : String(Math.round(num / 0.3048));  // m → ft
+    };
+
+    setProfileData(prev => ({
+      ...prev,
+      homeElevation: convertElev(prev.homeElevation),
+      targetElevation: convertElev(prev.targetElevation),
+    }));
+
+    // Convert weight if entered
+    const w = parseFloat(routeData.weight);
+    if (routeData.weight && !isNaN(w)) {
+      setRouteData(prev => ({
+        ...prev,
+        weight: newUnit === 'metric'
+          ? String(+(w * 0.453592).toFixed(1))  // lbs → kg
+          : String(Math.round(w / 0.453592)),    // kg → lbs
+      }));
+    }
+
+    setUnits(newUnit);
+  };
+
   const goNext = () => setPhase(p => p + 1);
   const goBack = () => setPhase(p => p - 1);
 
@@ -246,7 +278,7 @@ export default function App() {
             <li><a href={`${BASE}resources.html`}>Resources</a></li>
           </ul>
           <div className="site-nav__right">
-            <UnitToggle units={units} setUnits={setUnits} />
+            <UnitToggle units={units} setUnits={handleSetUnits} />
           </div>
           <button
             className={`site-nav__hamburger${mobileNavOpen ? ' open' : ''}`}
@@ -263,7 +295,7 @@ export default function App() {
         <a href={`${BASE}performance.html`} onClick={() => setMobileNavOpen(false)}>Performance</a>
         <a href={`${BASE}nutrition.html`} onClick={() => setMobileNavOpen(false)}>Nutrition</a>
         <a href={`${BASE}resources.html`} onClick={() => setMobileNavOpen(false)}>Resources</a>
-        <div style={{ padding: '8px 0' }}><UnitToggle units={units} setUnits={setUnits} /></div>
+        <div style={{ padding: '8px 0' }}><UnitToggle units={units} setUnits={handleSetUnits} /></div>
       </div>
 
     <div className="app">

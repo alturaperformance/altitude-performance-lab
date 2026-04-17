@@ -482,6 +482,8 @@ body::before {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .metric-card__label {
@@ -515,7 +517,7 @@ body::before {
   color: var(--text-muted);
   line-height: 1.45;
   font-style: italic;
-  margin-top: 10px;
+  margin-top: auto;
   padding-top: 8px;
   border-top: 1px solid var(--border);
 }

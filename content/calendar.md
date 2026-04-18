@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (37 articles published through 2026-04-18; 20 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (42 articles published through 2026-04-18; 15 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -57,11 +57,11 @@
 | 35 | altitude mask vs altitude tent | elevation training mask effectiveness, do altitude masks work, altitude mask hypoxic tent comparison | informational | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | altitude-mask-vs-altitude-tent-comparison.md | PUBLISHED 2026-04-18 |
 | 36 | altitude training for cross-country skiing | Nordic skiing altitude training, XC ski altitude camp, cross-country skiing altitude performance | informational | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | altitude-training-cross-country-skiing.md | PUBLISHED 2026-04-18 |
 | 37 | swimming at altitude | competitive swimming altitude, pool altitude training effects, altitude training for swimmers | informational | Swimming at Altitude: How Elevation Affects Performance (And How Swimmers Can Adapt) | swimming-at-altitude-guide.md | PUBLISHED 2026-04-18 |
-| 38 | altitude training periodization | altitude training mesocycle, how to periodize altitude training, altitude training block planning | informational | How to Periodize Altitude Training: Mesocycle Design for Peak Performance | altitude-training-periodization-mesocycle.md | QUEUED |
-| 39 | breathing mechanics at altitude | diaphragmatic breathing altitude, hypoxic ventilation response, how to breathe at high altitude | informational | Breathing Mechanics at Altitude: How Your Respiratory System Adapts (And How to Train It) | breathing-mechanics-altitude-athletes.md | QUEUED |
-| 40 | altitude and sleep apnea | periodic breathing altitude, Cheyne-Stokes at altitude, sleep-disordered breathing high altitude | informational | Altitude and Sleep Apnea: Why Athletes Experience Disrupted Breathing at Night | altitude-sleep-apnea-periodic-breathing.md | QUEUED |
-| 41 | altitude training for masters athletes | older athletes altitude training, masters runners altitude, over 40 altitude training | informational | Altitude Training for Masters Athletes: What Changes After 40 (And How to Adapt) | altitude-training-masters-athletes-over-40.md | QUEUED |
-| 42 | female athletes altitude training | women and altitude training, hormonal changes altitude, iron deficiency female athletes altitude | informational | Altitude Training for Female Athletes: Hormonal Differences, Iron Needs, and Protocols | altitude-training-female-athletes-guide.md | QUEUED |
+| 38 | altitude training periodization | altitude training mesocycle, how to periodize altitude training, altitude training block planning | informational | How to Periodize Altitude Training: Mesocycle Design for Peak Performance | altitude-training-periodization-mesocycle.md | PUBLISHED 2026-04-18 |
+| 39 | breathing mechanics at altitude | diaphragmatic breathing altitude, hypoxic ventilation response, how to breathe at high altitude | informational | Breathing Mechanics at Altitude: How Your Respiratory System Adapts (And How to Train It) | breathing-mechanics-altitude-athletes.md | PUBLISHED 2026-04-18 |
+| 40 | altitude and sleep apnea | periodic breathing altitude, Cheyne-Stokes at altitude, sleep-disordered breathing high altitude | informational | Altitude and Sleep Apnea: Why Athletes Experience Disrupted Breathing at Night | altitude-sleep-apnea-periodic-breathing.md | PUBLISHED 2026-04-18 |
+| 41 | altitude training for masters athletes | older athletes altitude training, masters runners altitude, over 40 altitude training | informational | Altitude Training for Masters Athletes: What Changes After 40 (And How to Adapt) | altitude-training-masters-athletes-over-40.md | PUBLISHED 2026-04-18 |
+| 42 | female athletes altitude training | women and altitude training, hormonal changes altitude, iron deficiency female athletes altitude | informational | Altitude Training for Female Athletes: Hormonal Differences, Iron Needs, and Protocols | altitude-training-female-athletes-guide.md | PUBLISHED 2026-04-18 |
 | 43 | re-acclimatization after altitude | returning to altitude camp, second altitude exposure, altitude re-adaptation timeline | informational | Re-Acclimatization: How Fast Do You Readapt When You Return to Altitude? | re-acclimatization-returning-altitude.md | QUEUED |
 | 44 | overtraining at altitude | altitude overtraining symptoms, too much training at altitude, non-functional overreaching altitude | informational | Overtraining at Altitude: Warning Signs and How to Avoid Going Too Hard Too High | overtraining-at-altitude-prevention.md | QUEUED |
 | 45 | cognitive effects of altitude | mental performance altitude, brain function high altitude, altitude cognition athletes | informational | How Altitude Affects Mental Performance and Cognition in Athletes | cognitive-effects-altitude-athletes.md | QUEUED |
@@ -121,6 +121,11 @@
 | 35 | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | src/articles/altitude-mask-vs-altitude-tent-comparison.md | 2026-04-18 |
 | 36 | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | src/articles/altitude-training-cross-country-skiing.md | 2026-04-18 |
 | 37 | Swimming at Altitude: How Elevation Affects Performance (And How Swimmers Can Adapt) | src/articles/swimming-at-altitude-guide.md | 2026-04-18 |
+| 38 | How to Periodize Altitude Training: Mesocycle Design for Peak Performance | src/articles/altitude-training-periodization-mesocycle.md | 2026-04-18 |
+| 39 | Breathing Mechanics at Altitude: How Your Respiratory System Adapts (And How to Train It) | src/articles/breathing-mechanics-altitude-athletes.md | 2026-04-18 |
+| 40 | Altitude and Sleep Apnea: Why Athletes Experience Disrupted Breathing at Night | src/articles/altitude-sleep-apnea-periodic-breathing.md | 2026-04-18 |
+| 41 | Altitude Training for Masters Athletes: What Changes After 40 (And How to Adapt) | src/articles/altitude-training-masters-athletes-over-40.md | 2026-04-18 |
+| 42 | Altitude Training for Female Athletes: Hormonal Differences, Iron Needs, and Protocols | src/articles/altitude-training-female-athletes-guide.md | 2026-04-18 |
 
 ---
 

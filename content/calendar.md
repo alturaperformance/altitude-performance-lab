@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (36 articles published through 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (36 articles published through 2026-04-18; 21 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -57,6 +57,26 @@
 | 35 | altitude mask vs altitude tent | elevation training mask effectiveness, do altitude masks work, altitude mask hypoxic tent comparison | informational | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | altitude-mask-vs-altitude-tent-comparison.md | PUBLISHED 2026-04-18 |
 | 36 | altitude training for cross-country skiing | Nordic skiing altitude training, XC ski altitude camp, cross-country skiing altitude performance | informational | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | altitude-training-cross-country-skiing.md | PUBLISHED 2026-04-18 |
 | 37 | swimming at altitude | competitive swimming altitude, pool altitude training effects, altitude training for swimmers | informational | Swimming at Altitude: How Elevation Affects Performance (And How Swimmers Can Adapt) | swimming-at-altitude-guide.md | QUEUED |
+| 38 | altitude training periodization | altitude training mesocycle, how to periodize altitude training, altitude training block planning | informational | How to Periodize Altitude Training: Mesocycle Design for Peak Performance | altitude-training-periodization-mesocycle.md | QUEUED |
+| 39 | breathing mechanics at altitude | diaphragmatic breathing altitude, hypoxic ventilation response, how to breathe at high altitude | informational | Breathing Mechanics at Altitude: How Your Respiratory System Adapts (And How to Train It) | breathing-mechanics-altitude-athletes.md | QUEUED |
+| 40 | altitude and sleep apnea | periodic breathing altitude, Cheyne-Stokes at altitude, sleep-disordered breathing high altitude | informational | Altitude and Sleep Apnea: Why Athletes Experience Disrupted Breathing at Night | altitude-sleep-apnea-periodic-breathing.md | QUEUED |
+| 41 | altitude training for masters athletes | older athletes altitude training, masters runners altitude, over 40 altitude training | informational | Altitude Training for Masters Athletes: What Changes After 40 (And How to Adapt) | altitude-training-masters-athletes-over-40.md | QUEUED |
+| 42 | female athletes altitude training | women and altitude training, hormonal changes altitude, iron deficiency female athletes altitude | informational | Altitude Training for Female Athletes: Hormonal Differences, Iron Needs, and Protocols | altitude-training-female-athletes-guide.md | QUEUED |
+| 43 | re-acclimatization after altitude | returning to altitude camp, second altitude exposure, altitude re-adaptation timeline | informational | Re-Acclimatization: How Fast Do You Readapt When You Return to Altitude? | re-acclimatization-returning-altitude.md | QUEUED |
+| 44 | overtraining at altitude | altitude overtraining symptoms, too much training at altitude, non-functional overreaching altitude | informational | Overtraining at Altitude: Warning Signs and How to Avoid Going Too Hard Too High | overtraining-at-altitude-prevention.md | QUEUED |
+| 45 | cognitive effects of altitude | mental performance altitude, brain function high altitude, altitude cognition athletes | informational | How Altitude Affects Mental Performance and Cognition in Athletes | cognitive-effects-altitude-athletes.md | QUEUED |
+| 46 | hydration at altitude | dehydration at high altitude, how much water to drink altitude, altitude fluid strategy | informational | Hydration at Altitude: Why You Dehydrate Faster and How to Stay Ahead of It | hydration-strategy-altitude-athletes.md | QUEUED |
+| 47 | jet lag and altitude | travel fatigue altitude training, jet lag altitude combination, flying to altitude camp | informational | Jet Lag + Altitude: How to Manage Travel Fatigue When Flying to a High-Altitude Camp | jet-lag-altitude-travel-fatigue.md | QUEUED |
+| 48 | altitude training for basketball players | basketball at altitude, high altitude basketball performance, team sport altitude | informational | Altitude Training for Basketball Players: Preparing for High-Elevation Games and Camps | altitude-training-basketball-team-sports.md | QUEUED |
+| 49 | altitude training for climbers | mountaineering acclimatization, high altitude climbing training, altitude preparation mountaineers | informational | Altitude Training for Climbers and Mountaineers: Building the Fitness and Acclimatization Base | altitude-training-climbers-mountaineers.md | QUEUED |
+| 50 | rowing at altitude | altitude training for rowers, crew rowing altitude, rowing performance altitude effects | informational | Rowing at Altitude: How Elevation Affects Performance and How Rowers Should Prepare | altitude-training-rowers-rowing.md | QUEUED |
+| 51 | altitude training log | altitude training diary, tracking altitude camp workouts, altitude training journal | tool-seeking | How to Keep an Altitude Training Log That Actually Improves Your Performance | altitude-training-log-tracking-guide.md | QUEUED |
+| 52 | race pace adjustment for altitude | running pace calculator altitude, adjust race time for elevation, slower pace high altitude | tool-seeking | Altitude Race Pace Adjustment: How Much Slower Should You Run (And Why)? | race-pace-adjustment-altitude-calculator.md | QUEUED |
+| 53 | when to race after altitude camp | timing race after altitude training, altitude washout race timing, peak performance after altitude | informational | When to Race After an Altitude Camp: The Optimal Timing Window for Peak Performance | when-to-race-after-altitude-camp.md | QUEUED |
+| 54 | acetazolamide for altitude | Diamox altitude training, acetazolamide AMS prevention, altitude medication athletes | informational | Acetazolamide (Diamox) for Altitude: Should Athletes Use It and What Are the Risks? | acetazolamide-diamox-altitude-athletes.md | QUEUED |
+| 55 | altitude training immune function | immune suppression altitude, getting sick at altitude, altitude and illness risk | informational | Altitude and Your Immune System: Why Athletes Get Sick at Altitude Camps (And How to Prevent It) | altitude-training-immune-function-illness.md | QUEUED |
+| 56 | breathing exercises for altitude | altitude breathing techniques, pursed lip breathing altitude, pre-altitude breathing prep | informational | Breathing Exercises to Prepare for Altitude: Techniques That Actually Help (And Some That Don't) | breathing-exercises-altitude-preparation.md | QUEUED |
+| 57 | altitude headache causes | dehydration altitude headache, high altitude headache prevention, why headaches at altitude | informational | Why You Get Headaches at Altitude (And What You Can Do About It) | altitude-headache-dehydration-prevention.md | QUEUED |
 
 ---
 
@@ -105,7 +125,7 @@
 
 ## Internal Linking Map
 
-> Updated 2026-04-17 — 15 articles published. Key cross-link clusters:
+> Updated 2026-04-18 — 36 articles published. Key cross-link clusters:
 
 | From Article (target_keyword) | Link To | Anchor Text Suggestion |
 |---|---|---|
@@ -113,28 +133,38 @@
 | altitude training benefits | altitude-training-vo2-max-improvement | "how altitude improves VO2 max" |
 | how to acclimatize to altitude | altitude-sickness-prevention-athletes | "prevent altitude sickness" |
 | how to acclimatize to altitude | how-long-acclimatize-altitude-timeline | "acclimatization timeline" |
+| how to acclimatize to altitude | re-acclimatization-returning-altitude (QUEUED) | "re-acclimatization on your second trip" |
 | live high train low protocol | altitude-tent-athletes-guide | "altitude tent for sleep" |
 | live high train low protocol | altitude-training-epo-red-blood-cells | "EPO and red blood cell production" |
 | VO2 max altitude training | intermittent-hypoxic-exposure-protocol | "intermittent hypoxic exposure" |
 | VO2 max altitude training | altitude-training-benefits-endurance-athletes | "full benefits of altitude training" |
-| altitude sickness prevention | altitude-sickness-symptoms-ams-hace-hape (QUEUED) | "recognize AMS, HACE, and HAPE" |
+| altitude sickness prevention | altitude-sickness-symptoms-ams-hace-hape | "recognize AMS, HACE, and HAPE" |
+| altitude sickness prevention | altitude-headache-dehydration-prevention (QUEUED) | "altitude headaches explained" |
 | hypoxic training benefits | altitude-tent-athletes-guide | "altitude tent for normobaric hypoxia" |
 | hypoxic training benefits | intermittent-hypoxic-exposure-protocol | "IHE protocol" |
-| blood oxygen levels athletes | pulse-oximeter-altitude-athletes-guide (QUEUED) | "how to use a pulse oximeter" |
-| altitude training camps | flagstaff-altitude-training-guide (QUEUED) | "Flagstaff, Arizona" |
-| altitude training camps | font-romeu-altitude-training-guide (QUEUED) | "Font Romeu, France" |
-| altitude tent for athletes | normobaric-vs-hypobaric-hypoxia-athletes (QUEUED) | "normobaric vs hypobaric hypoxia" |
-| altitude tent for athletes | altitude-mask-vs-altitude-tent-comparison (QUEUED) | "altitude mask vs altitude tent" |
-| how long to acclimatize | how-long-altitude-gains-last-washout (QUEUED) | "how long altitude gains last" |
-| altitude training for cyclists | altitude-training-plan-4-week-block (QUEUED) | "build a 4-week altitude training block" |
-| altitude training for runners | altitude-training-plan-4-week-block (QUEUED) | "sample altitude training plan" |
-| altitude training for runners | flagstaff-altitude-training-guide (QUEUED) | "train in Flagstaff" |
+| blood oxygen levels athletes | pulse-oximeter-altitude-athletes-guide | "how to use a pulse oximeter" |
+| blood oxygen levels athletes | acetazolamide-diamox-altitude-athletes (QUEUED) | "altitude medication options" |
+| altitude training camps | flagstaff-altitude-training-guide | "Flagstaff, Arizona" |
+| altitude training camps | font-romeu-altitude-training-guide | "Font Romeu, France" |
+| altitude training camps | jet-lag-altitude-travel-fatigue (QUEUED) | "managing travel fatigue when arriving at altitude" |
+| altitude tent for athletes | normobaric-vs-hypobaric-hypoxia-athletes | "normobaric vs hypobaric hypoxia" |
+| altitude tent for athletes | altitude-mask-vs-altitude-tent-comparison | "altitude mask vs altitude tent" |
+| how long to acclimatize | how-long-altitude-gains-last-washout | "how long altitude gains last" |
+| altitude training for cyclists | altitude-training-plan-4-week-block | "build a 4-week altitude training block" |
+| altitude training for cyclists | altitude-training-periodization-mesocycle (QUEUED) | "periodize your altitude training block" |
+| altitude training for runners | altitude-training-plan-4-week-block | "sample altitude training plan" |
+| altitude training for runners | flagstaff-altitude-training-guide | "train in Flagstaff" |
+| altitude training for runners | when-to-race-after-altitude-camp (QUEUED) | "optimal timing to race after altitude" |
+| altitude training recovery | overtraining-at-altitude-prevention (QUEUED) | "signs of overtraining at altitude" |
+| sleep quality altitude athletes | altitude-sleep-apnea-periodic-breathing (QUEUED) | "periodic breathing and sleep apnea at altitude" |
+| iron supplementation altitude | altitude-training-female-athletes-guide (QUEUED) | "iron needs for female athletes at altitude" |
 
 ---
 
 ## SEO Notes
 
 - **Primary topic cluster:** Altitude training (hub) → VO2 max, acclimatization, hypoxic training (spokes)
-- **Secondary cluster:** Tools & protocols (altitude tents, pulse oximeters, training plans)
+- **Secondary cluster:** Tools & protocols (altitude tents, pulse oximeters, training plans, pace calculators)
+- **Tertiary cluster:** Athlete-specific guides (masters, female athletes, climbers, team sports)
 - **Avoid:** Promotional product mentions in editorial content
-- **Opportunity keywords to monitor:** "altitude training mask", "breathing exercises for altitude", "HRV at altitude"
+- **Opportunity keywords to monitor:** "altitude training for women", "masters altitude training", "altitude headache", "Diamox for athletes", "altitude and immunity"

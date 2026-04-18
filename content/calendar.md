@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (47 articles published through 2026-04-18; 30 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (52 articles published through 2026-04-18; 25 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -67,11 +67,11 @@
 | 45 | cognitive effects of altitude | mental performance altitude, brain function high altitude, altitude cognition athletes | informational | How Altitude Affects Mental Performance and Cognition in Athletes | cognitive-effects-altitude-athletes.md | PUBLISHED 2026-04-18 |
 | 46 | hydration at altitude | dehydration at high altitude, how much water to drink altitude, altitude fluid strategy | informational | Hydration at Altitude: Why You Dehydrate Faster and How to Stay Ahead of It | hydration-strategy-altitude-athletes.md | PUBLISHED 2026-04-18 |
 | 47 | jet lag and altitude | travel fatigue altitude training, jet lag altitude combination, flying to altitude camp | informational | Jet Lag + Altitude: How to Manage Travel Fatigue When Flying to a High-Altitude Camp | jet-lag-altitude-travel-fatigue.md | PUBLISHED 2026-04-18 |
-| 48 | altitude training for basketball players | basketball at altitude, high altitude basketball performance, team sport altitude | informational | Altitude Training for Basketball Players: Preparing for High-Elevation Games and Camps | altitude-training-basketball-team-sports.md | QUEUED |
-| 49 | altitude training for climbers | mountaineering acclimatization, high altitude climbing training, altitude preparation mountaineers | informational | Altitude Training for Climbers and Mountaineers: Building the Fitness and Acclimatization Base | altitude-training-climbers-mountaineers.md | QUEUED |
-| 50 | rowing at altitude | altitude training for rowers, crew rowing altitude, rowing performance altitude effects | informational | Rowing at Altitude: How Elevation Affects Performance and How Rowers Should Prepare | altitude-training-rowers-rowing.md | QUEUED |
-| 51 | altitude training log | altitude training diary, tracking altitude camp workouts, altitude training journal | tool-seeking | How to Keep an Altitude Training Log That Actually Improves Your Performance | altitude-training-log-tracking-guide.md | QUEUED |
-| 52 | race pace adjustment for altitude | running pace calculator altitude, adjust race time for elevation, slower pace high altitude | tool-seeking | Altitude Race Pace Adjustment: How Much Slower Should You Run (And Why)? | race-pace-adjustment-altitude-calculator.md | QUEUED |
+| 48 | altitude training for basketball players | basketball at altitude, high altitude basketball performance, team sport altitude | informational | Altitude Training for Basketball Players: Preparing for High-Elevation Games and Camps | altitude-training-basketball-team-sports.md | PUBLISHED 2026-04-18 |
+| 49 | altitude training for climbers | mountaineering acclimatization, high altitude climbing training, altitude preparation mountaineers | informational | Altitude Training for Climbers and Mountaineers: Building the Fitness and Acclimatization Base | altitude-training-climbers-mountaineers.md | PUBLISHED 2026-04-18 |
+| 50 | rowing at altitude | altitude training for rowers, crew rowing altitude, rowing performance altitude effects | informational | Rowing at Altitude: How Elevation Affects Performance and How Rowers Should Prepare | altitude-training-rowers-rowing.md | PUBLISHED 2026-04-18 |
+| 51 | altitude training log | altitude training diary, tracking altitude camp workouts, altitude training journal | tool-seeking | How to Keep an Altitude Training Log That Actually Improves Your Performance | altitude-training-log-tracking-guide.md | PUBLISHED 2026-04-18 |
+| 52 | race pace adjustment for altitude | running pace calculator altitude, adjust race time for elevation, slower pace high altitude | tool-seeking | Altitude Race Pace Adjustment: How Much Slower Should You Run (And Why)? | race-pace-adjustment-altitude-calculator.md | PUBLISHED 2026-04-18 |
 | 53 | when to race after altitude camp | timing race after altitude training, altitude washout race timing, peak performance after altitude | informational | When to Race After an Altitude Camp: The Optimal Timing Window for Peak Performance | when-to-race-after-altitude-camp.md | QUEUED |
 | 54 | acetazolamide for altitude | Diamox altitude training, acetazolamide AMS prevention, altitude medication athletes | informational | Acetazolamide (Diamox) for Altitude: Should Athletes Use It and What Are the Risks? | acetazolamide-diamox-altitude-athletes.md | QUEUED |
 | 55 | altitude training immune function | immune suppression altitude, getting sick at altitude, altitude and illness risk | informational | Altitude and Your Immune System: Why Athletes Get Sick at Altitude Camps (And How to Prevent It) | altitude-training-immune-function-illness.md | QUEUED |
@@ -151,6 +151,11 @@
 | 45 | How Altitude Affects Mental Performance and Cognition in Athletes | src/articles/cognitive-effects-altitude-athletes.md | 2026-04-18 |
 | 46 | Hydration at Altitude: Why You Dehydrate Faster and How to Stay Ahead of It | src/articles/hydration-strategy-altitude-athletes.md | 2026-04-18 |
 | 47 | Jet Lag + Altitude: How to Manage Travel Fatigue When Flying to a High-Altitude Camp | src/articles/jet-lag-altitude-travel-fatigue.md | 2026-04-18 |
+| 48 | Altitude Training for Basketball Players: Preparing for High-Elevation Games and Camps | src/articles/altitude-training-basketball-team-sports.md | 2026-04-18 |
+| 49 | Altitude Training for Climbers and Mountaineers: Building the Fitness and Acclimatization Base | src/articles/altitude-training-climbers-mountaineers.md | 2026-04-18 |
+| 50 | Rowing at Altitude: How Elevation Affects Performance and How Rowers Should Prepare | src/articles/altitude-training-rowers-rowing.md | 2026-04-18 |
+| 51 | How to Keep an Altitude Training Log That Actually Improves Your Performance | src/articles/altitude-training-log-tracking-guide.md | 2026-04-18 |
+| 52 | Altitude Race Pace Adjustment: How Much Slower Should You Run (And Why)? | src/articles/race-pace-adjustment-altitude-calculator.md | 2026-04-18 |
 
 ---
 

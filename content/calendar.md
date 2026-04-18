@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (10 articles published 2026-04-17)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (15 articles published through 2026-04-17)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -30,11 +30,11 @@
 | 8 | altitude training camps | best altitude training locations, altitude training camps for runners, high altitude training destinations | informational | The Best Altitude Training Camps for Endurance Athletes (Ranked by Elevation & Accessibility) | best-altitude-training-camps-endurance-athletes.md | PUBLISHED 2026-04-17 |
 | 9 | heat vs altitude training | heat acclimation vs altitude, altitude training vs heat training for performance, which is better heat or altitude | informational | Heat vs. Altitude Training: Which Produces Better Performance Gains? | heat-vs-altitude-training-comparison.md | PUBLISHED 2026-04-17 |
 | 10 | intermittent hypoxic exposure | IHE protocol, hypoxic intervals, altitude simulation at home | informational | Intermittent Hypoxic Exposure (IHE): Protocols, Benefits, and Risks | intermittent-hypoxic-exposure-protocol.md | PUBLISHED 2026-04-17 |
-| 11 | erythropoietin altitude | EPO altitude training, red blood cell production altitude, natural EPO boost | informational | How Altitude Training Boosts EPO and Red Blood Cell Production Naturally | altitude-training-epo-red-blood-cells.md | QUEUED |
-| 12 | altitude tent for athletes | hypoxic tent reviews, altitude sleeping tent, normobaric hypoxia tent | tool-seeking | Altitude Tents for Athletes: How They Work, What to Look For, and Are They Worth It? | altitude-tent-athletes-guide.md | QUEUED |
-| 13 | how long to acclimatize to altitude | altitude acclimatization timeline, days to adjust to altitude, acclimatization schedule | informational | How Long Does It Take to Acclimatize to Altitude? (Full Timeline by Elevation) | how-long-acclimatize-altitude-timeline.md | QUEUED |
-| 14 | altitude training for cyclists | cycling at altitude, altitude training plan cycling, pro cycling altitude camps | informational | Altitude Training for Cyclists: Training Blocks, Gains, and Common Mistakes | altitude-training-cyclists-guide.md | QUEUED |
-| 15 | altitude training for runners | running at altitude, marathon training at altitude, altitude running tips | informational | Altitude Training for Runners: Everything From 5K to Ultramarathon Athletes | altitude-training-runners-guide.md | QUEUED |
+| 11 | erythropoietin altitude | EPO altitude training, red blood cell production altitude, natural EPO boost | informational | How Altitude Training Boosts EPO and Red Blood Cell Production Naturally | altitude-training-epo-red-blood-cells.md | PUBLISHED 2026-04-17 |
+| 12 | altitude tent for athletes | hypoxic tent reviews, altitude sleeping tent, normobaric hypoxia tent | tool-seeking | Altitude Tents for Athletes: How They Work, What to Look For, and Are They Worth It? | altitude-tent-athletes-guide.md | PUBLISHED 2026-04-17 |
+| 13 | how long to acclimatize to altitude | altitude acclimatization timeline, days to adjust to altitude, acclimatization schedule | informational | How Long Does It Take to Acclimatize to Altitude? (Full Timeline by Elevation) | how-long-acclimatize-altitude-timeline.md | PUBLISHED 2026-04-17 |
+| 14 | altitude training for cyclists | cycling at altitude, altitude training plan cycling, pro cycling altitude camps | informational | Altitude Training for Cyclists: Training Blocks, Gains, and Common Mistakes | altitude-training-cyclists-guide.md | PUBLISHED 2026-04-17 |
+| 15 | altitude training for runners | running at altitude, marathon training at altitude, altitude running tips | informational | Altitude Training for Runners: Everything From 5K to Ultramarathon Athletes | altitude-training-runners-guide.md | PUBLISHED 2026-04-17 |
 | 16 | symptoms of altitude sickness | acute mountain sickness symptoms, AMS vs HACE vs HAPE, altitude sickness signs | informational | Recognizing Altitude Sickness: AMS, HACE, and HAPE Symptoms Every Athlete Should Know | altitude-sickness-symptoms-ams-hace-hape.md | QUEUED |
 | 17 | normobaric vs hypobaric hypoxia | simulated altitude training, hypoxic chamber, altitude tent vs real altitude | informational | Normobaric vs. Hypobaric Hypoxia: Does Simulated Altitude Training Actually Work? | normobaric-vs-hypobaric-hypoxia-athletes.md | QUEUED |
 | 18 | pulse oximeter for athletes | best pulse oximeter athletes, SpO2 monitoring training, altitude oximeter | tool-seeking | How to Use a Pulse Oximeter to Track Your Altitude Acclimatization | pulse-oximeter-altitude-athletes-guide.md | QUEUED |
@@ -59,6 +59,11 @@
 | 8 | The Best Altitude Training Camps for Endurance Athletes (Ranked by Elevation & Accessibility) | src/articles/best-altitude-training-camps-endurance-athletes.md | 2026-04-17 |
 | 9 | Heat vs. Altitude Training: Which Produces Better Performance Gains? | src/articles/heat-vs-altitude-training-comparison.md | 2026-04-17 |
 | 10 | Intermittent Hypoxic Exposure (IHE): Protocols, Benefits, and Risks | src/articles/intermittent-hypoxic-exposure-protocol.md | 2026-04-17 |
+| 11 | How Altitude Training Boosts EPO and Red Blood Cell Production Naturally | src/articles/altitude-training-epo-red-blood-cells.md | 2026-04-17 |
+| 12 | Altitude Tents for Athletes: How They Work, What to Look For, and Are They Worth It? | src/articles/altitude-tent-athletes-guide.md | 2026-04-17 |
+| 13 | How Long Does It Take to Acclimatize to Altitude? (Full Timeline by Elevation) | src/articles/how-long-acclimatize-altitude-timeline.md | 2026-04-17 |
+| 14 | Altitude Training for Cyclists: Training Blocks, Gains, and Common Mistakes | src/articles/altitude-training-cyclists-guide.md | 2026-04-17 |
+| 15 | Altitude Training for Runners: Everything From 5K to Ultramarathon Athletes | src/articles/altitude-training-runners-guide.md | 2026-04-17 |
 
 ---
 

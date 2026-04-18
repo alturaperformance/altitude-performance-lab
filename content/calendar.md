@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (67 articles published through 2026-04-18; 10 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (67 articles published through 2026-04-18; 22 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -97,6 +97,18 @@
 | 75 | cold water immersion at altitude | ice bath altitude recovery, cold plunge altitude camp, cold water therapy high altitude | informational | Cold Water Immersion at Altitude: Does an Ice Bath Help or Hinder Hypoxic Adaptation? | cold-water-immersion-altitude-recovery.md | QUEUED |
 | 76 | altitude simulation room setup | hypoxic room home setup, altitude chamber cost, DIY altitude training room | tool-seeking | How to Set Up a Home Altitude Simulation Room: Costs, Equipment, and What Actually Works | altitude-simulation-room-home-setup-guide.md | QUEUED |
 | 77 | vitamin D and altitude training | vitamin D deficiency altitude, sun exposure altitude athletes, altitude vitamin D supplementation | informational | Vitamin D and Altitude Training: Why Elevation May Affect Your Vitamin D Status (And What to Do) | vitamin-d-altitude-training-athletes.md | QUEUED |
+| 78 | polarized training at altitude | 80 20 training altitude, polarized training zones altitude, low intensity high altitude sessions | informational | Polarized Training at Altitude: How the 80/20 Method Works When the Air Gets Thin | polarized-training-80-20-altitude-guide.md | QUEUED |
+| 79 | block periodization altitude training | altitude training mesocycle blocks, block periodization endurance altitude, altitude training phases | informational | Block Periodization for Altitude Training Camps: How to Structure Your Preparation, Peak, and Taper | block-periodization-altitude-training-camps.md | QUEUED |
+| 80 | strength training at altitude | concurrent training altitude, weights at high altitude, strength aerobic altitude combination | informational | Concurrent Strength and Aerobic Training at Altitude: Can You Build Power While Going High? | strength-training-altitude-concurrent-guide.md | QUEUED |
+| 81 | tapering after altitude camp | peaking after altitude training, altitude camp taper protocol, how to taper post altitude | informational | How to Taper After an Altitude Training Camp: Timing Your Competition Peak for Maximum Performance | tapering-after-altitude-camp-protocol.md | QUEUED |
+| 82 | ketones and altitude performance | exogenous ketones altitude, ketone esters altitude training, BHB altitude hypoxia | informational | Ketone Supplements and Altitude: Can Exogenous Ketones Improve Performance at High Elevation? | ketones-altitude-performance-exogenous-bhb.md | QUEUED |
+| 83 | St. Moritz altitude training | St Moritz Switzerland altitude camp, Engadin Valley altitude training, Switzerland high altitude destination | informational | Altitude Training in St. Moritz: Switzerland's Elite Destination for Endurance Athletes | st-moritz-altitude-training-destination.md | QUEUED |
+| 84 | plant-based diet altitude training | vegan athlete altitude, vegetarian altitude training, plant-based iron altitude performance | informational | Plant-Based Athletes at Altitude: Managing Iron, B12, and Protein for High-Altitude Performance | plant-based-diet-altitude-training-athletes.md | QUEUED |
+| 85 | altitude training Paralympic athletes | Paralympic altitude acclimatization, disabled athletes altitude, adaptive sports altitude training | informational | Altitude Training for Paralympic Athletes: Unique Considerations for Adaptive Sport at Elevation | altitude-training-paralympic-adaptive-athletes.md | QUEUED |
+| 86 | creatine altitude training | creatine high altitude dehydration, creatine supplementation altitude athletes, creatine hypoxia | informational | Creatine at Altitude: Does It Help Performance — or Increase Dehydration Risk? | creatine-altitude-training-dehydration-risk.md | QUEUED |
+| 87 | altitude training for MMA fighters | combat sports altitude camp, boxing altitude training, martial arts altitude conditioning | informational | Altitude Training for Combat Sports: How MMA Fighters and Boxers Use Elevation to Build a Gas Tank | altitude-training-mma-combat-sports-boxing.md | QUEUED |
+| 88 | Eldoret Kenya altitude training | Eldoret altitude training camp, Kenya Rift Valley altitude, distance running Kenya elevation | informational | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | eldoret-kenya-altitude-training-rift-valley.md | QUEUED |
+| 89 | NSAIDs altitude risk | ibuprofen at altitude, aspirin altitude sickness, anti-inflammatories altitude athletes | informational | NSAIDs at Altitude: Why Ibuprofen and Aspirin Come With Extra Risk at High Elevation | nsaids-ibuprofen-altitude-risk-athletes.md | QUEUED |
 
 ---
 

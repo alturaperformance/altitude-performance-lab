@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (47 articles published through 2026-04-18; 10 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (47 articles published through 2026-04-18; 30 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -77,6 +77,26 @@
 | 55 | altitude training immune function | immune suppression altitude, getting sick at altitude, altitude and illness risk | informational | Altitude and Your Immune System: Why Athletes Get Sick at Altitude Camps (And How to Prevent It) | altitude-training-immune-function-illness.md | QUEUED |
 | 56 | breathing exercises for altitude | altitude breathing techniques, pursed lip breathing altitude, pre-altitude breathing prep | informational | Breathing Exercises to Prepare for Altitude: Techniques That Actually Help (And Some That Don't) | breathing-exercises-altitude-preparation.md | QUEUED |
 | 57 | altitude headache causes | dehydration altitude headache, high altitude headache prevention, why headaches at altitude | informational | Why You Get Headaches at Altitude (And What You Can Do About It) | altitude-headache-dehydration-prevention.md | QUEUED |
+| 58 | Iten Kenya altitude training | Iten training camp, Kenya altitude running, African altitude training destination | informational | Training in Iten, Kenya: Why the World's Best Distance Runners Call This High-Altitude Town Home | iten-kenya-altitude-training-destination.md | QUEUED |
+| 59 | altitude and gut health | GI distress at altitude, digestion problems high altitude, altitude stomach issues | informational | Altitude and Gut Health: Why GI Distress Is So Common at High Elevation (And How to Fix It) | altitude-gut-health-gi-distress-athletes.md | QUEUED |
+| 60 | caffeine at altitude | coffee altitude performance, caffeine high altitude effects, caffeine dose altitude | informational | Caffeine at Altitude: How Elevation Changes Its Effects (And How Athletes Should Dose It) | caffeine-altitude-performance-athletes.md | QUEUED |
+| 61 | altitude training for volleyball players | volleyball altitude performance, beach volleyball altitude, team sport altitude conditioning | informational | Altitude Training for Volleyball Players: Conditioning Protocols for High-Elevation Competition | altitude-training-volleyball-team-sport.md | QUEUED |
+| 62 | sauna training at altitude | sauna altitude combination, heat shock proteins altitude, post-altitude sauna recovery | informational | Sauna Use at Altitude: Can Heat Therapy Stack With Hypoxic Adaptations? | sauna-altitude-training-combination.md | QUEUED |
+| 63 | Bogota altitude training | Colombia altitude training camp, Bogotá elevation 2600m, South America altitude destination | informational | Altitude Training in Bogotá: South America's High-Altitude Training Hub for Endurance Athletes | bogota-altitude-training-destination-guide.md | QUEUED |
+| 64 | carbohydrate needs at altitude | carb loading altitude, glycogen depletion altitude, carbohydrate metabolism high altitude | informational | Carbohydrate Needs at Altitude: Why You Burn More Carbs High Up (And How to Fuel for It) | carbohydrate-needs-altitude-athletes.md | QUEUED |
+| 65 | biathlon altitude training | biathlon altitude camp, winter sport altitude training, biathlon VO2 max altitude | informational | Altitude Training for Biathletes: Building the Aerobic Engine and Shooting Steadiness at Elevation | altitude-training-biathlon-winter-sport.md | QUEUED |
+| 66 | hemoglobin optimization altitude | altitude anemia prevention, hemoglobin levels altitude training, red blood cell altitude athlete | informational | Hemoglobin Optimization at Altitude: How to Prevent Altitude Anemia and Maximize Oxygen Carrying Capacity | hemoglobin-optimization-altitude-training.md | QUEUED |
+| 67 | compression garments at altitude | altitude recovery compression, compression socks altitude travel, travel DVT altitude | tool-seeking | Compression Garments at Altitude: Do They Speed Recovery and Reduce Swelling at Elevation? | compression-garments-altitude-recovery.md | QUEUED |
+| 68 | wearables at altitude | WHOOP altitude training, Oura altitude sleep, Garmin altitude HRV tracking | tool-seeking | Wearables at Altitude: How WHOOP, Oura, and Garmin Perform (and What the Data Actually Tells You) | wearables-altitude-training-whoop-oura-garmin.md | QUEUED |
+| 69 | altitude training for ultra-trail runners | 100 mile race altitude, ultra endurance altitude prep, UTMB altitude training | informational | Altitude Training for Ultra-Trail Runners: Preparing for 100-Mile Races at Elevation | altitude-training-ultra-trail-100-mile-runners.md | QUEUED |
+| 70 | protein intake at altitude | protein requirements high altitude, muscle preservation altitude, amino acids altitude athletes | informational | Protein Needs at Altitude: Why Muscle Breakdown Increases High Up (And How Much to Eat) | protein-intake-altitude-athletes-guide.md | QUEUED |
+| 71 | alpine skiing altitude preparation | downhill ski altitude performance, ski racing altitude prep, alpine ski VO2 max altitude | informational | Altitude Training for Alpine Skiers: How Downhill Racers Use Elevation to Build Race Fitness | altitude-training-alpine-skiing-guide.md | QUEUED |
+| 72 | Addis Ababa altitude training | Ethiopian altitude training, Addis Ababa elevation 2355m, Ethiopia distance running | informational | Altitude Training in Addis Ababa: Ethiopia's Secret to Producing the World's Best Distance Runners | addis-ababa-altitude-training-ethiopia.md | QUEUED |
+| 73 | altitude training for youth athletes | junior altitude training, teenage athletes altitude, youth altitude camp considerations | informational | Altitude Training for Young Athletes: What's Safe, What Works, and When to Start | altitude-training-youth-junior-athletes.md | QUEUED |
+| 74 | altitude and blood pressure | hypertension at altitude, blood pressure changes altitude, altitude cardiovascular athletes | informational | Altitude and Blood Pressure: What Athletes With Hypertension Need to Know Before Going High | altitude-blood-pressure-hypertension-athletes.md | QUEUED |
+| 75 | cold water immersion at altitude | ice bath altitude recovery, cold plunge altitude camp, cold water therapy high altitude | informational | Cold Water Immersion at Altitude: Does an Ice Bath Help or Hinder Hypoxic Adaptation? | cold-water-immersion-altitude-recovery.md | QUEUED |
+| 76 | altitude simulation room setup | hypoxic room home setup, altitude chamber cost, DIY altitude training room | tool-seeking | How to Set Up a Home Altitude Simulation Room: Costs, Equipment, and What Actually Works | altitude-simulation-room-home-setup-guide.md | QUEUED |
+| 77 | vitamin D and altitude training | vitamin D deficiency altitude, sun exposure altitude athletes, altitude vitamin D supplementation | informational | Vitamin D and Altitude Training: Why Elevation May Affect Your Vitamin D Status (And What to Do) | vitamin-d-altitude-training-athletes.md | QUEUED |
 
 ---
 
@@ -169,6 +189,20 @@
 | altitude training recovery | overtraining-at-altitude-prevention (QUEUED) | "signs of overtraining at altitude" |
 | sleep quality altitude athletes | altitude-sleep-apnea-periodic-breathing (QUEUED) | "periodic breathing and sleep apnea at altitude" |
 | iron supplementation altitude | altitude-training-female-athletes-guide (QUEUED) | "iron needs for female athletes at altitude" |
+| iron supplementation altitude | hemoglobin-optimization-altitude-training (QUEUED) | "optimizing hemoglobin levels at altitude" |
+| nutrition for altitude training | carbohydrate-needs-altitude-athletes (QUEUED) | "carbohydrate needs at altitude" |
+| nutrition for altitude training | protein-intake-altitude-athletes-guide (QUEUED) | "protein requirements at elevation" |
+| altitude training camps | iten-kenya-altitude-training-destination (QUEUED) | "Iten, Kenya — where the world's best train" |
+| altitude training camps | bogota-altitude-training-destination-guide (QUEUED) | "altitude training in Bogotá" |
+| altitude training camps | addis-ababa-altitude-training-ethiopia (QUEUED) | "Addis Ababa altitude training" |
+| altitude training recovery | cold-water-immersion-altitude-recovery (QUEUED) | "cold water immersion at altitude" |
+| altitude training recovery | compression-garments-altitude-recovery (QUEUED) | "compression garments for altitude recovery" |
+| HRV at altitude | wearables-altitude-training-whoop-oura-garmin (QUEUED) | "WHOOP, Oura, and Garmin at altitude" |
+| altitude training for runners | altitude-training-ultra-trail-100-mile-runners (QUEUED) | "ultra-trail and 100-mile race altitude prep" |
+| altitude training for cross-country skiing | altitude-training-biathlon-winter-sport (QUEUED) | "biathlon-specific altitude protocols" |
+| altitude training for cross-country skiing | altitude-training-alpine-skiing-guide (QUEUED) | "alpine skiing altitude training" |
+| altitude sickness prevention | altitude-blood-pressure-hypertension-athletes (QUEUED) | "altitude and blood pressure changes" |
+| altitude tent for athletes | altitude-simulation-room-home-setup-guide (QUEUED) | "build a home altitude simulation room" |
 
 ---
 
@@ -178,4 +212,4 @@
 - **Secondary cluster:** Tools & protocols (altitude tents, pulse oximeters, training plans, pace calculators)
 - **Tertiary cluster:** Athlete-specific guides (masters, female athletes, climbers, team sports)
 - **Avoid:** Promotional product mentions in editorial content
-- **Opportunity keywords to monitor:** "altitude training for women", "masters altitude training", "altitude headache", "Diamox for athletes", "altitude and immunity"
+- **Opportunity keywords to monitor:** "altitude training for women", "masters altitude training", "altitude headache", "Diamox for athletes", "altitude and immunity", "Iten Kenya training camp", "altitude gut health", "caffeine at altitude", "WHOOP altitude", "Bogota altitude training", "vitamin D altitude"

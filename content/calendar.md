@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (21 articles published through 2026-04-17)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (26 articles published through 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -41,11 +41,11 @@
 | 19 | altitude training plan | 4-week altitude training block, altitude training schedule, how to structure altitude camp | tool-seeking | How to Build a 4-Week Altitude Training Block (With Sample Weekly Plan) | altitude-training-plan-4-week-block.md | PUBLISHED 2026-04-17 |
 | 20 | iron supplementation altitude | iron and altitude training, ferritin levels altitude athletes, iron deficiency altitude | informational | Why Iron Supplementation Matters for Altitude Training (And How to Optimize It) | iron-supplementation-altitude-training.md | PUBLISHED 2026-04-17 |
 | 21 | sleep at altitude | sleeping at high altitude, altitude and sleep quality, insomnia altitude training | informational | Why Sleep Suffers at Altitude (And What Athletes Can Do About It) | sleep-quality-altitude-athletes.md | PUBLISHED 2026-04-17 |
-| 22 | altitude training recovery | recovery at altitude, overtraining altitude, rest days altitude camp | informational | Recovery at Altitude: Why You Need More Rest Days (and How to Plan Them) | altitude-training-recovery-guide.md | QUEUED |
-| 23 | nutrition for altitude training | altitude athlete diet, what to eat at high altitude, high altitude nutrition plan | informational | Fueling at Altitude: The Nutrition Strategy Every Altitude Athlete Needs | nutrition-for-altitude-training-athletes.md | QUEUED |
-| 24 | HRV at altitude | heart rate variability altitude training, HRV monitoring altitude camp, altitude HRV tracking | informational | How Altitude Affects Your HRV (And How to Use It to Guide Training Load) | hrv-at-altitude-training-guide.md | QUEUED |
-| 25 | altitude training hormones | testosterone altitude training, cortisol altitude athletes, hormonal adaptations high altitude | informational | Altitude Training and Hormones: How Elevation Affects Testosterone, Cortisol, and Recovery | altitude-training-hormones-testosterone-cortisol.md | QUEUED |
-| 26 | cold exposure vs altitude training | cold water immersion endurance athletes, cold plunge vs altitude tent, cold therapy performance gains | informational | Cold Exposure vs. Altitude Training: Which Environmental Stressor Delivers Better Gains? | cold-exposure-vs-altitude-training-comparison.md | QUEUED |
+| 22 | altitude training recovery | recovery at altitude, overtraining altitude, rest days altitude camp | informational | Recovery at Altitude: Why You Need More Rest Days (and How to Plan Them) | altitude-training-recovery-guide.md | PUBLISHED 2026-04-18 |
+| 23 | nutrition for altitude training | altitude athlete diet, what to eat at high altitude, high altitude nutrition plan | informational | Fueling at Altitude: The Nutrition Strategy Every Altitude Athlete Needs | nutrition-for-altitude-training-athletes.md | PUBLISHED 2026-04-18 |
+| 24 | HRV at altitude | heart rate variability altitude training, HRV monitoring altitude camp, altitude HRV tracking | informational | How Altitude Affects Your HRV (And How to Use It to Guide Training Load) | hrv-at-altitude-training-guide.md | PUBLISHED 2026-04-18 |
+| 25 | altitude training hormones | testosterone altitude training, cortisol altitude athletes, hormonal adaptations high altitude | informational | Altitude Training and Hormones: How Elevation Affects Testosterone, Cortisol, and Recovery | altitude-training-hormones-testosterone-cortisol.md | PUBLISHED 2026-04-18 |
+| 26 | cold exposure vs altitude training | cold water immersion endurance athletes, cold plunge vs altitude tent, cold therapy performance gains | informational | Cold Exposure vs. Altitude Training: Which Environmental Stressor Delivers Better Gains? | cold-exposure-vs-altitude-training-comparison.md | PUBLISHED 2026-04-18 |
 | 27 | how long do altitude gains last | altitude training adaptations duration, altitude training washout period, maintaining altitude fitness | informational | How Long Do Altitude Training Gains Last? (The Washout Timeline, Explained) | how-long-altitude-gains-last-washout.md | QUEUED |
 | 28 | altitude training for soccer | football altitude training, soccer players altitude camp, team sport altitude performance | informational | Altitude Training for Soccer Players: How to Prepare Your Team for High-Altitude Fixtures | altitude-training-soccer-football-guide.md | QUEUED |
 | 29 | altitude training for rugby | rugby altitude camp, rugby altitude performance, team sport altitude preparation | informational | Altitude Training for Rugby: What the Research Says About Team Sport Hypoxic Prep | altitude-training-rugby-team-sports.md | QUEUED |
@@ -85,6 +85,11 @@
 | 19 | How to Build a 4-Week Altitude Training Block (With Sample Weekly Plan) | src/articles/altitude-training-plan-4-week-block.md | 2026-04-17 |
 | 20 | Why Iron Supplementation Matters for Altitude Training (And How to Optimize It) | src/articles/iron-supplementation-altitude-training.md | 2026-04-17 |
 | 21 | Why Sleep Suffers at Altitude (And What Athletes Can Do About It) | src/articles/sleep-quality-altitude-athletes.md | 2026-04-17 |
+| 22 | Recovery at Altitude: Why You Need More Rest Days (and How to Plan Them) | src/articles/altitude-training-recovery-guide.md | 2026-04-18 |
+| 23 | Fueling at Altitude: The Nutrition Strategy Every Altitude Athlete Needs | src/articles/nutrition-for-altitude-training-athletes.md | 2026-04-18 |
+| 24 | How Altitude Affects Your HRV (And How to Use It to Guide Training Load) | src/articles/hrv-at-altitude-training-guide.md | 2026-04-18 |
+| 25 | Altitude Training and Hormones: How Elevation Affects Testosterone, Cortisol, and Recovery | src/articles/altitude-training-hormones-testosterone-cortisol.md | 2026-04-18 |
+| 26 | Cold Exposure vs. Altitude Training: Which Environmental Stressor Delivers Better Gains? | src/articles/cold-exposure-vs-altitude-training-comparison.md | 2026-04-18 |
 
 ---
 

@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (42 articles published through 2026-04-18; 15 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (47 articles published through 2026-04-18; 10 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -62,11 +62,11 @@
 | 40 | altitude and sleep apnea | periodic breathing altitude, Cheyne-Stokes at altitude, sleep-disordered breathing high altitude | informational | Altitude and Sleep Apnea: Why Athletes Experience Disrupted Breathing at Night | altitude-sleep-apnea-periodic-breathing.md | PUBLISHED 2026-04-18 |
 | 41 | altitude training for masters athletes | older athletes altitude training, masters runners altitude, over 40 altitude training | informational | Altitude Training for Masters Athletes: What Changes After 40 (And How to Adapt) | altitude-training-masters-athletes-over-40.md | PUBLISHED 2026-04-18 |
 | 42 | female athletes altitude training | women and altitude training, hormonal changes altitude, iron deficiency female athletes altitude | informational | Altitude Training for Female Athletes: Hormonal Differences, Iron Needs, and Protocols | altitude-training-female-athletes-guide.md | PUBLISHED 2026-04-18 |
-| 43 | re-acclimatization after altitude | returning to altitude camp, second altitude exposure, altitude re-adaptation timeline | informational | Re-Acclimatization: How Fast Do You Readapt When You Return to Altitude? | re-acclimatization-returning-altitude.md | QUEUED |
-| 44 | overtraining at altitude | altitude overtraining symptoms, too much training at altitude, non-functional overreaching altitude | informational | Overtraining at Altitude: Warning Signs and How to Avoid Going Too Hard Too High | overtraining-at-altitude-prevention.md | QUEUED |
-| 45 | cognitive effects of altitude | mental performance altitude, brain function high altitude, altitude cognition athletes | informational | How Altitude Affects Mental Performance and Cognition in Athletes | cognitive-effects-altitude-athletes.md | QUEUED |
-| 46 | hydration at altitude | dehydration at high altitude, how much water to drink altitude, altitude fluid strategy | informational | Hydration at Altitude: Why You Dehydrate Faster and How to Stay Ahead of It | hydration-strategy-altitude-athletes.md | QUEUED |
-| 47 | jet lag and altitude | travel fatigue altitude training, jet lag altitude combination, flying to altitude camp | informational | Jet Lag + Altitude: How to Manage Travel Fatigue When Flying to a High-Altitude Camp | jet-lag-altitude-travel-fatigue.md | QUEUED |
+| 43 | re-acclimatization after altitude | returning to altitude camp, second altitude exposure, altitude re-adaptation timeline | informational | Re-Acclimatization: How Fast Do You Readapt When You Return to Altitude? | re-acclimatization-returning-altitude.md | PUBLISHED 2026-04-18 |
+| 44 | overtraining at altitude | altitude overtraining symptoms, too much training at altitude, non-functional overreaching altitude | informational | Overtraining at Altitude: Warning Signs and How to Avoid Going Too Hard Too High | overtraining-at-altitude-prevention.md | PUBLISHED 2026-04-18 |
+| 45 | cognitive effects of altitude | mental performance altitude, brain function high altitude, altitude cognition athletes | informational | How Altitude Affects Mental Performance and Cognition in Athletes | cognitive-effects-altitude-athletes.md | PUBLISHED 2026-04-18 |
+| 46 | hydration at altitude | dehydration at high altitude, how much water to drink altitude, altitude fluid strategy | informational | Hydration at Altitude: Why You Dehydrate Faster and How to Stay Ahead of It | hydration-strategy-altitude-athletes.md | PUBLISHED 2026-04-18 |
+| 47 | jet lag and altitude | travel fatigue altitude training, jet lag altitude combination, flying to altitude camp | informational | Jet Lag + Altitude: How to Manage Travel Fatigue When Flying to a High-Altitude Camp | jet-lag-altitude-travel-fatigue.md | PUBLISHED 2026-04-18 |
 | 48 | altitude training for basketball players | basketball at altitude, high altitude basketball performance, team sport altitude | informational | Altitude Training for Basketball Players: Preparing for High-Elevation Games and Camps | altitude-training-basketball-team-sports.md | QUEUED |
 | 49 | altitude training for climbers | mountaineering acclimatization, high altitude climbing training, altitude preparation mountaineers | informational | Altitude Training for Climbers and Mountaineers: Building the Fitness and Acclimatization Base | altitude-training-climbers-mountaineers.md | QUEUED |
 | 50 | rowing at altitude | altitude training for rowers, crew rowing altitude, rowing performance altitude effects | informational | Rowing at Altitude: How Elevation Affects Performance and How Rowers Should Prepare | altitude-training-rowers-rowing.md | QUEUED |
@@ -126,6 +126,11 @@
 | 40 | Altitude and Sleep Apnea: Why Athletes Experience Disrupted Breathing at Night | src/articles/altitude-sleep-apnea-periodic-breathing.md | 2026-04-18 |
 | 41 | Altitude Training for Masters Athletes: What Changes After 40 (And How to Adapt) | src/articles/altitude-training-masters-athletes-over-40.md | 2026-04-18 |
 | 42 | Altitude Training for Female Athletes: Hormonal Differences, Iron Needs, and Protocols | src/articles/altitude-training-female-athletes-guide.md | 2026-04-18 |
+| 43 | Re-Acclimatization: How Fast Do You Readapt When You Return to Altitude? | src/articles/re-acclimatization-returning-altitude.md | 2026-04-18 |
+| 44 | Overtraining at Altitude: Warning Signs and How to Avoid Going Too Hard Too High | src/articles/overtraining-at-altitude-prevention.md | 2026-04-18 |
+| 45 | How Altitude Affects Mental Performance and Cognition in Athletes | src/articles/cognitive-effects-altitude-athletes.md | 2026-04-18 |
+| 46 | Hydration at Altitude: Why You Dehydrate Faster and How to Stay Ahead of It | src/articles/hydration-strategy-altitude-athletes.md | 2026-04-18 |
+| 47 | Jet Lag + Altitude: How to Manage Travel Fatigue When Flying to a High-Altitude Camp | src/articles/jet-lag-altitude-travel-fatigue.md | 2026-04-18 |
 
 ---
 

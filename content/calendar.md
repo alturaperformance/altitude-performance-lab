@@ -56,7 +56,7 @@
 | 34 | altitude training for triathletes | triathlon altitude camp, Ironman altitude training, triathlete altitude acclimatization | informational | Altitude Training for Triathletes: Maximizing Swim-Bike-Run Adaptations at Elevation | altitude-training-triathletes-guide.md | PUBLISHED 2026-04-18 |
 | 35 | altitude mask vs altitude tent | elevation training mask effectiveness, do altitude masks work, altitude mask hypoxic tent comparison | informational | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | altitude-mask-vs-altitude-tent-comparison.md | PUBLISHED 2026-04-18 |
 | 36 | altitude training for cross-country skiing | Nordic skiing altitude training, XC ski altitude camp, cross-country skiing altitude performance | informational | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | altitude-training-cross-country-skiing.md | PUBLISHED 2026-04-18 |
-| 37 | swimming at altitude | competitive swimming altitude, pool altitude training effects, altitude training for swimmers | informational | Swimming at Altitude: How Elevation Affects Performance (And How Swimmers Can Adapt) | swimming-at-altitude-guide.md | QUEUED |
+| 37 | swimming at altitude | competitive swimming altitude, pool altitude training effects, altitude training for swimmers | informational | Swimming at Altitude: How Elevation Affects Performance (And How Swimmers Can Adapt) | swimming-at-altitude-guide.md | PUBLISHED 2026-04-18 |
 
 ---
 
@@ -100,6 +100,7 @@
 | 34 | Altitude Training for Triathletes: Maximizing Swim-Bike-Run Adaptations at Elevation | src/articles/altitude-training-triathletes-guide.md | 2026-04-18 |
 | 35 | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | src/articles/altitude-mask-vs-altitude-tent-comparison.md | 2026-04-18 |
 | 36 | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | src/articles/altitude-training-cross-country-skiing.md | 2026-04-18 |
+| 37 | Swimming at Altitude: How Elevation Affects Performance (And How Swimmers Can Adapt) | src/articles/swimming-at-altitude-guide.md | 2026-04-18 |
 
 ---
 

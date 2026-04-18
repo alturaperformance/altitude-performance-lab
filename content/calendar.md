@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (15 articles published through 2026-04-17; 15 new topics queued 2026-04-17)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (21 articles published through 2026-04-17)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -35,12 +35,12 @@
 | 13 | how long to acclimatize to altitude | altitude acclimatization timeline, days to adjust to altitude, acclimatization schedule | informational | How Long Does It Take to Acclimatize to Altitude? (Full Timeline by Elevation) | how-long-acclimatize-altitude-timeline.md | PUBLISHED 2026-04-17 |
 | 14 | altitude training for cyclists | cycling at altitude, altitude training plan cycling, pro cycling altitude camps | informational | Altitude Training for Cyclists: Training Blocks, Gains, and Common Mistakes | altitude-training-cyclists-guide.md | PUBLISHED 2026-04-17 |
 | 15 | altitude training for runners | running at altitude, marathon training at altitude, altitude running tips | informational | Altitude Training for Runners: Everything From 5K to Ultramarathon Athletes | altitude-training-runners-guide.md | PUBLISHED 2026-04-17 |
-| 16 | symptoms of altitude sickness | acute mountain sickness symptoms, AMS vs HACE vs HAPE, altitude sickness signs | informational | Recognizing Altitude Sickness: AMS, HACE, and HAPE Symptoms Every Athlete Should Know | altitude-sickness-symptoms-ams-hace-hape.md | QUEUED |
-| 17 | normobaric vs hypobaric hypoxia | simulated altitude training, hypoxic chamber, altitude tent vs real altitude | informational | Normobaric vs. Hypobaric Hypoxia: Does Simulated Altitude Training Actually Work? | normobaric-vs-hypobaric-hypoxia-athletes.md | QUEUED |
-| 18 | pulse oximeter for athletes | best pulse oximeter athletes, SpO2 monitoring training, altitude oximeter | tool-seeking | How to Use a Pulse Oximeter to Track Your Altitude Acclimatization | pulse-oximeter-altitude-athletes-guide.md | QUEUED |
-| 19 | altitude training plan | 4-week altitude training block, altitude training schedule, how to structure altitude camp | tool-seeking | How to Build a 4-Week Altitude Training Block (With Sample Weekly Plan) | altitude-training-plan-4-week-block.md | QUEUED |
-| 20 | iron supplementation altitude | iron and altitude training, ferritin levels altitude athletes, iron deficiency altitude | informational | Why Iron Supplementation Matters for Altitude Training (And How to Optimize It) | iron-supplementation-altitude-training.md | QUEUED |
-| 21 | sleep at altitude | sleeping at high altitude, altitude and sleep quality, insomnia altitude training | informational | Why Sleep Suffers at Altitude (And What Athletes Can Do About It) | sleep-quality-altitude-athletes.md | QUEUED |
+| 16 | symptoms of altitude sickness | acute mountain sickness symptoms, AMS vs HACE vs HAPE, altitude sickness signs | informational | Recognizing Altitude Sickness: AMS, HACE, and HAPE Symptoms Every Athlete Should Know | altitude-sickness-symptoms-ams-hace-hape.md | PUBLISHED 2026-04-17 |
+| 17 | normobaric vs hypobaric hypoxia | simulated altitude training, hypoxic chamber, altitude tent vs real altitude | informational | Normobaric vs. Hypobaric Hypoxia: Does Simulated Altitude Training Actually Work? | normobaric-vs-hypobaric-hypoxia-athletes.md | PUBLISHED 2026-04-17 |
+| 18 | pulse oximeter for athletes | best pulse oximeter athletes, SpO2 monitoring training, altitude oximeter | tool-seeking | How to Use a Pulse Oximeter to Track Your Altitude Acclimatization | pulse-oximeter-altitude-athletes-guide.md | PUBLISHED 2026-04-17 |
+| 19 | altitude training plan | 4-week altitude training block, altitude training schedule, how to structure altitude camp | tool-seeking | How to Build a 4-Week Altitude Training Block (With Sample Weekly Plan) | altitude-training-plan-4-week-block.md | PUBLISHED 2026-04-17 |
+| 20 | iron supplementation altitude | iron and altitude training, ferritin levels altitude athletes, iron deficiency altitude | informational | Why Iron Supplementation Matters for Altitude Training (And How to Optimize It) | iron-supplementation-altitude-training.md | PUBLISHED 2026-04-17 |
+| 21 | sleep at altitude | sleeping at high altitude, altitude and sleep quality, insomnia altitude training | informational | Why Sleep Suffers at Altitude (And What Athletes Can Do About It) | sleep-quality-altitude-athletes.md | PUBLISHED 2026-04-17 |
 | 22 | altitude training recovery | recovery at altitude, overtraining altitude, rest days altitude camp | informational | Recovery at Altitude: Why You Need More Rest Days (and How to Plan Them) | altitude-training-recovery-guide.md | QUEUED |
 | 23 | nutrition for altitude training | altitude athlete diet, what to eat at high altitude, high altitude nutrition plan | informational | Fueling at Altitude: The Nutrition Strategy Every Altitude Athlete Needs | nutrition-for-altitude-training-athletes.md | QUEUED |
 | 24 | HRV at altitude | heart rate variability altitude training, HRV monitoring altitude camp, altitude HRV tracking | informational | How Altitude Affects Your HRV (And How to Use It to Guide Training Load) | hrv-at-altitude-training-guide.md | QUEUED |
@@ -79,6 +79,12 @@
 | 13 | How Long Does It Take to Acclimatize to Altitude? (Full Timeline by Elevation) | src/articles/how-long-acclimatize-altitude-timeline.md | 2026-04-17 |
 | 14 | Altitude Training for Cyclists: Training Blocks, Gains, and Common Mistakes | src/articles/altitude-training-cyclists-guide.md | 2026-04-17 |
 | 15 | Altitude Training for Runners: Everything From 5K to Ultramarathon Athletes | src/articles/altitude-training-runners-guide.md | 2026-04-17 |
+| 16 | Recognizing Altitude Sickness: AMS, HACE, and HAPE Symptoms Every Athlete Should Know | src/articles/altitude-sickness-symptoms-ams-hace-hape.md | 2026-04-17 |
+| 17 | Normobaric vs. Hypobaric Hypoxia: Does Simulated Altitude Training Actually Work? | src/articles/normobaric-vs-hypobaric-hypoxia-athletes.md | 2026-04-17 |
+| 18 | How to Use a Pulse Oximeter to Track Your Altitude Acclimatization | src/articles/pulse-oximeter-altitude-athletes-guide.md | 2026-04-17 |
+| 19 | How to Build a 4-Week Altitude Training Block (With Sample Weekly Plan) | src/articles/altitude-training-plan-4-week-block.md | 2026-04-17 |
+| 20 | Why Iron Supplementation Matters for Altitude Training (And How to Optimize It) | src/articles/iron-supplementation-altitude-training.md | 2026-04-17 |
+| 21 | Why Sleep Suffers at Altitude (And What Athletes Can Do About It) | src/articles/sleep-quality-altitude-athletes.md | 2026-04-17 |
 
 ---
 

@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (57 articles published through 2026-04-18; 2 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (62 articles published through 2026-04-18; 15 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -77,11 +77,11 @@
 | 55 | altitude training immune function | immune suppression altitude, getting sick at altitude, altitude and illness risk | informational | Altitude and Your Immune System: Why Athletes Get Sick at Altitude Camps (And How to Prevent It) | altitude-training-immune-function-illness.md | PUBLISHED 2026-04-18 |
 | 56 | breathing exercises for altitude | altitude breathing techniques, pursed lip breathing altitude, pre-altitude breathing prep | informational | Breathing Exercises to Prepare for Altitude: Techniques That Actually Help (And Some That Don't) | breathing-exercises-altitude-preparation.md | PUBLISHED 2026-04-18 |
 | 57 | altitude headache causes | dehydration altitude headache, high altitude headache prevention, why headaches at altitude | informational | Why You Get Headaches at Altitude (And What You Can Do About It) | altitude-headache-dehydration-prevention.md | PUBLISHED 2026-04-18 |
-| 58 | Iten Kenya altitude training | Iten training camp, Kenya altitude running, African altitude training destination | informational | Training in Iten, Kenya: Why the World's Best Distance Runners Call This High-Altitude Town Home | iten-kenya-altitude-training-destination.md | QUEUED |
-| 59 | altitude and gut health | GI distress at altitude, digestion problems high altitude, altitude stomach issues | informational | Altitude and Gut Health: Why GI Distress Is So Common at High Elevation (And How to Fix It) | altitude-gut-health-gi-distress-athletes.md | QUEUED |
-| 60 | caffeine at altitude | coffee altitude performance, caffeine high altitude effects, caffeine dose altitude | informational | Caffeine at Altitude: How Elevation Changes Its Effects (And How Athletes Should Dose It) | caffeine-altitude-performance-athletes.md | QUEUED |
-| 61 | altitude training for volleyball players | volleyball altitude performance, beach volleyball altitude, team sport altitude conditioning | informational | Altitude Training for Volleyball Players: Conditioning Protocols for High-Elevation Competition | altitude-training-volleyball-team-sport.md | QUEUED |
-| 62 | sauna training at altitude | sauna altitude combination, heat shock proteins altitude, post-altitude sauna recovery | informational | Sauna Use at Altitude: Can Heat Therapy Stack With Hypoxic Adaptations? | sauna-altitude-training-combination.md | QUEUED |
+| 58 | Iten Kenya altitude training | Iten training camp, Kenya altitude running, African altitude training destination | informational | Training in Iten, Kenya: Why the World's Best Distance Runners Call This High-Altitude Town Home | iten-kenya-altitude-training-destination.md | PUBLISHED 2026-04-18 |
+| 59 | altitude and gut health | GI distress at altitude, digestion problems high altitude, altitude stomach issues | informational | Altitude and Gut Health: Why GI Distress Is So Common at High Elevation (And How to Fix It) | altitude-gut-health-gi-distress-athletes.md | PUBLISHED 2026-04-18 |
+| 60 | caffeine at altitude | coffee altitude performance, caffeine high altitude effects, caffeine dose altitude | informational | Caffeine at Altitude: How Elevation Changes Its Effects (And How Athletes Should Dose It) | caffeine-altitude-performance-athletes.md | PUBLISHED 2026-04-18 |
+| 61 | altitude training for volleyball players | volleyball altitude performance, beach volleyball altitude, team sport altitude conditioning | informational | Altitude Training for Volleyball Players: Conditioning Protocols for High-Elevation Competition | altitude-training-volleyball-team-sport.md | PUBLISHED 2026-04-18 |
+| 62 | sauna training at altitude | sauna altitude combination, heat shock proteins altitude, post-altitude sauna recovery | informational | Sauna Use at Altitude: Can Heat Therapy Stack With Hypoxic Adaptations? | sauna-altitude-training-combination.md | PUBLISHED 2026-04-18 |
 | 63 | Bogota altitude training | Colombia altitude training camp, Bogotá elevation 2600m, South America altitude destination | informational | Altitude Training in Bogotá: South America's High-Altitude Training Hub for Endurance Athletes | bogota-altitude-training-destination-guide.md | QUEUED |
 | 64 | carbohydrate needs at altitude | carb loading altitude, glycogen depletion altitude, carbohydrate metabolism high altitude | informational | Carbohydrate Needs at Altitude: Why You Burn More Carbs High Up (And How to Fuel for It) | carbohydrate-needs-altitude-athletes.md | QUEUED |
 | 65 | biathlon altitude training | biathlon altitude camp, winter sport altitude training, biathlon VO2 max altitude | informational | Altitude Training for Biathletes: Building the Aerobic Engine and Shooting Steadiness at Elevation | altitude-training-biathlon-winter-sport.md | QUEUED |
@@ -156,6 +156,16 @@
 | 50 | Rowing at Altitude: How Elevation Affects Performance and How Rowers Should Prepare | src/articles/altitude-training-rowers-rowing.md | 2026-04-18 |
 | 51 | How to Keep an Altitude Training Log That Actually Improves Your Performance | src/articles/altitude-training-log-tracking-guide.md | 2026-04-18 |
 | 52 | Altitude Race Pace Adjustment: How Much Slower Should You Run (And Why)? | src/articles/race-pace-adjustment-altitude-calculator.md | 2026-04-18 |
+| 53 | When to Race After an Altitude Camp: The Optimal Timing Window for Peak Performance | src/articles/when-to-race-after-altitude-camp.md | 2026-04-18 |
+| 54 | Acetazolamide (Diamox) for Altitude: Should Athletes Use It and What Are the Risks? | src/articles/acetazolamide-diamox-altitude-athletes.md | 2026-04-18 |
+| 55 | Altitude and Your Immune System: Why Athletes Get Sick at Altitude Camps (And How to Prevent It) | src/articles/altitude-training-immune-function-illness.md | 2026-04-18 |
+| 56 | Breathing Exercises to Prepare for Altitude: Techniques That Actually Help (And Some That Don't) | src/articles/breathing-exercises-altitude-preparation.md | 2026-04-18 |
+| 57 | Why You Get Headaches at Altitude (And What You Can Do About It) | src/articles/altitude-headache-dehydration-prevention.md | 2026-04-18 |
+| 58 | Training in Iten, Kenya: Why the World's Best Distance Runners Call This High-Altitude Town Home | src/articles/iten-kenya-altitude-training-destination.md | 2026-04-18 |
+| 59 | Altitude and Gut Health: Why GI Distress Is So Common at High Elevation (And How to Fix It) | src/articles/altitude-gut-health-gi-distress-athletes.md | 2026-04-18 |
+| 60 | Caffeine at Altitude: How Elevation Changes Its Effects (And How Athletes Should Dose It) | src/articles/caffeine-altitude-performance-athletes.md | 2026-04-18 |
+| 61 | Altitude Training for Volleyball Players: Conditioning Protocols for High-Elevation Competition | src/articles/altitude-training-volleyball-team-sport.md | 2026-04-18 |
+| 62 | Sauna Use at Altitude: Can Heat Therapy Stack With Hypoxic Adaptations? | src/articles/sauna-altitude-training-combination.md | 2026-04-18 |
 
 ---
 

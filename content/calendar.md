@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (26 articles published through 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (31 articles published through 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -46,11 +46,11 @@
 | 24 | HRV at altitude | heart rate variability altitude training, HRV monitoring altitude camp, altitude HRV tracking | informational | How Altitude Affects Your HRV (And How to Use It to Guide Training Load) | hrv-at-altitude-training-guide.md | PUBLISHED 2026-04-18 |
 | 25 | altitude training hormones | testosterone altitude training, cortisol altitude athletes, hormonal adaptations high altitude | informational | Altitude Training and Hormones: How Elevation Affects Testosterone, Cortisol, and Recovery | altitude-training-hormones-testosterone-cortisol.md | PUBLISHED 2026-04-18 |
 | 26 | cold exposure vs altitude training | cold water immersion endurance athletes, cold plunge vs altitude tent, cold therapy performance gains | informational | Cold Exposure vs. Altitude Training: Which Environmental Stressor Delivers Better Gains? | cold-exposure-vs-altitude-training-comparison.md | PUBLISHED 2026-04-18 |
-| 27 | how long do altitude gains last | altitude training adaptations duration, altitude training washout period, maintaining altitude fitness | informational | How Long Do Altitude Training Gains Last? (The Washout Timeline, Explained) | how-long-altitude-gains-last-washout.md | QUEUED |
-| 28 | altitude training for soccer | football altitude training, soccer players altitude camp, team sport altitude performance | informational | Altitude Training for Soccer Players: How to Prepare Your Team for High-Altitude Fixtures | altitude-training-soccer-football-guide.md | QUEUED |
-| 29 | altitude training for rugby | rugby altitude camp, rugby altitude performance, team sport altitude preparation | informational | Altitude Training for Rugby: What the Research Says About Team Sport Hypoxic Prep | altitude-training-rugby-team-sports.md | QUEUED |
-| 30 | altitude camp packing list | what to bring altitude training, altitude camp gear checklist, altitude training essentials | tool-seeking | The Complete Altitude Training Camp Packing List (Gear, Supplements & Recovery Tools) | altitude-training-camp-packing-list.md | QUEUED |
-| 31 | altitude training calculator | elevation training dose calculator, how much altitude do I need to train, altitude training elevation tool | tool-seeking | Altitude Training Calculator: Find Your Optimal Training Elevation and Exposure Time | altitude-training-calculator-tool.md | QUEUED |
+| 27 | how long do altitude gains last | altitude training adaptations duration, altitude training washout period, maintaining altitude fitness | informational | How Long Do Altitude Training Gains Last? (The Washout Timeline, Explained) | how-long-altitude-gains-last-washout.md | PUBLISHED 2026-04-18 |
+| 28 | altitude training for soccer | football altitude training, soccer players altitude camp, team sport altitude performance | informational | Altitude Training for Soccer Players: How to Prepare Your Team for High-Altitude Fixtures | altitude-training-soccer-football-guide.md | PUBLISHED 2026-04-18 |
+| 29 | altitude training for rugby | rugby altitude camp, rugby altitude performance, team sport altitude preparation | informational | Altitude Training for Rugby: What the Research Says About Team Sport Hypoxic Prep | altitude-training-rugby-team-sports.md | PUBLISHED 2026-04-18 |
+| 30 | altitude camp packing list | what to bring altitude training, altitude camp gear checklist, altitude training essentials | tool-seeking | The Complete Altitude Training Camp Packing List (Gear, Supplements & Recovery Tools) | altitude-training-camp-packing-list.md | PUBLISHED 2026-04-18 |
+| 31 | altitude training calculator | elevation training dose calculator, how much altitude do I need to train, altitude training elevation tool | tool-seeking | Altitude Training Calculator: Find Your Optimal Training Elevation and Exposure Time | altitude-training-calculator-tool.md | PUBLISHED 2026-04-18 |
 | 32 | Flagstaff altitude training | Flagstaff Arizona altitude training for runners, Northern Arizona altitude camp, Flagstaff AZ elevation 2100m | informational | Training in Flagstaff: Why Elite Runners Love Arizona's 7,000-Foot Altitude Hub | flagstaff-altitude-training-guide.md | QUEUED |
 | 33 | Font Romeu altitude training | Font Romeu training camp, French Pyrenees altitude training, Font Romeu athletics center France | informational | Font Romeu Altitude Training: Europe's Premier High-Altitude Camp Destination | font-romeu-altitude-training-guide.md | QUEUED |
 | 34 | altitude training for triathletes | triathlon altitude camp, Ironman altitude training, triathlete altitude acclimatization | informational | Altitude Training for Triathletes: Maximizing Swim-Bike-Run Adaptations at Elevation | altitude-training-triathletes-guide.md | QUEUED |
@@ -90,6 +90,11 @@
 | 24 | How Altitude Affects Your HRV (And How to Use It to Guide Training Load) | src/articles/hrv-at-altitude-training-guide.md | 2026-04-18 |
 | 25 | Altitude Training and Hormones: How Elevation Affects Testosterone, Cortisol, and Recovery | src/articles/altitude-training-hormones-testosterone-cortisol.md | 2026-04-18 |
 | 26 | Cold Exposure vs. Altitude Training: Which Environmental Stressor Delivers Better Gains? | src/articles/cold-exposure-vs-altitude-training-comparison.md | 2026-04-18 |
+| 27 | How Long Do Altitude Training Gains Last? (The Washout Timeline, Explained) | src/articles/how-long-altitude-gains-last-washout.md | 2026-04-18 |
+| 28 | Altitude Training for Soccer Players: How to Prepare Your Team for High-Altitude Fixtures | src/articles/altitude-training-soccer-football-guide.md | 2026-04-18 |
+| 29 | Altitude Training for Rugby: What the Research Says About Team Sport Hypoxic Prep | src/articles/altitude-training-rugby-team-sports.md | 2026-04-18 |
+| 30 | The Complete Altitude Training Camp Packing List (Gear, Supplements & Recovery Tools) | src/articles/altitude-training-camp-packing-list.md | 2026-04-18 |
+| 31 | Altitude Training Calculator: Find Your Optimal Training Elevation and Exposure Time | src/articles/altitude-training-calculator-tool.md | 2026-04-18 |
 
 ---
 

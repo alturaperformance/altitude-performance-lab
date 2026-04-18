@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (72 articles published through 2026-04-18; 17 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (77 articles published through 2026-04-18; 12 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -92,11 +92,11 @@
 | 70 | protein intake at altitude | protein requirements high altitude, muscle preservation altitude, amino acids altitude athletes | informational | Protein Needs at Altitude: Why Muscle Breakdown Increases High Up (And How Much to Eat) | protein-intake-altitude-athletes-guide.md | PUBLISHED 2026-04-18 |
 | 71 | alpine skiing altitude preparation | downhill ski altitude performance, ski racing altitude prep, alpine ski VO2 max altitude | informational | Altitude Training for Alpine Skiers: How Downhill Racers Use Elevation to Build Race Fitness | altitude-training-alpine-skiing-guide.md | PUBLISHED 2026-04-18 |
 | 72 | Addis Ababa altitude training | Ethiopian altitude training, Addis Ababa elevation 2355m, Ethiopia distance running | informational | Altitude Training in Addis Ababa: Ethiopia's Secret to Producing the World's Best Distance Runners | addis-ababa-altitude-training-ethiopia.md | PUBLISHED 2026-04-18 |
-| 73 | altitude training for youth athletes | junior altitude training, teenage athletes altitude, youth altitude camp considerations | informational | Altitude Training for Young Athletes: What's Safe, What Works, and When to Start | altitude-training-youth-junior-athletes.md | QUEUED |
-| 74 | altitude and blood pressure | hypertension at altitude, blood pressure changes altitude, altitude cardiovascular athletes | informational | Altitude and Blood Pressure: What Athletes With Hypertension Need to Know Before Going High | altitude-blood-pressure-hypertension-athletes.md | QUEUED |
-| 75 | cold water immersion at altitude | ice bath altitude recovery, cold plunge altitude camp, cold water therapy high altitude | informational | Cold Water Immersion at Altitude: Does an Ice Bath Help or Hinder Hypoxic Adaptation? | cold-water-immersion-altitude-recovery.md | QUEUED |
-| 76 | altitude simulation room setup | hypoxic room home setup, altitude chamber cost, DIY altitude training room | tool-seeking | How to Set Up a Home Altitude Simulation Room: Costs, Equipment, and What Actually Works | altitude-simulation-room-home-setup-guide.md | QUEUED |
-| 77 | vitamin D and altitude training | vitamin D deficiency altitude, sun exposure altitude athletes, altitude vitamin D supplementation | informational | Vitamin D and Altitude Training: Why Elevation May Affect Your Vitamin D Status (And What to Do) | vitamin-d-altitude-training-athletes.md | QUEUED |
+| 73 | altitude training for youth athletes | junior altitude training, teenage athletes altitude, youth altitude camp considerations | informational | Altitude Training for Young Athletes: What's Safe, What Works, and When to Start | altitude-training-youth-junior-athletes.md | PUBLISHED 2026-04-18 |
+| 74 | altitude and blood pressure | hypertension at altitude, blood pressure changes altitude, altitude cardiovascular athletes | informational | Altitude and Blood Pressure: What Athletes With Hypertension Need to Know Before Going High | altitude-blood-pressure-hypertension-athletes.md | PUBLISHED 2026-04-18 |
+| 75 | cold water immersion at altitude | ice bath altitude recovery, cold plunge altitude camp, cold water therapy high altitude | informational | Cold Water Immersion at Altitude: Does an Ice Bath Help or Hinder Hypoxic Adaptation? | cold-water-immersion-altitude-recovery.md | PUBLISHED 2026-04-18 |
+| 76 | altitude simulation room setup | hypoxic room home setup, altitude chamber cost, DIY altitude training room | tool-seeking | How to Set Up a Home Altitude Simulation Room: Costs, Equipment, and What Actually Works | altitude-simulation-room-home-setup-guide.md | PUBLISHED 2026-04-18 |
+| 77 | vitamin D and altitude training | vitamin D deficiency altitude, sun exposure altitude athletes, altitude vitamin D supplementation | informational | Vitamin D and Altitude Training: Why Elevation May Affect Your Vitamin D Status (And What to Do) | vitamin-d-altitude-training-athletes.md | PUBLISHED 2026-04-18 |
 | 78 | polarized training at altitude | 80 20 training altitude, polarized training zones altitude, low intensity high altitude sessions | informational | Polarized Training at Altitude: How the 80/20 Method Works When the Air Gets Thin | polarized-training-80-20-altitude-guide.md | QUEUED |
 | 79 | block periodization altitude training | altitude training mesocycle blocks, block periodization endurance altitude, altitude training phases | informational | Block Periodization for Altitude Training Camps: How to Structure Your Preparation, Peak, and Taper | block-periodization-altitude-training-camps.md | QUEUED |
 | 80 | strength training at altitude | concurrent training altitude, weights at high altitude, strength aerobic altitude combination | informational | Concurrent Strength and Aerobic Training at Altitude: Can You Build Power While Going High? | strength-training-altitude-concurrent-guide.md | QUEUED |
@@ -183,6 +183,11 @@
 | 65 | Altitude Training for Biathletes: Building the Aerobic Engine and Shooting Steadiness at Elevation | src/articles/altitude-training-biathlon-winter-sport.md | 2026-04-18 |
 | 66 | Hemoglobin Optimization at Altitude: How to Prevent Altitude Anemia and Maximize Oxygen Carrying Capacity | src/articles/hemoglobin-optimization-altitude-training.md | 2026-04-18 |
 | 67 | Compression Garments at Altitude: Do They Speed Recovery and Reduce Swelling at Elevation? | src/articles/compression-garments-altitude-recovery.md | 2026-04-18 |
+| 73 | Altitude Training for Young Athletes: What's Safe, What Works, and When to Start | src/articles/altitude-training-youth-junior-athletes.md | 2026-04-18 |
+| 74 | Altitude and Blood Pressure: What Athletes With Hypertension Need to Know Before Going High | src/articles/altitude-blood-pressure-hypertension-athletes.md | 2026-04-18 |
+| 75 | Cold Water Immersion at Altitude: Does an Ice Bath Help or Hinder Hypoxic Adaptation? | src/articles/cold-water-immersion-altitude-recovery.md | 2026-04-18 |
+| 76 | How to Set Up a Home Altitude Simulation Room: Costs, Equipment, and What Actually Works | src/articles/altitude-simulation-room-home-setup-guide.md | 2026-04-18 |
+| 77 | Vitamin D and Altitude Training: Why Elevation May Affect Your Vitamin D Status (And What to Do) | src/articles/vitamin-d-altitude-training-athletes.md | 2026-04-18 |
 
 ---
 

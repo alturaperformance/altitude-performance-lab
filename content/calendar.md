@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (31 articles published through 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (36 articles published through 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -51,11 +51,11 @@
 | 29 | altitude training for rugby | rugby altitude camp, rugby altitude performance, team sport altitude preparation | informational | Altitude Training for Rugby: What the Research Says About Team Sport Hypoxic Prep | altitude-training-rugby-team-sports.md | PUBLISHED 2026-04-18 |
 | 30 | altitude camp packing list | what to bring altitude training, altitude camp gear checklist, altitude training essentials | tool-seeking | The Complete Altitude Training Camp Packing List (Gear, Supplements & Recovery Tools) | altitude-training-camp-packing-list.md | PUBLISHED 2026-04-18 |
 | 31 | altitude training calculator | elevation training dose calculator, how much altitude do I need to train, altitude training elevation tool | tool-seeking | Altitude Training Calculator: Find Your Optimal Training Elevation and Exposure Time | altitude-training-calculator-tool.md | PUBLISHED 2026-04-18 |
-| 32 | Flagstaff altitude training | Flagstaff Arizona altitude training for runners, Northern Arizona altitude camp, Flagstaff AZ elevation 2100m | informational | Training in Flagstaff: Why Elite Runners Love Arizona's 7,000-Foot Altitude Hub | flagstaff-altitude-training-guide.md | QUEUED |
-| 33 | Font Romeu altitude training | Font Romeu training camp, French Pyrenees altitude training, Font Romeu athletics center France | informational | Font Romeu Altitude Training: Europe's Premier High-Altitude Camp Destination | font-romeu-altitude-training-guide.md | QUEUED |
-| 34 | altitude training for triathletes | triathlon altitude camp, Ironman altitude training, triathlete altitude acclimatization | informational | Altitude Training for Triathletes: Maximizing Swim-Bike-Run Adaptations at Elevation | altitude-training-triathletes-guide.md | QUEUED |
-| 35 | altitude mask vs altitude tent | elevation training mask effectiveness, do altitude masks work, altitude mask hypoxic tent comparison | informational | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | altitude-mask-vs-altitude-tent-comparison.md | QUEUED |
-| 36 | altitude training for cross-country skiing | Nordic skiing altitude training, XC ski altitude camp, cross-country skiing altitude performance | informational | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | altitude-training-cross-country-skiing.md | QUEUED |
+| 32 | Flagstaff altitude training | Flagstaff Arizona altitude training for runners, Northern Arizona altitude camp, Flagstaff AZ elevation 2100m | informational | Training in Flagstaff: Why Elite Runners Love Arizona's 7,000-Foot Altitude Hub | flagstaff-altitude-training-guide.md | PUBLISHED 2026-04-18 |
+| 33 | Font Romeu altitude training | Font Romeu training camp, French Pyrenees altitude training, Font Romeu athletics center France | informational | Font Romeu Altitude Training: Europe's Premier High-Altitude Camp Destination | font-romeu-altitude-training-guide.md | PUBLISHED 2026-04-18 |
+| 34 | altitude training for triathletes | triathlon altitude camp, Ironman altitude training, triathlete altitude acclimatization | informational | Altitude Training for Triathletes: Maximizing Swim-Bike-Run Adaptations at Elevation | altitude-training-triathletes-guide.md | PUBLISHED 2026-04-18 |
+| 35 | altitude mask vs altitude tent | elevation training mask effectiveness, do altitude masks work, altitude mask hypoxic tent comparison | informational | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | altitude-mask-vs-altitude-tent-comparison.md | PUBLISHED 2026-04-18 |
+| 36 | altitude training for cross-country skiing | Nordic skiing altitude training, XC ski altitude camp, cross-country skiing altitude performance | informational | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | altitude-training-cross-country-skiing.md | PUBLISHED 2026-04-18 |
 | 37 | swimming at altitude | competitive swimming altitude, pool altitude training effects, altitude training for swimmers | informational | Swimming at Altitude: How Elevation Affects Performance (And How Swimmers Can Adapt) | swimming-at-altitude-guide.md | QUEUED |
 
 ---
@@ -95,6 +95,11 @@
 | 29 | Altitude Training for Rugby: What the Research Says About Team Sport Hypoxic Prep | src/articles/altitude-training-rugby-team-sports.md | 2026-04-18 |
 | 30 | The Complete Altitude Training Camp Packing List (Gear, Supplements & Recovery Tools) | src/articles/altitude-training-camp-packing-list.md | 2026-04-18 |
 | 31 | Altitude Training Calculator: Find Your Optimal Training Elevation and Exposure Time | src/articles/altitude-training-calculator-tool.md | 2026-04-18 |
+| 32 | Training in Flagstaff: Why Elite Runners Love Arizona's 7,000-Foot Altitude Hub | src/articles/flagstaff-altitude-training-guide.md | 2026-04-18 |
+| 33 | Font Romeu Altitude Training: Europe's Premier High-Altitude Camp Destination | src/articles/font-romeu-altitude-training-guide.md | 2026-04-18 |
+| 34 | Altitude Training for Triathletes: Maximizing Swim-Bike-Run Adaptations at Elevation | src/articles/altitude-training-triathletes-guide.md | 2026-04-18 |
+| 35 | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | src/articles/altitude-mask-vs-altitude-tent-comparison.md | 2026-04-18 |
+| 36 | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | src/articles/altitude-training-cross-country-skiing.md | 2026-04-18 |
 
 ---
 

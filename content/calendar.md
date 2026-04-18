@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (5 articles published 2026-04-17)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (10 articles published 2026-04-17)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -25,11 +25,11 @@
 | 3 | live high train low protocol | LHTL altitude training, live high train low benefits, altitude tent training | informational | Live High, Train Low: The Gold-Standard Protocol for Altitude Training | live-high-train-low-protocol-guide.md | PUBLISHED 2026-04-17 |
 | 4 | VO2 max altitude training | improve VO2 max at altitude, altitude VO2 max effects, aerobic capacity altitude | informational | How Altitude Training Improves VO2 Max (And What the Research Says) | altitude-training-vo2-max-improvement.md | PUBLISHED 2026-04-17 |
 | 5 | altitude sickness prevention | how to prevent altitude sickness, acute mountain sickness prevention, AMS athletes | informational | Altitude Sickness Prevention: What Every Athlete Needs to Know Before Going High | altitude-sickness-prevention-athletes.md | PUBLISHED 2026-04-17 |
-| 6 | hypoxic training benefits | intermittent hypoxic training, normobaric hypoxia, hypoxic tent benefits | informational | Hypoxic Training 101: Benefits, Methods, and How to Get Started | hypoxic-training-benefits-methods.md | QUEUED |
-| 7 | blood oxygen levels athletes | SpO2 for athletes, optimal blood oxygen saturation, oxygen saturation training | informational | Blood Oxygen Levels for Athletes: What Your SpO2 Readings Actually Mean | blood-oxygen-levels-athletes-spo2.md | QUEUED |
-| 8 | altitude training camps | best altitude training locations, altitude training camps for runners, high altitude training destinations | informational | The Best Altitude Training Camps for Endurance Athletes (Ranked by Elevation & Accessibility) | best-altitude-training-camps-endurance-athletes.md | QUEUED |
-| 9 | heat vs altitude training | heat acclimation vs altitude, altitude training vs heat training for performance, which is better heat or altitude | informational | Heat vs. Altitude Training: Which Produces Better Performance Gains? | heat-vs-altitude-training-comparison.md | QUEUED |
-| 10 | intermittent hypoxic exposure | IHE protocol, hypoxic intervals, altitude simulation at home | informational | Intermittent Hypoxic Exposure (IHE): Protocols, Benefits, and Risks | intermittent-hypoxic-exposure-protocol.md | QUEUED |
+| 6 | hypoxic training benefits | intermittent hypoxic training, normobaric hypoxia, hypoxic tent benefits | informational | Hypoxic Training 101: Benefits, Methods, and How to Get Started | hypoxic-training-benefits-methods.md | PUBLISHED 2026-04-17 |
+| 7 | blood oxygen levels athletes | SpO2 for athletes, optimal blood oxygen saturation, oxygen saturation training | informational | Blood Oxygen Levels for Athletes: What Your SpO2 Readings Actually Mean | blood-oxygen-levels-athletes-spo2.md | PUBLISHED 2026-04-17 |
+| 8 | altitude training camps | best altitude training locations, altitude training camps for runners, high altitude training destinations | informational | The Best Altitude Training Camps for Endurance Athletes (Ranked by Elevation & Accessibility) | best-altitude-training-camps-endurance-athletes.md | PUBLISHED 2026-04-17 |
+| 9 | heat vs altitude training | heat acclimation vs altitude, altitude training vs heat training for performance, which is better heat or altitude | informational | Heat vs. Altitude Training: Which Produces Better Performance Gains? | heat-vs-altitude-training-comparison.md | PUBLISHED 2026-04-17 |
+| 10 | intermittent hypoxic exposure | IHE protocol, hypoxic intervals, altitude simulation at home | informational | Intermittent Hypoxic Exposure (IHE): Protocols, Benefits, and Risks | intermittent-hypoxic-exposure-protocol.md | PUBLISHED 2026-04-17 |
 | 11 | erythropoietin altitude | EPO altitude training, red blood cell production altitude, natural EPO boost | informational | How Altitude Training Boosts EPO and Red Blood Cell Production Naturally | altitude-training-epo-red-blood-cells.md | QUEUED |
 | 12 | altitude tent for athletes | hypoxic tent reviews, altitude sleeping tent, normobaric hypoxia tent | tool-seeking | Altitude Tents for Athletes: How They Work, What to Look For, and Are They Worth It? | altitude-tent-athletes-guide.md | QUEUED |
 | 13 | how long to acclimatize to altitude | altitude acclimatization timeline, days to adjust to altitude, acclimatization schedule | informational | How Long Does It Take to Acclimatize to Altitude? (Full Timeline by Elevation) | how-long-acclimatize-altitude-timeline.md | QUEUED |
@@ -54,6 +54,11 @@
 | 3 | Live High, Train Low: The Gold-Standard Protocol for Altitude Training | src/articles/live-high-train-low-protocol-guide.md | 2026-04-17 |
 | 4 | How Altitude Training Improves VO2 Max (And What the Research Says) | src/articles/altitude-training-vo2-max-improvement.md | 2026-04-17 |
 | 5 | Altitude Sickness Prevention: What Every Athlete Needs to Know Before Going High | src/articles/altitude-sickness-prevention-athletes.md | 2026-04-17 |
+| 6 | Hypoxic Training 101: Benefits, Methods, and How to Get Started | src/articles/hypoxic-training-benefits-methods.md | 2026-04-17 |
+| 7 | Blood Oxygen Levels for Athletes: What Your SpO2 Readings Actually Mean | src/articles/blood-oxygen-levels-athletes-spo2.md | 2026-04-17 |
+| 8 | The Best Altitude Training Camps for Endurance Athletes (Ranked by Elevation & Accessibility) | src/articles/best-altitude-training-camps-endurance-athletes.md | 2026-04-17 |
+| 9 | Heat vs. Altitude Training: Which Produces Better Performance Gains? | src/articles/heat-vs-altitude-training-comparison.md | 2026-04-17 |
+| 10 | Intermittent Hypoxic Exposure (IHE): Protocols, Benefits, and Risks | src/articles/intermittent-hypoxic-exposure-protocol.md | 2026-04-17 |
 
 ---
 

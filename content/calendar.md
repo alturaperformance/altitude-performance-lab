@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (62 articles published through 2026-04-18; 15 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (67 articles published through 2026-04-18; 10 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -82,11 +82,11 @@
 | 60 | caffeine at altitude | coffee altitude performance, caffeine high altitude effects, caffeine dose altitude | informational | Caffeine at Altitude: How Elevation Changes Its Effects (And How Athletes Should Dose It) | caffeine-altitude-performance-athletes.md | PUBLISHED 2026-04-18 |
 | 61 | altitude training for volleyball players | volleyball altitude performance, beach volleyball altitude, team sport altitude conditioning | informational | Altitude Training for Volleyball Players: Conditioning Protocols for High-Elevation Competition | altitude-training-volleyball-team-sport.md | PUBLISHED 2026-04-18 |
 | 62 | sauna training at altitude | sauna altitude combination, heat shock proteins altitude, post-altitude sauna recovery | informational | Sauna Use at Altitude: Can Heat Therapy Stack With Hypoxic Adaptations? | sauna-altitude-training-combination.md | PUBLISHED 2026-04-18 |
-| 63 | Bogota altitude training | Colombia altitude training camp, Bogotá elevation 2600m, South America altitude destination | informational | Altitude Training in Bogotá: South America's High-Altitude Training Hub for Endurance Athletes | bogota-altitude-training-destination-guide.md | QUEUED |
-| 64 | carbohydrate needs at altitude | carb loading altitude, glycogen depletion altitude, carbohydrate metabolism high altitude | informational | Carbohydrate Needs at Altitude: Why You Burn More Carbs High Up (And How to Fuel for It) | carbohydrate-needs-altitude-athletes.md | QUEUED |
-| 65 | biathlon altitude training | biathlon altitude camp, winter sport altitude training, biathlon VO2 max altitude | informational | Altitude Training for Biathletes: Building the Aerobic Engine and Shooting Steadiness at Elevation | altitude-training-biathlon-winter-sport.md | QUEUED |
-| 66 | hemoglobin optimization altitude | altitude anemia prevention, hemoglobin levels altitude training, red blood cell altitude athlete | informational | Hemoglobin Optimization at Altitude: How to Prevent Altitude Anemia and Maximize Oxygen Carrying Capacity | hemoglobin-optimization-altitude-training.md | QUEUED |
-| 67 | compression garments at altitude | altitude recovery compression, compression socks altitude travel, travel DVT altitude | tool-seeking | Compression Garments at Altitude: Do They Speed Recovery and Reduce Swelling at Elevation? | compression-garments-altitude-recovery.md | QUEUED |
+| 63 | Bogota altitude training | Colombia altitude training camp, Bogotá elevation 2600m, South America altitude destination | informational | Altitude Training in Bogotá: South America's High-Altitude Training Hub for Endurance Athletes | bogota-altitude-training-destination-guide.md | PUBLISHED 2026-04-18 |
+| 64 | carbohydrate needs at altitude | carb loading altitude, glycogen depletion altitude, carbohydrate metabolism high altitude | informational | Carbohydrate Needs at Altitude: Why You Burn More Carbs High Up (And How to Fuel for It) | carbohydrate-needs-altitude-athletes.md | PUBLISHED 2026-04-18 |
+| 65 | biathlon altitude training | biathlon altitude camp, winter sport altitude training, biathlon VO2 max altitude | informational | Altitude Training for Biathletes: Building the Aerobic Engine and Shooting Steadiness at Elevation | altitude-training-biathlon-winter-sport.md | PUBLISHED 2026-04-18 |
+| 66 | hemoglobin optimization altitude | altitude anemia prevention, hemoglobin levels altitude training, red blood cell altitude athlete | informational | Hemoglobin Optimization at Altitude: How to Prevent Altitude Anemia and Maximize Oxygen Carrying Capacity | hemoglobin-optimization-altitude-training.md | PUBLISHED 2026-04-18 |
+| 67 | compression garments at altitude | altitude recovery compression, compression socks altitude travel, travel DVT altitude | tool-seeking | Compression Garments at Altitude: Do They Speed Recovery and Reduce Swelling at Elevation? | compression-garments-altitude-recovery.md | PUBLISHED 2026-04-18 |
 | 68 | wearables at altitude | WHOOP altitude training, Oura altitude sleep, Garmin altitude HRV tracking | tool-seeking | Wearables at Altitude: How WHOOP, Oura, and Garmin Perform (and What the Data Actually Tells You) | wearables-altitude-training-whoop-oura-garmin.md | QUEUED |
 | 69 | altitude training for ultra-trail runners | 100 mile race altitude, ultra endurance altitude prep, UTMB altitude training | informational | Altitude Training for Ultra-Trail Runners: Preparing for 100-Mile Races at Elevation | altitude-training-ultra-trail-100-mile-runners.md | QUEUED |
 | 70 | protein intake at altitude | protein requirements high altitude, muscle preservation altitude, amino acids altitude athletes | informational | Protein Needs at Altitude: Why Muscle Breakdown Increases High Up (And How Much to Eat) | protein-intake-altitude-athletes-guide.md | QUEUED |
@@ -166,6 +166,11 @@
 | 60 | Caffeine at Altitude: How Elevation Changes Its Effects (And How Athletes Should Dose It) | src/articles/caffeine-altitude-performance-athletes.md | 2026-04-18 |
 | 61 | Altitude Training for Volleyball Players: Conditioning Protocols for High-Elevation Competition | src/articles/altitude-training-volleyball-team-sport.md | 2026-04-18 |
 | 62 | Sauna Use at Altitude: Can Heat Therapy Stack With Hypoxic Adaptations? | src/articles/sauna-altitude-training-combination.md | 2026-04-18 |
+| 63 | Altitude Training in Bogotá: South America's High-Altitude Training Hub for Endurance Athletes | src/articles/bogota-altitude-training-destination-guide.md | 2026-04-18 |
+| 64 | Carbohydrate Needs at Altitude: Why You Burn More Carbs High Up (And How to Fuel for It) | src/articles/carbohydrate-needs-altitude-athletes.md | 2026-04-18 |
+| 65 | Altitude Training for Biathletes: Building the Aerobic Engine and Shooting Steadiness at Elevation | src/articles/altitude-training-biathlon-winter-sport.md | 2026-04-18 |
+| 66 | Hemoglobin Optimization at Altitude: How to Prevent Altitude Anemia and Maximize Oxygen Carrying Capacity | src/articles/hemoglobin-optimization-altitude-training.md | 2026-04-18 |
+| 67 | Compression Garments at Altitude: Do They Speed Recovery and Reduce Swelling at Elevation? | src/articles/compression-garments-altitude-recovery.md | 2026-04-18 |
 
 ---
 

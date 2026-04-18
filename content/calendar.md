@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (15 articles published through 2026-04-17)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-17. (15 articles published through 2026-04-17; 15 new topics queued 2026-04-17)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -42,6 +42,21 @@
 | 20 | iron supplementation altitude | iron and altitude training, ferritin levels altitude athletes, iron deficiency altitude | informational | Why Iron Supplementation Matters for Altitude Training (And How to Optimize It) | iron-supplementation-altitude-training.md | QUEUED |
 | 21 | sleep at altitude | sleeping at high altitude, altitude and sleep quality, insomnia altitude training | informational | Why Sleep Suffers at Altitude (And What Athletes Can Do About It) | sleep-quality-altitude-athletes.md | QUEUED |
 | 22 | altitude training recovery | recovery at altitude, overtraining altitude, rest days altitude camp | informational | Recovery at Altitude: Why You Need More Rest Days (and How to Plan Them) | altitude-training-recovery-guide.md | QUEUED |
+| 23 | nutrition for altitude training | altitude athlete diet, what to eat at high altitude, high altitude nutrition plan | informational | Fueling at Altitude: The Nutrition Strategy Every Altitude Athlete Needs | nutrition-for-altitude-training-athletes.md | QUEUED |
+| 24 | HRV at altitude | heart rate variability altitude training, HRV monitoring altitude camp, altitude HRV tracking | informational | How Altitude Affects Your HRV (And How to Use It to Guide Training Load) | hrv-at-altitude-training-guide.md | QUEUED |
+| 25 | altitude training hormones | testosterone altitude training, cortisol altitude athletes, hormonal adaptations high altitude | informational | Altitude Training and Hormones: How Elevation Affects Testosterone, Cortisol, and Recovery | altitude-training-hormones-testosterone-cortisol.md | QUEUED |
+| 26 | cold exposure vs altitude training | cold water immersion endurance athletes, cold plunge vs altitude tent, cold therapy performance gains | informational | Cold Exposure vs. Altitude Training: Which Environmental Stressor Delivers Better Gains? | cold-exposure-vs-altitude-training-comparison.md | QUEUED |
+| 27 | how long do altitude gains last | altitude training adaptations duration, altitude training washout period, maintaining altitude fitness | informational | How Long Do Altitude Training Gains Last? (The Washout Timeline, Explained) | how-long-altitude-gains-last-washout.md | QUEUED |
+| 28 | altitude training for soccer | football altitude training, soccer players altitude camp, team sport altitude performance | informational | Altitude Training for Soccer Players: How to Prepare Your Team for High-Altitude Fixtures | altitude-training-soccer-football-guide.md | QUEUED |
+| 29 | altitude training for rugby | rugby altitude camp, rugby altitude performance, team sport altitude preparation | informational | Altitude Training for Rugby: What the Research Says About Team Sport Hypoxic Prep | altitude-training-rugby-team-sports.md | QUEUED |
+| 30 | altitude camp packing list | what to bring altitude training, altitude camp gear checklist, altitude training essentials | tool-seeking | The Complete Altitude Training Camp Packing List (Gear, Supplements & Recovery Tools) | altitude-training-camp-packing-list.md | QUEUED |
+| 31 | altitude training calculator | elevation training dose calculator, how much altitude do I need to train, altitude training elevation tool | tool-seeking | Altitude Training Calculator: Find Your Optimal Training Elevation and Exposure Time | altitude-training-calculator-tool.md | QUEUED |
+| 32 | Flagstaff altitude training | Flagstaff Arizona altitude training for runners, Northern Arizona altitude camp, Flagstaff AZ elevation 2100m | informational | Training in Flagstaff: Why Elite Runners Love Arizona's 7,000-Foot Altitude Hub | flagstaff-altitude-training-guide.md | QUEUED |
+| 33 | Font Romeu altitude training | Font Romeu training camp, French Pyrenees altitude training, Font Romeu athletics center France | informational | Font Romeu Altitude Training: Europe's Premier High-Altitude Camp Destination | font-romeu-altitude-training-guide.md | QUEUED |
+| 34 | altitude training for triathletes | triathlon altitude camp, Ironman altitude training, triathlete altitude acclimatization | informational | Altitude Training for Triathletes: Maximizing Swim-Bike-Run Adaptations at Elevation | altitude-training-triathletes-guide.md | QUEUED |
+| 35 | altitude mask vs altitude tent | elevation training mask effectiveness, do altitude masks work, altitude mask hypoxic tent comparison | informational | Altitude Mask vs. Altitude Tent: Which One Actually Works? (The Evidence-Based Answer) | altitude-mask-vs-altitude-tent-comparison.md | QUEUED |
+| 36 | altitude training for cross-country skiing | Nordic skiing altitude training, XC ski altitude camp, cross-country skiing altitude performance | informational | Altitude Training for Cross-Country Skiers: Nordic Protocols for VO2 Max and Endurance | altitude-training-cross-country-skiing.md | QUEUED |
+| 37 | swimming at altitude | competitive swimming altitude, pool altitude training effects, altitude training for swimmers | informational | Swimming at Altitude: How Elevation Affects Performance (And How Swimmers Can Adapt) | swimming-at-altitude-guide.md | QUEUED |
 
 ---
 
@@ -69,7 +84,30 @@
 
 ## Internal Linking Map
 
-_Populated as articles are published. Cross-link opportunities will be tracked here._
+> Updated 2026-04-17 — 15 articles published. Key cross-link clusters:
+
+| From Article (target_keyword) | Link To | Anchor Text Suggestion |
+|---|---|---|
+| altitude training benefits | live-high-train-low-protocol-guide | "Live High Train Low protocol" |
+| altitude training benefits | altitude-training-vo2-max-improvement | "how altitude improves VO2 max" |
+| how to acclimatize to altitude | altitude-sickness-prevention-athletes | "prevent altitude sickness" |
+| how to acclimatize to altitude | how-long-acclimatize-altitude-timeline | "acclimatization timeline" |
+| live high train low protocol | altitude-tent-athletes-guide | "altitude tent for sleep" |
+| live high train low protocol | altitude-training-epo-red-blood-cells | "EPO and red blood cell production" |
+| VO2 max altitude training | intermittent-hypoxic-exposure-protocol | "intermittent hypoxic exposure" |
+| VO2 max altitude training | altitude-training-benefits-endurance-athletes | "full benefits of altitude training" |
+| altitude sickness prevention | altitude-sickness-symptoms-ams-hace-hape (QUEUED) | "recognize AMS, HACE, and HAPE" |
+| hypoxic training benefits | altitude-tent-athletes-guide | "altitude tent for normobaric hypoxia" |
+| hypoxic training benefits | intermittent-hypoxic-exposure-protocol | "IHE protocol" |
+| blood oxygen levels athletes | pulse-oximeter-altitude-athletes-guide (QUEUED) | "how to use a pulse oximeter" |
+| altitude training camps | flagstaff-altitude-training-guide (QUEUED) | "Flagstaff, Arizona" |
+| altitude training camps | font-romeu-altitude-training-guide (QUEUED) | "Font Romeu, France" |
+| altitude tent for athletes | normobaric-vs-hypobaric-hypoxia-athletes (QUEUED) | "normobaric vs hypobaric hypoxia" |
+| altitude tent for athletes | altitude-mask-vs-altitude-tent-comparison (QUEUED) | "altitude mask vs altitude tent" |
+| how long to acclimatize | how-long-altitude-gains-last-washout (QUEUED) | "how long altitude gains last" |
+| altitude training for cyclists | altitude-training-plan-4-week-block (QUEUED) | "build a 4-week altitude training block" |
+| altitude training for runners | altitude-training-plan-4-week-block (QUEUED) | "sample altitude training plan" |
+| altitude training for runners | flagstaff-altitude-training-guide (QUEUED) | "train in Flagstaff" |
 
 ---
 

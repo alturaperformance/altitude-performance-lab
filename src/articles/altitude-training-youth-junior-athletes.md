@@ -1,3 +1,15 @@
+---
+title: "Altitude Training for Young Athletes: What's Safe, What Works, and When to Start"
+description: "A science-based guide to altitude training for youth and junior athletes — what the research shows about safety, physiological response, and how to structure age-appropriate altitude exposure."
+date: 2026-04-18
+category: Training Science
+tags:
+  - articles
+  - altitude training youth
+  - junior athletes altitude
+  - young athletes
+---
+
 # Altitude Training for Young Athletes: What's Safe, What Works, and When to Start
 
 Altitude training for youth athletes is a topic that receives surprisingly little scientific scrutiny given how many junior programs incorporate high-altitude camps into their calendars. For coaches and parents considering altitude training for young athletes, the questions are the same as for adults — but the physiological stakes and developmental context are meaningfully different.

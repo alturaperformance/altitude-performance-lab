@@ -1,3 +1,15 @@
+---
+title: "Vitamin D and Altitude Training: Why Elevation May Affect Your Vitamin D Status (And What to Do)"
+description: "How altitude training affects vitamin D status in athletes — the mechanisms behind vitamin D depletion at elevation, why it matters for performance and recovery, and evidence-based supplementation strategies."
+date: 2026-04-18
+category: Training Science
+tags:
+  - articles
+  - vitamin D athletes
+  - altitude nutrition
+  - supplementation altitude
+---
+
 # Vitamin D and Altitude Training: Why Elevation May Affect Your Vitamin D Status (And What to Do)
 
 Vitamin D and altitude training share a connection that most athletes — and many coaches — overlook entirely. Vitamin D deficiency is already endemic in high-training-load athletes worldwide; add the physiological stress of altitude and a few specific mechanisms that operate at elevation, and you have a micronutrient issue that can silently blunt the gains you went to altitude to achieve.

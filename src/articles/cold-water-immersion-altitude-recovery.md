@@ -1,3 +1,15 @@
+---
+title: "Cold Water Immersion at Altitude: Does an Ice Bath Help or Hinder Hypoxic Adaptation?"
+description: "A science-based analysis of cold water immersion (ice baths) at altitude — when CWI helps recovery, when it blunts hypoxic adaptation, and how athletes should approach it during altitude camps."
+date: 2026-04-18
+category: Training Science
+tags:
+  - articles
+  - cold water immersion altitude
+  - ice bath altitude training
+  - recovery altitude
+---
+
 # Cold Water Immersion at Altitude: Does an Ice Bath Help or Hinder Hypoxic Adaptation?
 
 Cold water immersion at altitude sits at the intersection of two of the most popular environmental interventions in elite sport. Both cold exposure and hypoxic training are tools serious athletes reach for to accelerate recovery and drive adaptation — but when you combine them, the physiology gets complicated. For some outcomes, they synergize. For others, they directly conflict.

@@ -1,3 +1,15 @@
+---
+title: "Altitude and Blood Pressure: What Athletes With Hypertension Need to Know Before Going High"
+description: "A science-based guide to altitude and blood pressure for athletes — how hypoxia elevates blood pressure, what hypertensive athletes need to know, and how to manage cardiovascular risk at elevation."
+date: 2026-04-18
+category: Training Science
+tags:
+  - articles
+  - altitude blood pressure
+  - hypertension athletes
+  - altitude cardiovascular
+---
+
 # Altitude and Blood Pressure: What Athletes With Hypertension Need to Know Before Going High
 
 Altitude and blood pressure are intimately linked — and for athletes who already manage hypertension, or who train hard enough to push blood pressure into borderline territory, understanding this relationship is not optional. The cardiovascular response to high-altitude hypoxia is immediate, measurable, and for some athletes, clinically significant.

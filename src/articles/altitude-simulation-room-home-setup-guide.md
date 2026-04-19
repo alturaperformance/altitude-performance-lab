@@ -1,3 +1,15 @@
+---
+title: "How to Set Up a Home Altitude Simulation Room: Costs, Equipment, and What Actually Works"
+description: "A practical guide to building a home altitude simulation room — normobaric hypoxia systems, costs, equipment, safety requirements, and what the evidence shows about effectiveness."
+date: 2026-04-18
+category: Training Science
+tags:
+  - articles
+  - altitude simulation room
+  - hypoxic training
+  - normobaric hypoxia
+---
+
 # How to Set Up a Home Altitude Simulation Room: Costs, Equipment, and What Actually Works
 
 A home altitude simulation room is no longer purely the domain of national team programs and high-performance centers. The technology has matured, costs have come down, and the physiological evidence for normobaric hypoxic training is robust enough that serious endurance athletes at the amateur and semi-professional level are installing their own systems.

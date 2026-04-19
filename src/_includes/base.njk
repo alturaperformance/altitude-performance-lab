@@ -8,6 +8,9 @@
   <meta name="description" content="{{ description or site.description }}" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  {% if site.googleSiteVerification %}
+  <meta name="google-site-verification" content="{{ site.googleSiteVerification }}" />
+  {% endif %}
 
   {# Open Graph #}
   <meta property="og:type" content="{{ ogType or 'website' }}" />

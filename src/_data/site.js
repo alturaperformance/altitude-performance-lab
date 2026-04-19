@@ -12,4 +12,7 @@ export default {
   },
   language: "en",
   buildYear: new Date().getFullYear(),
+  // Google Search Console verification token — set after verifying in GSC
+  // Get this from GSC > Settings > Ownership verification > HTML tag method
+  googleSiteVerification: "",
 };

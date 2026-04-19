@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (87 articles published through 2026-04-18; 22 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (88 articles published through 2026-04-18; 21 topics queued as of 2026-04-18)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -107,7 +107,7 @@
 | 85 | altitude training Paralympic athletes | Paralympic altitude acclimatization, disabled athletes altitude, adaptive sports altitude training | informational | Altitude Training for Paralympic Athletes: Unique Considerations for Adaptive Sport at Elevation | altitude-training-paralympic-adaptive-athletes.md | PUBLISHED 2026-04-18 |
 | 86 | creatine altitude training | creatine high altitude dehydration, creatine supplementation altitude athletes, creatine hypoxia | informational | Creatine at Altitude: Does It Help Performance — or Increase Dehydration Risk? | creatine-altitude-training-dehydration-risk.md | PUBLISHED 2026-04-18 |
 | 87 | altitude training for MMA fighters | combat sports altitude camp, boxing altitude training, martial arts altitude conditioning | informational | Altitude Training for Combat Sports: How MMA Fighters and Boxers Use Elevation to Build a Gas Tank | altitude-training-mma-combat-sports-boxing.md | PUBLISHED 2026-04-18 |
-| 88 | Eldoret Kenya altitude training | Eldoret altitude training camp, Kenya Rift Valley altitude, distance running Kenya elevation | informational | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | eldoret-kenya-altitude-training-rift-valley.md | QUEUED |
+| 88 | Eldoret Kenya altitude training | Eldoret altitude training camp, Kenya Rift Valley altitude, distance running Kenya elevation | informational | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | eldoret-kenya-altitude-training-rift-valley.md | PUBLISHED 2026-04-18 |
 | 89 | NSAIDs altitude risk | ibuprofen at altitude, aspirin altitude sickness, anti-inflammatories altitude athletes | informational | NSAIDs at Altitude: Why Ibuprofen and Aspirin Come With Extra Risk at High Elevation | nsaids-ibuprofen-altitude-risk-athletes.md | QUEUED |
 | 90 | genetics of altitude response | EPAS1 gene altitude athletes, altitude training genetics, genetic variation hypoxia response | informational | Genetics of Altitude Response: Why Some Athletes Thrive at Elevation (And Others Struggle) | genetics-altitude-response-epas1-athletes.md | QUEUED |
 | 91 | epigenetics altitude training | gene expression hypoxia, epigenetic altitude adaptations, heritable altitude response athletes | informational | Epigenetics and Altitude Training: How High Elevation Changes Your Gene Expression | epigenetics-altitude-training-gene-expression.md | QUEUED |
@@ -218,6 +218,7 @@
 | 85 | Altitude Training for Paralympic Athletes: Unique Considerations for Adaptive Sport at Elevation | src/articles/altitude-training-paralympic-adaptive-athletes.md | 2026-04-18 |
 | 86 | Creatine at Altitude: Does It Help Performance — or Increase Dehydration Risk? | src/articles/creatine-altitude-training-dehydration-risk.md | 2026-04-18 |
 | 87 | Altitude Training for Combat Sports: How MMA Fighters and Boxers Use Elevation to Build a Gas Tank | src/articles/altitude-training-mma-combat-sports-boxing.md | 2026-04-18 |
+| 88 | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | src/articles/eldoret-kenya-altitude-training-rift-valley.md | 2026-04-18 |
 
 ---
 

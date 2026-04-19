@@ -203,6 +203,11 @@
 | 65 | Altitude Training for Biathletes: Building the Aerobic Engine and Shooting Steadiness at Elevation | src/articles/altitude-training-biathlon-winter-sport.md | 2026-04-18 |
 | 66 | Hemoglobin Optimization at Altitude: How to Prevent Altitude Anemia and Maximize Oxygen Carrying Capacity | src/articles/hemoglobin-optimization-altitude-training.md | 2026-04-18 |
 | 67 | Compression Garments at Altitude: Do They Speed Recovery and Reduce Swelling at Elevation? | src/articles/compression-garments-altitude-recovery.md | 2026-04-18 |
+| 68 | Wearables at Altitude: How WHOOP, Oura, and Garmin Perform (and What the Data Actually Tells You) | src/articles/wearables-altitude-training-whoop-oura-garmin.md | 2026-04-18 |
+| 69 | Altitude Training for Ultra-Trail Runners: Preparing for 100-Mile Races at Elevation | src/articles/altitude-training-ultra-trail-100-mile-runners.md | 2026-04-18 |
+| 70 | Protein Needs at Altitude: Why Muscle Breakdown Increases High Up (And How Much to Eat) | src/articles/protein-intake-altitude-athletes-guide.md | 2026-04-18 |
+| 71 | Altitude Training for Alpine Skiers: How Downhill Racers Use Elevation to Build Race Fitness | src/articles/altitude-training-alpine-skiing-guide.md | 2026-04-18 |
+| 72 | Altitude Training in Addis Ababa: Ethiopia's Secret to Producing the World's Best Distance Runners | src/articles/addis-ababa-altitude-training-ethiopia.md | 2026-04-18 |
 | 73 | Altitude Training for Young Athletes: What's Safe, What Works, and When to Start | src/articles/altitude-training-youth-junior-athletes.md | 2026-04-18 |
 | 74 | Altitude and Blood Pressure: What Athletes With Hypertension Need to Know Before Going High | src/articles/altitude-blood-pressure-hypertension-athletes.md | 2026-04-18 |
 | 75 | Cold Water Immersion at Altitude: Does an Ice Bath Help or Hinder Hypoxic Adaptation? | src/articles/cold-water-immersion-altitude-recovery.md | 2026-04-18 |
@@ -224,7 +229,7 @@
 
 ## Internal Linking Map
 
-> Updated 2026-04-18 — 36 articles published. Key cross-link clusters:
+> Updated 2026-04-19 — 88 articles published. Key cross-link clusters:
 
 | From Article (target_keyword) | Link To | Anchor Text Suggestion |
 |---|---|---|
@@ -232,45 +237,108 @@
 | altitude training benefits | altitude-training-vo2-max-improvement | "how altitude improves VO2 max" |
 | how to acclimatize to altitude | altitude-sickness-prevention-athletes | "prevent altitude sickness" |
 | how to acclimatize to altitude | how-long-acclimatize-altitude-timeline | "acclimatization timeline" |
-| how to acclimatize to altitude | re-acclimatization-returning-altitude (QUEUED) | "re-acclimatization on your second trip" |
+| how to acclimatize to altitude | re-acclimatization-returning-altitude | "re-acclimatization on your second trip" |
 | live high train low protocol | altitude-tent-athletes-guide | "altitude tent for sleep" |
 | live high train low protocol | altitude-training-epo-red-blood-cells | "EPO and red blood cell production" |
 | VO2 max altitude training | intermittent-hypoxic-exposure-protocol | "intermittent hypoxic exposure" |
 | VO2 max altitude training | altitude-training-benefits-endurance-athletes | "full benefits of altitude training" |
 | altitude sickness prevention | altitude-sickness-symptoms-ams-hace-hape | "recognize AMS, HACE, and HAPE" |
-| altitude sickness prevention | altitude-headache-dehydration-prevention (QUEUED) | "altitude headaches explained" |
+| altitude sickness prevention | altitude-headache-dehydration-prevention | "altitude headaches explained" |
+| altitude sickness prevention | altitude-blood-pressure-hypertension-athletes | "altitude and blood pressure changes" |
 | hypoxic training benefits | altitude-tent-athletes-guide | "altitude tent for normobaric hypoxia" |
 | hypoxic training benefits | intermittent-hypoxic-exposure-protocol | "IHE protocol" |
 | blood oxygen levels athletes | pulse-oximeter-altitude-athletes-guide | "how to use a pulse oximeter" |
-| blood oxygen levels athletes | acetazolamide-diamox-altitude-athletes (QUEUED) | "altitude medication options" |
+| blood oxygen levels athletes | acetazolamide-diamox-altitude-athletes | "altitude medication options" |
 | altitude training camps | flagstaff-altitude-training-guide | "Flagstaff, Arizona" |
 | altitude training camps | font-romeu-altitude-training-guide | "Font Romeu, France" |
-| altitude training camps | jet-lag-altitude-travel-fatigue (QUEUED) | "managing travel fatigue when arriving at altitude" |
+| altitude training camps | jet-lag-altitude-travel-fatigue | "managing travel fatigue when arriving at altitude" |
+| altitude training camps | iten-kenya-altitude-training-destination | "Iten, Kenya — where the world's best train" |
+| altitude training camps | bogota-altitude-training-destination-guide | "altitude training in Bogotá" |
+| altitude training camps | addis-ababa-altitude-training-ethiopia | "Addis Ababa altitude training" |
 | altitude tent for athletes | normobaric-vs-hypobaric-hypoxia-athletes | "normobaric vs hypobaric hypoxia" |
 | altitude tent for athletes | altitude-mask-vs-altitude-tent-comparison | "altitude mask vs altitude tent" |
+| altitude tent for athletes | altitude-simulation-room-home-setup-guide | "build a home altitude simulation room" |
 | how long to acclimatize | how-long-altitude-gains-last-washout | "how long altitude gains last" |
 | altitude training for cyclists | altitude-training-plan-4-week-block | "build a 4-week altitude training block" |
-| altitude training for cyclists | altitude-training-periodization-mesocycle (QUEUED) | "periodize your altitude training block" |
+| altitude training for cyclists | altitude-training-periodization-mesocycle | "periodize your altitude training block" |
 | altitude training for runners | altitude-training-plan-4-week-block | "sample altitude training plan" |
 | altitude training for runners | flagstaff-altitude-training-guide | "train in Flagstaff" |
-| altitude training for runners | when-to-race-after-altitude-camp (QUEUED) | "optimal timing to race after altitude" |
-| altitude training recovery | overtraining-at-altitude-prevention (QUEUED) | "signs of overtraining at altitude" |
-| sleep quality altitude athletes | altitude-sleep-apnea-periodic-breathing (QUEUED) | "periodic breathing and sleep apnea at altitude" |
-| iron supplementation altitude | altitude-training-female-athletes-guide (QUEUED) | "iron needs for female athletes at altitude" |
-| iron supplementation altitude | hemoglobin-optimization-altitude-training (QUEUED) | "optimizing hemoglobin levels at altitude" |
-| nutrition for altitude training | carbohydrate-needs-altitude-athletes (QUEUED) | "carbohydrate needs at altitude" |
-| nutrition for altitude training | protein-intake-altitude-athletes-guide (QUEUED) | "protein requirements at elevation" |
-| altitude training camps | iten-kenya-altitude-training-destination (QUEUED) | "Iten, Kenya — where the world's best train" |
-| altitude training camps | bogota-altitude-training-destination-guide (QUEUED) | "altitude training in Bogotá" |
-| altitude training camps | addis-ababa-altitude-training-ethiopia (QUEUED) | "Addis Ababa altitude training" |
-| altitude training recovery | cold-water-immersion-altitude-recovery (QUEUED) | "cold water immersion at altitude" |
-| altitude training recovery | compression-garments-altitude-recovery (QUEUED) | "compression garments for altitude recovery" |
-| HRV at altitude | wearables-altitude-training-whoop-oura-garmin (QUEUED) | "WHOOP, Oura, and Garmin at altitude" |
-| altitude training for runners | altitude-training-ultra-trail-100-mile-runners (QUEUED) | "ultra-trail and 100-mile race altitude prep" |
-| altitude training for cross-country skiing | altitude-training-biathlon-winter-sport (QUEUED) | "biathlon-specific altitude protocols" |
-| altitude training for cross-country skiing | altitude-training-alpine-skiing-guide (QUEUED) | "alpine skiing altitude training" |
-| altitude sickness prevention | altitude-blood-pressure-hypertension-athletes (QUEUED) | "altitude and blood pressure changes" |
-| altitude tent for athletes | altitude-simulation-room-home-setup-guide (QUEUED) | "build a home altitude simulation room" |
+| altitude training for runners | when-to-race-after-altitude-camp | "optimal timing to race after altitude" |
+| altitude training for runners | altitude-training-ultra-trail-100-mile-runners | "ultra-trail and 100-mile race altitude prep" |
+| altitude training recovery | overtraining-at-altitude-prevention | "signs of overtraining at altitude" |
+| altitude training recovery | cold-water-immersion-altitude-recovery | "cold water immersion at altitude" |
+| altitude training recovery | compression-garments-altitude-recovery | "compression garments for altitude recovery" |
+| sleep quality altitude athletes | altitude-sleep-apnea-periodic-breathing | "periodic breathing and sleep apnea at altitude" |
+| iron supplementation altitude | altitude-training-female-athletes-guide | "iron needs for female athletes at altitude" |
+| iron supplementation altitude | hemoglobin-optimization-altitude-training | "optimizing hemoglobin levels at altitude" |
+| nutrition for altitude training | carbohydrate-needs-altitude-athletes | "carbohydrate needs at altitude" |
+| nutrition for altitude training | protein-intake-altitude-athletes-guide | "protein requirements at elevation" |
+| HRV at altitude | wearables-altitude-training-whoop-oura-garmin | "WHOOP, Oura, and Garmin at altitude" |
+| altitude training for cross-country skiing | altitude-training-biathlon-winter-sport | "biathlon-specific altitude protocols" |
+| altitude training for cross-country skiing | altitude-training-alpine-skiing-guide | "alpine skiing altitude training" |
+| wearables at altitude | hrv-at-altitude-training-guide | "HRV monitoring at altitude" |
+| wearables at altitude | sleep-quality-altitude-athletes | "sleep quality at altitude" |
+| wearables at altitude | blood-oxygen-levels-athletes-spo2 | "SpO2 and blood oxygen data" |
+| altitude training for ultra-trail runners | altitude-training-runners-guide | "altitude training for runners" |
+| altitude training for ultra-trail runners | altitude-training-plan-4-week-block | "4-week altitude training block" |
+| altitude training for ultra-trail runners | tapering-after-altitude-camp-protocol | "taper after your altitude camp" |
+| protein intake at altitude | nutrition-for-altitude-training-athletes | "altitude nutrition strategy" |
+| protein intake at altitude | altitude-training-recovery-guide | "recovery nutrition at altitude" |
+| protein intake at altitude | plant-based-diet-altitude-training-athletes | "plant-based protein at altitude" |
+| alpine skiing altitude preparation | altitude-training-cross-country-skiing | "cross-country skiing at altitude" |
+| alpine skiing altitude preparation | altitude-training-biathlon-winter-sport | "biathlon altitude protocols" |
+| alpine skiing altitude preparation | altitude-training-periodization-mesocycle | "periodize your altitude training" |
+| Addis Ababa altitude training | iten-kenya-altitude-training-destination | "Iten, Kenya altitude training" |
+| Addis Ababa altitude training | best-altitude-training-camps-endurance-athletes | "best altitude training camps" |
+| Addis Ababa altitude training | eldoret-kenya-altitude-training-rift-valley | "Eldoret, Kenya's Rift Valley" |
+| altitude training for youth athletes | altitude-sickness-prevention-athletes | "altitude sickness prevention" |
+| altitude training for youth athletes | how-to-acclimatize-to-altitude-athletes | "how to acclimatize safely" |
+| altitude and blood pressure | altitude-sickness-symptoms-ams-hace-hape | "AMS, HACE, and HAPE symptoms" |
+| altitude and blood pressure | acetazolamide-diamox-altitude-athletes | "medications for altitude symptoms" |
+| cold water immersion at altitude | altitude-training-recovery-guide | "recovery at altitude" |
+| cold water immersion at altitude | cold-exposure-vs-altitude-training-comparison | "cold vs altitude training" |
+| cold water immersion at altitude | sauna-altitude-training-combination | "sauna at altitude for recovery" |
+| altitude simulation room setup | altitude-tent-athletes-guide | "altitude tents for athletes" |
+| altitude simulation room setup | normobaric-vs-hypobaric-hypoxia-athletes | "normobaric vs hypobaric hypoxia" |
+| altitude simulation room setup | live-high-train-low-protocol-guide | "live high train low protocol" |
+| vitamin D and altitude training | nutrition-for-altitude-training-athletes | "altitude nutrition strategy" |
+| vitamin D and altitude training | iron-supplementation-altitude-training | "supplementation at altitude" |
+| polarized training at altitude | altitude-training-periodization-mesocycle | "altitude training mesocycle design" |
+| polarized training at altitude | altitude-training-plan-4-week-block | "4-week altitude training block" |
+| polarized training at altitude | block-periodization-altitude-training-camps | "block periodization at altitude" |
+| block periodization altitude training | altitude-training-periodization-mesocycle | "mesocycle design for altitude" |
+| block periodization altitude training | tapering-after-altitude-camp-protocol | "tapering after your altitude camp" |
+| block periodization altitude training | polarized-training-80-20-altitude-guide | "polarized training at altitude" |
+| strength training at altitude | altitude-training-recovery-guide | "recovery demands at altitude" |
+| strength training at altitude | altitude-training-plan-4-week-block | "structure your altitude training block" |
+| strength training at altitude | overtraining-at-altitude-prevention | "avoid overtraining at altitude" |
+| tapering after altitude camp | when-to-race-after-altitude-camp | "optimal race timing after altitude" |
+| tapering after altitude camp | altitude-training-periodization-mesocycle | "periodization leading into your camp" |
+| tapering after altitude camp | how-long-altitude-gains-last-washout | "altitude gains washout timeline" |
+| ketones and altitude performance | nutrition-for-altitude-training-athletes | "overall altitude nutrition strategy" |
+| ketones and altitude performance | carbohydrate-needs-altitude-athletes | "carbohydrate needs at elevation" |
+| St. Moritz altitude training | best-altitude-training-camps-endurance-athletes | "best altitude training camps" |
+| St. Moritz altitude training | font-romeu-altitude-training-guide | "Font Romeu, France" |
+| plant-based diet altitude training | iron-supplementation-altitude-training | "iron supplementation at altitude" |
+| plant-based diet altitude training | nutrition-for-altitude-training-athletes | "altitude nutrition fundamentals" |
+| plant-based diet altitude training | altitude-training-female-athletes-guide | "female athletes and iron at altitude" |
+| altitude training Paralympic athletes | altitude-sickness-prevention-athletes | "altitude sickness prevention" |
+| altitude training Paralympic athletes | how-to-acclimatize-to-altitude-athletes | "acclimatization strategies" |
+| creatine altitude training | hydration-strategy-altitude-athletes | "staying hydrated at altitude" |
+| creatine altitude training | nutrition-for-altitude-training-athletes | "altitude nutrition strategy" |
+| altitude training for MMA fighters | altitude-training-rugby-team-sports | "team sport altitude training" |
+| altitude training for MMA fighters | altitude-training-plan-4-week-block | "build a combat sports altitude block" |
+| Eldoret Kenya altitude training | iten-kenya-altitude-training-destination | "Iten, Kenya — altitude training hub" |
+| Eldoret Kenya altitude training | best-altitude-training-camps-endurance-athletes | "best altitude training camps worldwide" |
+| Eldoret Kenya altitude training | addis-ababa-altitude-training-ethiopia | "Addis Ababa altitude training" |
+| NSAIDs altitude risk | acetazolamide-diamox-altitude-athletes | "altitude medications overview" |
+| NSAIDs altitude risk | altitude-sickness-symptoms-ams-hace-hape | "recognizing altitude sickness" |
+| genetics of altitude response | altitude-training-epo-red-blood-cells | "EPO and red blood cell production" |
+| genetics of altitude response | altitude-training-vo2-max-improvement | "VO2 max improvements from altitude" |
+| epigenetics altitude training | altitude-training-epo-red-blood-cells | "EPO and adaptation" |
+| epigenetics altitude training | genetics-altitude-response-epas1-athletes (QUEUED) | "genetic variation in altitude response" |
+| individual variation EPO altitude | altitude-training-epo-red-blood-cells | "how altitude boosts EPO naturally" |
+| individual variation EPO altitude | genetics-altitude-response-epas1-athletes (QUEUED) | "genetic factors in altitude response" |
 
 ---
 

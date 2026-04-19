@@ -968,20 +968,107 @@ function initEmailCapture() {
 function initResourcesFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   if (!filterBtns.length) return;
+
+  const searchInput  = document.getElementById('article-search');
+  const noResults    = document.getElementById('no-results');
+  const noResultsMsg = document.getElementById('no-results-msg');
+  const clearBtn     = document.getElementById('clear-search');
+  const summary      = document.getElementById('results-summary');
+  const articles     = Array.from(document.querySelectorAll('.article-card'));
+
+  let activeFilter = 'all';
+  let searchQuery  = '';
+
+  // Count articles per category for badge labels
+  const counts = { all: articles.length };
+  articles.forEach(a => {
+    const cat = a.dataset.category;
+    if (cat) counts[cat] = (counts[cat] || 0) + 1;
+  });
+  document.querySelectorAll('.filter-btn__count').forEach(badge => {
+    const key = badge.dataset.count;
+    if (counts[key] !== undefined) badge.textContent = counts[key];
+  });
+
+  function applyFilters() {
+    const q = searchQuery.toLowerCase().trim();
+    let visible = 0;
+
+    articles.forEach(article => {
+      const catMatch  = activeFilter === 'all' || article.dataset.category === activeFilter;
+      const searchStr = (article.dataset.searchText || '') + ' ' +
+                        (article.querySelector('h3')?.textContent || '') + ' ' +
+                        (article.querySelector('p')?.textContent || '');
+      const textMatch = !q || searchStr.toLowerCase().includes(q);
+
+      if (catMatch && textMatch) {
+        article.removeAttribute('data-hidden');
+        visible++;
+      } else {
+        article.setAttribute('data-hidden', 'true');
+      }
+    });
+
+    // No-results state
+    if (noResults) {
+      if (visible === 0) {
+        noResults.classList.add('visible');
+        if (noResultsMsg) {
+          noResultsMsg.textContent = q
+            ? `No articles matched "${q}"${activeFilter !== 'all' ? ' in this category' : ''}.`
+            : 'No articles in this category.';
+        }
+      } else {
+        noResults.classList.remove('visible');
+      }
+    }
+
+    // Results summary
+    if (summary) {
+      if (q || activeFilter !== 'all') {
+        summary.textContent = `Showing ${visible} of ${articles.length} article${articles.length !== 1 ? 's' : ''}`;
+      } else {
+        summary.textContent = '';
+      }
+    }
+  }
+
+  // Category filter clicks
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter;
+      activeFilter = btn.dataset.filter;
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      document.querySelectorAll('.article-card').forEach(article => {
-        if (filter === 'all' || article.dataset.category === filter) {
-          article.removeAttribute('data-hidden');
-        } else {
-          article.setAttribute('data-hidden', 'true');
-        }
-      });
+      applyFilters();
     });
   });
+
+  // Live search
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      searchQuery = searchInput.value;
+      applyFilters();
+    });
+  }
+
+  // Clear search button
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      if (searchInput) { searchInput.value = ''; searchQuery = ''; }
+      activeFilter = 'all';
+      filterBtns.forEach(b => b.classList.remove('active'));
+      const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+      if (allBtn) allBtn.classList.add('active');
+      applyFilters();
+    });
+  }
+
+  // Support ?filter=category in URL (e.g. from footer links)
+  const urlFilter = new URLSearchParams(window.location.search).get('filter');
+  if (urlFilter) {
+    const matchBtn = document.querySelector(`.filter-btn[data-filter="${urlFilter}"]`);
+    if (matchBtn) matchBtn.click();
+  }
 }
 
 

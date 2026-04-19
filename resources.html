@@ -4,20 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
   <title>Altitude Training Resources | Science, Training & Nutrition Guides | Altitude Performance Lab</title>
   <meta name="description" content="Expert guides on altitude training, acclimatization, nutrition at elevation, and the physiology behind altitude performance. Evidence-based resources for serious athletes.">
   <meta name="keywords" content="altitude training guide, altitude acclimatization, VO2 max at altitude, high altitude nutrition, altitude running training, altitude sickness athletes">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://altitudeperformancelab.com/resources.html">
 
-  <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="Altitude Training Resources | Altitude Performance Lab">
   <meta property="og:description" content="Science-backed guides on altitude training, acclimatization, and nutrition for endurance athletes.">
   <meta property="og:url"         content="https://altitudeperformancelab.com/resources.html">
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,183 +22,376 @@
     "name": "Altitude Performance Lab — Resources",
     "url": "https://altitudeperformancelab.com/resources.html",
     "description": "Expert guides on altitude training, acclimatization, nutrition, and the science of altitude performance.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Altitude Performance Lab",
-      "url": "https://altitudeperformancelab.com"
-    }
+    "publisher": { "@type": "Organization", "name": "Altitude Performance Lab", "url": "https://altitudeperformancelab.com" }
   }
   </script>
 
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* ── Filter bar ── */
+    .filter-bar {
+      position: sticky;
+      top: var(--nav-height, 60px);
+      z-index: 90;
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+    }
+    .filter-bar__inner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-bar__pills {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .filter-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+    .filter-btn.active {
+      background: var(--accent-dim);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .filter-btn__count {
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      background: var(--bg-tertiary);
+      border-radius: 99px;
+      padding: 1px 6px;
+      color: var(--text-muted);
+    }
+    .filter-btn.active .filter-btn__count {
+      background: rgba(0,180,216,0.15);
+      color: var(--accent);
+    }
+    .filter-bar__search {
+      position: relative;
+      flex-shrink: 0;
+    }
+    .filter-bar__search input {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 14px 6px 34px;
+      font-size: 0.8125rem;
+      color: var(--text-primary);
+      width: 200px;
+      transition: border-color 0.15s, width 0.2s;
+    }
+    .filter-bar__search input::placeholder { color: var(--text-muted); }
+    .filter-bar__search input:focus {
+      outline: none;
+      border-color: var(--accent);
+      width: 240px;
+    }
+    .filter-bar__search-icon {
+      position: absolute;
+      left: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    @media (max-width: 640px) {
+      .filter-bar__search { width: 100%; }
+      .filter-bar__search input { width: 100% !important; }
+      .filter-bar__inner { flex-direction: column; align-items: stretch; }
+    }
+
+    /* ── Article cards ── */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 1024px) { .articles-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px)  { .articles-grid { grid-template-columns: 1fr; } }
+
+    .article-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .article-card:hover {
+      border-color: var(--border-muted, #30363d);
+      transform: translateY(-2px);
+    }
+    .article-card[data-hidden="true"] { display: none; }
+
+    /* Category accent strip */
+    .article-card[data-category="acclimatization"] { border-top: 2px solid var(--warning); }
+    .article-card[data-category="training"]         { border-top: 2px solid var(--accent); }
+    .article-card[data-category="nutrition"]        { border-top: 2px solid var(--success); }
+    .article-card[data-category="science"]          { border-top: 2px solid #a78bfa; }
+
+    .article-card__body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .article-card__category {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .article-card[data-category="acclimatization"] .article-card__category { color: var(--warning); }
+    .article-card[data-category="training"]         .article-card__category { color: var(--accent); }
+    .article-card[data-category="nutrition"]        .article-card__category { color: var(--success); }
+    .article-card[data-category="science"]          .article-card__category { color: #a78bfa; }
+
+    .article-card h3 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      line-height: 1.45;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .article-card p {
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      flex: 1;
+      margin-bottom: 16px;
+    }
+    .article-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: auto;
+    }
+    .article-card__read-time {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    .article-card__meta .btn { margin-left: auto; }
+
+    /* Featured card */
+    .article-card--featured {
+      grid-column: span 2;
+      flex-direction: row;
+    }
+    @media (max-width: 1024px) { .article-card--featured { grid-column: span 2; flex-direction: column; } }
+    @media (max-width: 600px)  { .article-card--featured { grid-column: span 1; flex-direction: column; } }
+
+    .article-card--featured .article-card__visual {
+      flex: 0 0 220px;
+      background: linear-gradient(135deg, rgba(0,180,216,0.08) 0%, var(--bg-tertiary) 100%);
+      border-right: 1px solid var(--border);
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media (max-width: 1024px) {
+      .article-card--featured .article-card__visual { flex: none; border-right: none; border-bottom: 1px solid var(--border); }
+    }
+    .article-card--featured h3 { font-size: 1.0625rem; }
+
+    /* No-results state */
+    .no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 64px 24px;
+      display: none;
+    }
+    .no-results.visible { display: block; }
+    .no-results__icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .no-results h3 { color: var(--text-primary); margin-bottom: 8px; }
+    .no-results p { color: var(--text-muted); font-size: 0.875rem; }
+
+    /* Results summary */
+    .results-summary {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      padding: 16px 0 4px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-       ============================================================ -->
+  <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo" aria-label="Altitude Performance Lab home">
         <div class="nav__logo-mark">APL</div>
         <span class="nav__logo-text">Altitude<span>Performance</span>Lab</span>
       </a>
-
       <ul class="nav__links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="performance.html">Performance</a></li>
-        <li><a href="nutrition.html">Nutrition</a></li>
-        <li><a href="resources.html">Resources</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
       </ul>
-
-      <div class="nav__cta">
-        <a href="calculator/dist/index.html" class="btn btn--primary btn--sm">Try the Calculator →</a>
-      </div>
-
       <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-
   <div class="nav__mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
     <a href="index.html">Home</a>
-    <a href="performance.html">Performance</a>
-    <a href="nutrition.html">Nutrition</a>
+    <a href="tools.html">Tools</a>
     <a href="resources.html">Resources</a>
-    <a href="calculator/dist/index.html" class="btn btn--primary" style="margin-top: 8px;">Try the Calculator →</a>
   </div>
 
 
-  <!-- ============================================================
-       PAGE HERO
-       ============================================================ -->
+  <!-- PAGE HERO -->
   <section class="page-hero" aria-labelledby="resources-page-heading">
     <div class="container">
       <div class="page-hero__inner">
-        <span class="label">Research &amp; Guides</span>
-        <h1 id="resources-page-heading" style="margin-top: 12px; margin-bottom: 16px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <span style="font-size: 1.5rem;">📖</span>
+          <span class="label">Research &amp; Guides</span>
+        </div>
+        <h1 id="resources-page-heading" style="margin-bottom: 16px;">
           Altitude Performance Resources
         </h1>
         <p style="font-size: 1.0625rem; max-width: 580px;">
           Evidence-based guides covering the science, training, and nutrition of altitude performance.
-          Rigorous enough for serious athletes — clear enough for anyone.
+          Filter by topic or search for exactly what you need.
         </p>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================================
-       FEATURED ARTICLE (Hero card)
-       ============================================================ -->
-  <section style="padding: 0 0 48px;" aria-labelledby="featured-heading">
+  <!-- STICKY FILTER BAR -->
+  <div class="filter-bar" role="search" aria-label="Filter and search articles">
     <div class="container">
-      <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; align-items: center;" class="featured-article-card">
+      <div class="filter-bar__inner">
 
-        <!-- Visual side -->
-        <div style="background: linear-gradient(135deg, rgba(0,180,216,0.08) 0%, var(--bg-tertiary) 100%); padding: 56px 48px; border-right: 1px solid var(--border); height: 100%; display: flex; flex-direction: column; justify-content: center;">
-          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 24px;">EDITOR'S PICK</div>
-
-          <!-- Mini data viz -->
-          <div style="display: flex; flex-direction: column; gap: 14px;">
-            <div>
-              <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px;">
-                <span>Sea Level (0 ft)</span><span>VO₂ Max: Baseline</span>
-              </div>
-              <div style="height: 6px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
-                <div style="width: 100%; height: 100%; background: var(--accent); border-radius: 3px;"></div>
-              </div>
-            </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px;">
-                <span>5,000 ft (1,524 m)</span><span>−3.6%</span>
-              </div>
-              <div style="height: 6px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
-                <div style="width: 96%; height: 100%; background: var(--accent); opacity: 0.85; border-radius: 3px;"></div>
-              </div>
-            </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px;">
-                <span>8,000 ft (2,438 m)</span><span>−9.8%</span>
-              </div>
-              <div style="height: 6px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
-                <div style="width: 90%; height: 100%; background: var(--warning); border-radius: 3px;"></div>
-              </div>
-            </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px;">
-                <span>12,000 ft (3,658 m)</span><span>−18.2%</span>
-              </div>
-              <div style="height: 6px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
-                <div style="width: 81%; height: 100%; background: var(--danger); border-radius: 3px;"></div>
-              </div>
-            </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px;">
-                <span>18,000 ft (5,486 m)</span><span>−31.5%</span>
-              </div>
-              <div style="height: 6px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
-                <div style="width: 68%; height: 100%; background: var(--danger); opacity: 0.7; border-radius: 3px;"></div>
-              </div>
-            </div>
-          </div>
-          <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 20px; font-family: var(--font-mono);">VO₂ max reduction by altitude — Wehrlin &amp; Hallen, 2006</p>
+        <div class="filter-bar__pills" role="group" aria-label="Filter by category">
+          <button class="filter-btn active" data-filter="all">
+            All <span class="filter-btn__count" data-count="all">16</span>
+          </button>
+          <button class="filter-btn" data-filter="acclimatization">
+            🏔️ Acclimatization <span class="filter-btn__count" data-count="acclimatization">4</span>
+          </button>
+          <button class="filter-btn" data-filter="training">
+            🏃 Training <span class="filter-btn__count" data-count="training">4</span>
+          </button>
+          <button class="filter-btn" data-filter="nutrition">
+            🥗 Nutrition <span class="filter-btn__count" data-count="nutrition">4</span>
+          </button>
+          <button class="filter-btn" data-filter="science">
+            🧬 Science <span class="filter-btn__count" data-count="science">4</span>
+          </button>
         </div>
 
-        <!-- Content side -->
-        <div style="padding: 48px;">
-          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-            <span>🧬</span> Science &amp; Research
-          </div>
-          <h2 id="featured-heading" style="font-size: 1.625rem; margin-bottom: 16px; line-height: 1.3;">
-            How Altitude Reduces Your VO₂ Max — And What to Do About It
-          </h2>
-          <p style="margin-bottom: 28px; line-height: 1.7;">
-            At altitude, the partial pressure of oxygen drops — your lungs take in less O₂ per breath,
-            your heart works harder, and your aerobic engine runs lean. This guide breaks down exactly
-            what's happening physiologically, how much it costs you at different elevations, and the
-            evidence-based strategies that minimize the loss.
-          </p>
-          <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
-            <a href="#" class="btn btn--primary">Read Article →</a>
-            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">8 min read</span>
-            <span class="badge badge--accent">Featured</span>
-          </div>
+        <div class="filter-bar__search">
+          <svg class="filter-bar__search-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M11 11l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input type="search" id="article-search" placeholder="Search articles…" aria-label="Search articles">
         </div>
 
       </div>
     </div>
-  </section>
+  </div>
 
 
-  <!-- ============================================================
-       ARTICLE GRID
-       ============================================================ -->
-  <section class="section" style="padding-top: 24px;" aria-labelledby="all-articles-heading">
+  <!-- ARTICLE GRID -->
+  <section class="section" style="padding-top: 32px;" aria-labelledby="all-articles-heading">
     <div class="container">
 
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; flex-wrap: gap;">
-        <h2 id="all-articles-heading" style="font-size: 1.375rem;">All Articles</h2>
-      </div>
+      <div class="results-summary" id="results-summary" aria-live="polite"></div>
 
-      <!-- Filter buttons -->
-      <div class="resources-filters" role="group" aria-label="Filter articles by category">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="acclimatization">🏔️ Acclimatization</button>
-        <button class="filter-btn" data-filter="training">🏃 Training</button>
-        <button class="filter-btn" data-filter="nutrition">🥗 Nutrition &amp; Supplements</button>
-        <button class="filter-btn" data-filter="science">🧬 Science &amp; Research</button>
-      </div>
+      <div class="articles-grid" id="articles-grid" style="margin-top: 16px;">
 
-      <!-- Article grid -->
-      <div class="articles-grid" id="articles-grid">
+        <!-- ===== SCIENCE — FEATURED ===== -->
+        <article class="article-card article-card--featured" data-category="science"
+          data-search-text="how altitude reduces vo2 max performance oxygen physiology science research wehrlin">
+          <div class="article-card__visual">
+            <div style="font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 16px;">FEATURED</div>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <div>
+                <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); margin-bottom: 5px;">
+                  <span>5,000 ft</span><span>−3.6%</span>
+                </div>
+                <div style="height: 5px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
+                  <div style="width: 96%; height: 100%; background: var(--accent); border-radius: 3px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); margin-bottom: 5px;">
+                  <span>8,000 ft</span><span>−9.8%</span>
+                </div>
+                <div style="height: 5px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
+                  <div style="width: 90%; height: 100%; background: var(--warning); border-radius: 3px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); margin-bottom: 5px;">
+                  <span>12,000 ft</span><span>−18.2%</span>
+                </div>
+                <div style="height: 5px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
+                  <div style="width: 81%; height: 100%; background: var(--danger); border-radius: 3px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); margin-bottom: 5px;">
+                  <span>18,000 ft</span><span>−31.5%</span>
+                </div>
+                <div style="height: 5px; background: var(--bg-primary); border-radius: 3px; overflow: hidden;">
+                  <div style="width: 68%; height: 100%; background: var(--danger); opacity: 0.7; border-radius: 3px;"></div>
+                </div>
+              </div>
+            </div>
+            <p style="font-size: 0.68rem; color: var(--text-muted); margin-top: 14px; font-family: var(--font-mono); line-height: 1.5;">VO₂ max reduction by altitude</p>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__category">🧬 Science &amp; Research</div>
+            <h3>How Altitude Reduces Your VO₂ Max — And What to Do About It</h3>
+            <p>At altitude, the partial pressure of oxygen drops — your lungs take in less O₂ per breath, your heart works harder, and your aerobic engine runs lean. This guide breaks down exactly what's happening physiologically, how much it costs you at different elevations, and the evidence-based strategies that minimize the loss.</p>
+            <div class="article-card__meta">
+              <span class="article-card__read-time">8 min read</span>
+              <span class="badge badge--accent" style="font-size: 0.68rem;">Featured</span>
+              <a href="#" class="btn btn--ghost btn--sm">Read →</a>
+            </div>
+          </div>
+        </article>
 
         <!-- ===== ACCLIMATIZATION ===== -->
 
-        <article class="article-card" data-category="acclimatization">
+        <article class="article-card" data-category="acclimatization"
+          data-search-text="complete athlete guide altitude acclimatization timing arrival race day performance structure lead-up camp">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🏔️</span> Acclimatization</div>
+            <div class="article-card__category">🏔️ Acclimatization</div>
             <h3>The Complete Athlete's Guide to Altitude Acclimatization</h3>
             <p>From arriving 48 hours early to a full 4-week pre-camp — exactly how to structure your altitude lead-up for peak race day performance.</p>
             <div class="article-card__meta">
@@ -211,9 +401,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="acclimatization">
+        <article class="article-card" data-category="acclimatization"
+          data-search-text="how long acclimatize 3-day rule adaptation phases science research timeline weeks">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🏔️</span> Acclimatization</div>
+            <div class="article-card__category">🏔️ Acclimatization</div>
             <h3>How Long Does It Take to Acclimatize? What the Research Actually Says</h3>
             <p>The "3-day rule" is oversimplified. Real adaptation happens in waves over weeks. Here's a science-based breakdown of each phase.</p>
             <div class="article-card__meta">
@@ -223,9 +414,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="acclimatization">
+        <article class="article-card" data-category="acclimatization"
+          data-search-text="altitude sickness AMS normal fatigue difference symptoms descend headache nausea dizziness">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🏔️</span> Acclimatization</div>
+            <div class="article-card__category">🏔️ Acclimatization</div>
             <h3>Altitude Sickness vs. Normal Fatigue: How to Tell the Difference</h3>
             <p>Feeling rough on day two? Know how to distinguish typical altitude adjustment from early AMS — and when to descend immediately.</p>
             <div class="article-card__meta">
@@ -235,9 +427,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="acclimatization">
+        <article class="article-card" data-category="acclimatization"
+          data-search-text="staging ascent optimal acclimatization schedule high-altitude events timing arrival race start gun 10000 ft">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🏔️</span> Acclimatization</div>
+            <div class="article-card__category">🏔️ Acclimatization</div>
             <h3>Staging Your Ascent: The Optimal Acclimatization Schedule for High-Altitude Events</h3>
             <p>Racing or competing above 10,000 ft? The timing of your arrival relative to the start gun makes a bigger difference than most athletes realize.</p>
             <div class="article-card__meta">
@@ -249,9 +442,10 @@
 
         <!-- ===== TRAINING ===== -->
 
-        <article class="article-card" data-category="training">
+        <article class="article-card" data-category="training"
+          data-search-text="live high train low LHTL protocol endurance athletes evidence benefits apply">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🏃</span> Training</div>
+            <div class="article-card__category">🏃 Training</div>
             <h3>Live High, Train Low: Does It Actually Work?</h3>
             <p>The LHTL protocol is used by the world's best endurance athletes. Here's what the evidence says, who benefits most, and how to apply it practically.</p>
             <div class="article-card__meta">
@@ -261,9 +455,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="training">
+        <article class="article-card" data-category="training"
+          data-search-text="adjust training zones altitude heart rate power FTP pace recalibrate intensity">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🏃</span> Training</div>
+            <div class="article-card__category">🏃 Training</div>
             <h3>How to Adjust Your Training Zones at Altitude</h3>
             <p>Your heart rate zones and power targets from sea level are wrong at altitude. Here's how to recalibrate so you're actually training at the right intensity.</p>
             <div class="article-card__meta">
@@ -273,9 +468,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="training">
+        <article class="article-card" data-category="training"
+          data-search-text="altitude training endurance athletes science framework camp selection workout design recovery protocols block">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🏃</span> Training</div>
+            <div class="article-card__category">🏃 Training</div>
             <h3>Altitude Training for Endurance Athletes: A Science-Backed Framework</h3>
             <p>A practical guide to structuring an altitude training block — from camp selection to workout design to recovery protocols.</p>
             <div class="article-card__meta">
@@ -285,9 +481,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="training">
+        <article class="article-card" data-category="training"
+          data-search-text="racing altitude pacing strategy effort calibration sea-level mistake data-driven 5000 ft">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🏃</span> Training</div>
+            <div class="article-card__category">🏃 Training</div>
             <h3>Racing at Altitude: Pacing Strategy and Effort Calibration</h3>
             <p>Going out at sea-level effort is the number one mistake at altitude events. A data-driven approach to race-day pacing above 5,000 ft.</p>
             <div class="article-card__meta">
@@ -299,9 +496,10 @@
 
         <!-- ===== NUTRITION ===== -->
 
-        <article class="article-card" data-category="nutrition">
+        <article class="article-card" data-category="nutrition"
+          data-search-text="iron EPO altitude nutrition needs 5000 ft supplement red blood cells eat">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🥗</span> Nutrition &amp; Supplements</div>
+            <div class="article-card__category">🥗 Nutrition &amp; Supplements</div>
             <h3>Iron, EPO, and Altitude: Why Your Nutrition Needs Change Above 5,000 ft</h3>
             <p>Altitude triggers your body's EPO response — but only if you have the iron stores to support it. What to eat and supplement before your trip.</p>
             <div class="article-card__meta">
@@ -311,9 +509,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="nutrition">
+        <article class="article-card" data-category="nutrition"
+          data-search-text="hydration altitude losing more water breath dehydrated workout drink fluid mountain air respiratory">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🥗</span> Nutrition &amp; Supplements</div>
+            <div class="article-card__category">🥗 Nutrition &amp; Supplements</div>
             <h3>Hydration at Altitude: Why You're Losing More Than You Think</h3>
             <p>Cold, dry mountain air pulls moisture from your lungs with every breath. Most athletes arrive dehydrated before their first workout. Here's how to stay ahead of it.</p>
             <div class="article-card__meta">
@@ -323,9 +522,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="nutrition">
+        <article class="article-card" data-category="nutrition"
+          data-search-text="what eat before during after training altitude pre intra post workout nutrition guide high elevation basal metabolic rate appetite">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🥗</span> Nutrition &amp; Supplements</div>
+            <div class="article-card__category">🥗 Nutrition &amp; Supplements</div>
             <h3>What to Eat Before, During, and After Training at Altitude</h3>
             <p>Altitude raises your basal metabolic rate and blunts appetite. A complete pre-, intra-, and post-workout nutrition guide for high-elevation training.</p>
             <div class="article-card__meta">
@@ -335,9 +535,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="nutrition">
+        <article class="article-card" data-category="nutrition"
+          data-search-text="altitude supplement stack what works beet root acetazolamide antioxidants iron evidence research">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🥗</span> Nutrition &amp; Supplements</div>
+            <div class="article-card__category">🥗 Nutrition &amp; Supplements</div>
             <h3>The Altitude Supplement Stack: What Works and What Doesn't</h3>
             <p>Iron, beet root, acetazolamide, antioxidants — a research-backed breakdown of which supplements have evidence behind them for altitude performance.</p>
             <div class="article-card__meta">
@@ -349,22 +550,10 @@
 
         <!-- ===== SCIENCE ===== -->
 
-        <article class="article-card" data-category="science">
+        <article class="article-card" data-category="science"
+          data-search-text="EPO hemoglobin red blood cells altitude effect blood physiology timeline production erythropoiesis">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🧬</span> Science &amp; Research</div>
-            <h3>How Altitude Reduces Your VO₂ Max — And What to Do About It</h3>
-            <p>A deep dive into the physiology behind oxygen availability at elevation and the evidence-based strategies that minimize performance loss.</p>
-            <div class="article-card__meta">
-              <span class="article-card__read-time">8 min read</span>
-              <span class="badge badge--accent" style="font-size: 0.7rem;">Featured</span>
-              <a href="#" class="btn btn--ghost btn--sm">Read →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="article-card" data-category="science">
-          <div class="article-card__body">
-            <div class="article-card__category"><span>🧬</span> Science &amp; Research</div>
+            <div class="article-card__category">🧬 Science &amp; Research</div>
             <h3>EPO, Hemoglobin, and Red Blood Cells: Altitude's Effect on Your Blood</h3>
             <p>Altitude training's "secret weapon" is increased red blood cell production. Here's the complete physiology — and the timeline for when it actually kicks in.</p>
             <div class="article-card__meta">
@@ -374,9 +563,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="science">
+        <article class="article-card" data-category="science"
+          data-search-text="physiology altitude adaptation body hyperventilation day one mitochondrial adaptations weeks hypoxia timeline">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🧬</span> Science &amp; Research</div>
+            <div class="article-card__category">🧬 Science &amp; Research</div>
             <h3>The Physiology of Altitude Adaptation: What's Happening Inside Your Body</h3>
             <p>From hyperventilation on day one to mitochondrial adaptations weeks later — a full timeline of what your body does to cope with hypoxia.</p>
             <div class="article-card__meta">
@@ -386,9 +576,10 @@
           </div>
         </article>
 
-        <article class="article-card" data-category="science">
+        <article class="article-card" data-category="science"
+          data-search-text="altitude training camps review world top locations Font Romeu Flagstaff Iten St Moritz Mammoth Lakes elevation infrastructure">
           <div class="article-card__body">
-            <div class="article-card__category"><span>🧬</span> Science &amp; Research</div>
+            <div class="article-card__category">🧬 Science &amp; Research</div>
             <h3>Altitude Training Camps: A Review of the World's Top Locations</h3>
             <p>Comparing Font Romeu, Flagstaff, Iten, St. Moritz, and Mammoth Lakes — elevation profiles, infrastructure, and who trains where and why.</p>
             <div class="article-card__meta">
@@ -398,12 +589,19 @@
           </div>
         </article>
 
+        <!-- No results state -->
+        <div class="no-results" id="no-results" aria-live="polite">
+          <div class="no-results__icon">🔍</div>
+          <h3>No articles found</h3>
+          <p id="no-results-msg">Try a different search term or clear your filter.</p>
+          <button class="btn btn--ghost btn--sm" style="margin-top: 16px;" id="clear-search">Clear search</button>
+        </div>
+
       </div>
 
-      <!-- Coming soon note -->
-      <div style="margin-top: 40px; padding: 24px; background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); text-align: center;">
+      <div style="margin-top: 40px; padding: 20px 24px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg); text-align: center;">
         <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">
-          New articles published regularly.
+          New articles published regularly. &nbsp;
           <a href="#newsletter-signup" style="color: var(--accent);">Subscribe to get notified →</a>
         </p>
       </div>
@@ -412,86 +610,65 @@
   </section>
 
 
-  <!-- ============================================================
-       NEWSLETTER SIGNUP
-       ============================================================ -->
+  <!-- NEWSLETTER SIGNUP -->
   <section class="section section--sm" id="newsletter-signup" aria-labelledby="newsletter-heading">
     <div class="container">
       <div class="email-capture">
         <div class="email-capture__inner">
-          <span class="label email-capture__label">Free Resource</span>
+          <span class="label email-capture__label">Stay Current</span>
           <h2 id="newsletter-heading">Get new research delivered to your inbox</h2>
           <p>
             Plus receive a free personalized altitude performance report — covering your VO₂ max impact,
             acclimatization timeline, training adjustments, and nutrition strategy.
           </p>
           <form class="email-capture__form section-email-form" novalidate>
-            <input
-              type="email"
-              class="form-input"
-              placeholder="your@email.com"
-              aria-label="Email address"
-              required
-            >
+            <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
             <button type="submit" class="btn btn--primary">Get My Free Report</button>
           </form>
           <div class="success-msg" style="justify-content: center;">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#3FB950"/><path d="M5 8l2 2 4-4" stroke="#0D1117" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             You're in! Your free report is on its way.
           </div>
-          <p class="email-capture__disclaimer">
-            No spam. Unsubscribe anytime.
-          </p>
+          <p class="email-capture__disclaimer">No spam. Unsubscribe anytime.</p>
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
+  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__inner">
-
         <div class="footer__brand">
           <a href="index.html" class="footer__logo" aria-label="Altitude Performance Lab home">
             <div class="footer__logo-mark">APL</div>
             <span class="footer__logo-text">Altitude<span>Performance</span>Lab</span>
           </a>
-          <p>
-            Science-backed tools and resources to help athletes understand and conquer
-            altitude's impact on performance.
-          </p>
+          <p>Science-backed tools and resources to help athletes understand and conquer altitude's impact on performance.</p>
           <a href="https://alturaperformance.com" class="footer__powered" target="_blank" rel="noopener">
-            <span class="footer__powered-label">Powered by</span>
-            Altura Performance
+            <span class="footer__powered-label">Powered by</span>Altura Performance
           </a>
         </div>
-
         <div>
           <div class="footer__col-title">Tools</div>
           <ul class="footer__links">
-            <li><a href="calculator/dist/index.html">Altitude Performance Calculator</a></li>
-            <li><a href="calculator/dist/index.html">Hydration Calculator</a></li>
-            <li><a href="calculator/dist/index.html">Nutrition Estimator</a></li>
+            <li><a href="tools.html#altitude-calculator">Altitude Performance Calculator</a></li>
+            <li><a href="tools.html#zone-adjuster">Training Zone Adjuster</a></li>
+            <li><a href="tools.html#nutrition-calculator">Nutrition &amp; Hydration Calculator</a></li>
           </ul>
         </div>
-
         <div>
           <div class="footer__col-title">Resources</div>
           <ul class="footer__links">
-            <li><a href="resources.html">Acclimatization Guides</a></li>
-            <li><a href="resources.html">Training</a></li>
-            <li><a href="resources.html">Nutrition &amp; Supplements</a></li>
-            <li><a href="resources.html">Science &amp; Research</a></li>
+            <li><a href="resources.html?filter=acclimatization">Acclimatization</a></li>
+            <li><a href="resources.html?filter=training">Training</a></li>
+            <li><a href="resources.html?filter=nutrition">Nutrition &amp; Supplements</a></li>
+            <li><a href="resources.html?filter=science">Science &amp; Research</a></li>
             <li><a href="terms.html">Terms of Use</a></li>
           </ul>
         </div>
-
       </div>
-
       <div class="footer__bottom">
         <span class="footer__copyright">© 2026 Altitude Performance Lab. All rights reserved.</span>
         <span class="footer__copyright"><a href="terms.html" style="color: var(--text-muted); text-decoration: none;">Terms of Use</a></span>
@@ -499,6 +676,6 @@
     </div>
   </footer>
 
-  <script src="js/calculators.js"></script>
+  <script src="js/calculators.js?v=2"></script>
 </body>
 </html>

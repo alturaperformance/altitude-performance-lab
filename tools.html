@@ -4,393 +4,515 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <title>Altitude Performance Calculator | Free Tools | Altitude Performance Lab</title>
-  <meta name="description" content="Calculate exactly how altitude affects your VO₂ max, race times, and training. Free altitude performance calculator for runners, cyclists, and endurance athletes.">
-  <meta name="keywords" content="altitude performance calculator, VO2 max altitude calculator, altitude running calculator, high altitude training tool, acclimatization timeline">
+  <title>Altitude Performance Tools | Altitude Performance Lab</title>
+  <meta name="description" content="Three free calculators for athletes at altitude: the Altitude Performance Calculator, Training Zone Adjuster, and Nutrition & Hydration Calculator.">
+  <meta name="keywords" content="altitude performance calculator, training zone adjuster altitude, altitude nutrition calculator, high altitude tools athletes">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://altitudeperformancelab.com/tools.html">
 
-  <!-- Open Graph -->
   <meta property="og:type"        content="website">
-  <meta property="og:title"       content="Altitude Performance Calculator | Altitude Performance Lab">
-  <meta property="og:description" content="Free calculator: see exactly how altitude affects your VO₂ max, performance, and acclimatization timeline.">
+  <meta property="og:title"       content="Altitude Performance Tools | Altitude Performance Lab">
+  <meta property="og:description" content="Free science-backed calculators for athletes training and competing at altitude.">
   <meta property="og:url"         content="https://altitudeperformancelab.com/tools.html">
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Altitude Performance Calculator",
-    "url": "https://altitudeperformancelab.com/tools.html",
-    "description": "Free calculator that quantifies how altitude impacts VO2 max, pace, power output, and acclimatization timeline for endurance athletes.",
-    "applicationCategory": "SportsApplication",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-  }
-  </script>
-
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .tool-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0;
+    }
+    .tool-section {
+      padding: 56px 0 48px;
+    }
+    .tool-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .tool-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: var(--font-mono);
+    }
+    .featured-tool-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: center;
+    }
+    @media (max-width: 640px) {
+      .featured-tool-card { grid-template-columns: 1fr; }
+    }
+    .featured-tool-features {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .featured-tool-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .featured-tool-feature::before {
+      content: '✓';
+      color: var(--success);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-       ============================================================ -->
+  <!-- Netlify Forms detection -->
+  <form name="performance-calculator-lead" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" />
+    <input type="text" name="lastName" />
+    <input type="email" name="email" />
+    <input type="text" name="targetAlt" />
+    <input type="text" name="sport" />
+    <input type="text" name="bot-field" />
+  </form>
+  <form name="nutrition-calculator-lead" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" />
+    <input type="text" name="lastName" />
+    <input type="email" name="email" />
+    <input type="text" name="targetAlt" />
+    <input type="text" name="trainingLoad" />
+    <input type="text" name="bot-field" />
+  </form>
+
+  <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo" aria-label="Altitude Performance Lab home">
         <div class="nav__logo-mark">APL</div>
         <span class="nav__logo-text">Altitude<span>Performance</span>Lab</span>
       </a>
-
       <ul class="nav__links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="acclimatization.html">Acclimatization</a></li>
-        <li><a href="training.html">Training</a></li>
-        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="tools.html" class="active">Tools</a></li>
         <li><a href="resources.html">Resources</a></li>
       </ul>
-
-      <div class="nav__cta">
-        <a href="calculator/dist/index.html" class="btn btn--primary btn--sm">Try the Calculator →</a>
-      </div>
-
       <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-
   <div class="nav__mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
     <a href="index.html">Home</a>
-    <a href="acclimatization.html">Acclimatization</a>
-    <a href="training.html">Training</a>
-    <a href="nutrition.html">Nutrition</a>
+    <a href="tools.html">Tools</a>
     <a href="resources.html">Resources</a>
-    <a href="calculator/dist/index.html" class="btn btn--primary" style="margin-top: 8px;">Try the Calculator →</a>
   </div>
 
 
-  <!-- ============================================================
-       PAGE HERO
-       ============================================================ -->
+  <!-- PAGE HERO -->
   <section class="page-hero" aria-labelledby="tools-page-heading">
     <div class="container">
       <div class="page-hero__inner">
-        <span class="label">Free Tools</span>
-        <h1 id="tools-page-heading" style="margin-top: 12px; margin-bottom: 16px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <span style="font-size: 1.5rem;">🛠️</span>
+          <span class="label">Tools</span>
+        </div>
+        <h1 id="tools-page-heading" style="margin-bottom: 16px;">
           Altitude Performance Tools
         </h1>
-        <p style="font-size: 1.0625rem; max-width: 560px;">
-          Interactive calculators built on peer-reviewed altitude physiology research.
-          Enter your numbers — get instant, personalized results.
+        <p style="font-size: 1.0625rem; max-width: 600px; margin-bottom: 28px;">
+          Three free calculators built on exercise physiology research — to help you train at the right intensity,
+          fuel correctly, and race smart above sea level.
         </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="#altitude-calculator" class="btn btn--ghost btn--sm">↓ Altitude Performance Calculator</a>
+          <a href="#zone-adjuster" class="btn btn--ghost btn--sm">↓ Training Zone Adjuster</a>
+          <a href="#nutrition-calculator" class="btn btn--ghost btn--sm">↓ Nutrition &amp; Hydration</a>
+        </div>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================================
-       ALTITUDE PERFORMANCE CALCULATOR
-       ============================================================ -->
-  <section class="section" style="padding-top: 48px;" aria-labelledby="calculator-heading">
+  <!-- TOOL 1: Altitude Performance Calculator -->
+  <section id="altitude-calculator" class="tool-section" aria-labelledby="apc-heading">
     <div class="container">
 
-      <!-- Section label -->
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <span class="badge badge--success">Live</span>
-          <h2 id="calculator-heading" style="font-size: 1.375rem; margin: 0;">Altitude Performance Calculator</h2>
+      <div class="tool-header">
+        <div class="tool-number">01</div>
+        <div>
+          <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); letter-spacing: 0.08em; margin-bottom: 2px;">MULTI-STEP ASSESSMENT</div>
+          <h2 id="apc-heading" style="font-size: 1.25rem; margin: 0;">Altitude Performance Calculator</h2>
         </div>
       </div>
 
-      <div class="calculator-layout">
-
-        <!-- ===== FORM ===== -->
+      <div class="featured-tool-card">
         <div>
-          <div class="calculator-form">
-            <div class="calculator-form__header">
-              <div class="calculator-form__header-left">
-                <div class="calculator-form__icon">📊</div>
-                <div>
-                  <div class="calculator-form__title">Performance Analysis</div>
-                  <div class="calculator-form__subtitle">Enter your details below</div>
-                </div>
+          <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 0;">
+            The most comprehensive tool we offer. Answer a few questions about your activity, fitness profile,
+            and target elevation — and get a full personalized report including oxygen availability, expected
+            performance impact, AMS risk, hydration targets, acclimatization timeline, and adjusted training zones.
+          </p>
+          <div class="featured-tool-features">
+            <div class="featured-tool-feature">O₂ availability &amp; VO₂ max reduction at your target elevation</div>
+            <div class="featured-tool-feature">Altitude sickness (AMS) risk score based on your profile</div>
+            <div class="featured-tool-feature">Personalized acclimatization timeline and day-by-day guidance</div>
+            <div class="featured-tool-feature">Adjusted heart rate training zones and pacing strategy</div>
+            <div class="featured-tool-feature">Hydration target, nutrition timing, and day-of checklist</div>
+          </div>
+          <div style="margin-top: 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+            <a href="calculator/dist/index.html" class="btn btn--primary" style="display:inline-flex; align-items:center; gap:8px;">
+              Open Calculator
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Free &nbsp;·&nbsp; ~2 minutes &nbsp;·&nbsp; No account needed</span>
+          </div>
+        </div>
+        <div style="text-align: center; flex-shrink: 0;">
+          <div style="font-size: 4rem; margin-bottom: 12px;">🏔️</div>
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase;">Full Report</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent); margin: 4px 0;">5 Metrics</div>
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.05em; color: var(--text-muted);">personalised to you</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <hr class="tool-divider">
+
+
+  <!-- TOOL 2: Training Zone Adjuster -->
+  <section id="zone-adjuster" class="tool-section" aria-labelledby="tz-calc-heading">
+    <div class="container">
+
+      <div class="tool-header">
+        <div class="tool-number">02</div>
+        <div>
+          <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); letter-spacing: 0.08em; margin-bottom: 2px;">INSTANT RESULTS</div>
+          <h2 id="tz-calc-heading" style="font-size: 1.25rem; margin: 0;">Training Zone Adjuster</h2>
+        </div>
+      </div>
+
+      <div style="max-width: 640px;">
+        <div class="calculator-form">
+          <div class="calculator-form__header">
+            <div class="calculator-form__header-left">
+              <div class="calculator-form__icon">🏃</div>
+              <div>
+                <div class="calculator-form__title">Zone Calibration</div>
+                <div class="calculator-form__subtitle">Enter your training data below</div>
               </div>
-              <!-- Unit toggle -->
-              <div class="unit-toggle" role="group" aria-label="Altitude unit">
-                <button type="button" class="active" data-unit="ft" aria-pressed="true">ft</button>
-                <button type="button" data-unit="m" aria-pressed="false">m</button>
+            </div>
+            <div class="unit-toggle" id="tz-unit-toggle" role="group" aria-label="Altitude unit">
+              <button type="button" class="active" data-unit="ft">ft</button>
+              <button type="button" data-unit="m">m</button>
+            </div>
+          </div>
+
+          <form id="training-zone-form" class="calculator-form__body" novalidate>
+
+            <div class="form-group">
+              <label class="form-label" for="tz-target-alt">
+                Target altitude <span style="color: var(--danger)">*</span>
+              </label>
+              <div class="input-with-unit">
+                <input type="number" id="tz-target-alt" class="form-input" placeholder="e.g. 8000" min="0" max="29032" aria-required="true">
+                <span class="input-unit tz-unit">ft</span>
               </div>
             </div>
 
-            <form id="altitude-calculator-form" class="calculator-form__body" novalidate>
-
-              <!-- Target Altitude -->
-              <div class="form-group">
-                <label class="form-label" for="calc-target-alt">
-                  Target altitude <span style="color: var(--danger)">*</span>
-                </label>
-                <div class="input-with-unit">
-                  <input
-                    type="number"
-                    id="calc-target-alt"
-                    class="form-input"
-                    placeholder="e.g. 8000"
-                    min="0"
-                    max="29032"
-                    aria-required="true"
-                  >
-                  <span class="input-unit">ft</span>
-                </div>
-                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">
-                  The elevation where you'll be training or competing
-                </p>
+            <div class="form-group">
+              <label class="form-label" for="tz-home-alt">Home / training altitude</label>
+              <div class="input-with-unit">
+                <input type="number" id="tz-home-alt" class="form-input" placeholder="e.g. 0 (sea level)" min="0" value="0">
+                <span class="input-unit tz-unit">ft</span>
               </div>
+            </div>
 
-              <!-- Home Altitude -->
-              <div class="form-group">
-                <label class="form-label" for="calc-home-alt">
-                  Your home / training altitude
-                </label>
-                <div class="input-with-unit">
-                  <input
-                    type="number"
-                    id="calc-home-alt"
-                    class="form-input"
-                    placeholder="e.g. 0 (sea level)"
-                    min="0"
-                    max="29032"
-                    value="0"
-                  >
-                  <span class="input-unit">ft</span>
-                </div>
-                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">
-                  Where you currently live and train (default: sea level)
-                </p>
-              </div>
-
-              <!-- Sport -->
-              <div class="form-group">
-                <label class="form-label" for="calc-sport">Primary sport / activity</label>
-                <select id="calc-sport" class="form-select" aria-label="Select your sport">
-                  <option value="running">🏃 Running</option>
-                  <option value="cycling">🚴 Cycling</option>
-                  <option value="skiing">⛷️ Skiing / Nordic</option>
-                  <option value="hiking">🥾 Hiking / Trekking</option>
-                  <option value="mountaineering">🧗 Mountaineering / Climbing</option>
-                  <option value="general">💪 General Fitness / Cross-training</option>
-                </select>
-              </div>
-
-              <!-- Fitness Level -->
-              <div class="form-group">
-                <label class="form-label" for="calc-fitness">Fitness level</label>
-                <select id="calc-fitness" class="form-select" aria-label="Select your fitness level">
-                  <option value="recreational">Recreational — occasional training, general fitness</option>
-                  <option value="intermediate" selected>Intermediate — consistent training, some events</option>
-                  <option value="advanced">Advanced — regular structured training, competitive events</option>
-                  <option value="competitive">Competitive — serious racer / performance athlete</option>
-                  <option value="elite">Elite — professional or near-professional level</option>
-                </select>
-                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">
-                  Elite athletes are more sensitive to altitude — their performance ceiling is closer to their VO₂ max.
-                </p>
-              </div>
-
-              <!-- Error message -->
-              <div
-                id="calc-error"
-                style="display: none; padding: 10px 14px; background: var(--danger-dim); border: 1px solid rgba(248,81,73,0.3); border-radius: var(--radius); font-size: 0.875rem; color: var(--danger);"
-                role="alert"
-              ></div>
-
-              <div class="calculator-form__footer">
-                <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
-                  Calculate My Altitude Impact →
+            <div class="form-group">
+              <label class="form-label">Training metric</label>
+              <div style="display: flex; gap: 8px;">
+                <button type="button" class="metric-toggle-btn active" data-metric="ftp"
+                  style="flex: 1; padding: 10px; background: var(--accent-dim); border: 1px solid var(--accent); border-radius: var(--radius); color: var(--accent); font-size: 0.875rem; font-weight: 600; cursor: pointer;">
+                  ⚡ Cycling FTP
+                </button>
+                <button type="button" class="metric-toggle-btn" data-metric="pace"
+                  style="flex: 1; padding: 10px; background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text-secondary); font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+                  🏃 Running Pace
                 </button>
               </div>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 6px;">Select your primary training metric</p>
+            </div>
 
-            </form>
+            <div class="form-group" id="ftp-group">
+              <label class="form-label" for="tz-ftp">Current FTP (watts)</label>
+              <input type="number" id="tz-ftp" class="form-input" placeholder="e.g. 280" min="50" max="600">
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Your functional threshold power at home altitude</p>
+            </div>
+
+            <div class="form-group" id="pace-group" style="display: none;">
+              <label class="form-label" for="tz-pace">Threshold pace (min:sec per mile)</label>
+              <input type="text" id="tz-pace" class="form-input" placeholder="e.g. 7:30" pattern="\d{1,2}:\d{2}">
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Your 1-hour race pace or lactate threshold pace at home altitude</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tz-sport">Sport</label>
+              <select id="tz-sport" class="form-select">
+                <option value="cycling">🚴 Cycling</option>
+                <option value="running">🏃 Running</option>
+                <option value="skiing">⛷️ Nordic Skiing</option>
+                <option value="general">💪 General Endurance</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tz-fitness">Fitness level</label>
+              <select id="tz-fitness" class="form-select">
+                <option value="recreational">Recreational</option>
+                <option value="intermediate" selected>Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="competitive">Competitive</option>
+                <option value="elite">Elite</option>
+              </select>
+            </div>
+
+            <div id="tz-error" style="display: none; padding: 10px 14px; background: var(--danger-dim); border: 1px solid rgba(248,81,73,0.3); border-radius: var(--radius); font-size: 0.875rem; color: var(--danger);" role="alert"></div>
+
+            <div class="calculator-form__footer">
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+                Adjust My Training Zones →
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+        <div style="margin-top: 20px; padding: 14px 18px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+          <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.7; margin: 0;">
+            <strong style="color: var(--text-primary);">Heart rate at altitude:</strong>
+            HR zones (in BPM) don't shift — your max HR stays the same. But HR runs <em>higher</em> for equivalent effort, especially above 8,000 ft. Use power or pace to set intensity, and treat elevated HR as a warning sign to back off.
+          </p>
+        </div>
+
+        <!-- Results -->
+        <div class="results-panel" style="margin-top: 24px;">
+          <div class="results-placeholder" id="tz-placeholder">
+            <div class="results-placeholder__icon">🏃</div>
+            <h3>Your adjusted zones will appear here</h3>
+            <p>Enter your altitude, metric type, and current training values to get altitude-calibrated zones.</p>
           </div>
+          <div id="tz-results-container"></div>
 
-          <!-- Altitude Zone Reference -->
-          <div class="altitude-zones mt-24">
-            <div class="altitude-zones__title">Altitude Zone Reference</div>
-            <div class="altitude-zone">
-              <div class="altitude-zone__dot" style="background: var(--success)"></div>
-              <span class="altitude-zone__label">Low Altitude</span>
-              <span class="altitude-zone__range">&lt; 5,000 ft / 1,500 m</span>
-            </div>
-            <div class="altitude-zone">
-              <div class="altitude-zone__dot" style="background: var(--warning)"></div>
-              <span class="altitude-zone__label">Moderate Altitude</span>
-              <span class="altitude-zone__range">5,000–8,200 ft / 1,500–2,500 m</span>
-            </div>
-            <div class="altitude-zone">
-              <div class="altitude-zone__dot" style="background: #F0A741"></div>
-              <span class="altitude-zone__label">High Altitude</span>
-              <span class="altitude-zone__range">8,200–11,500 ft / 2,500–3,500 m</span>
-            </div>
-            <div class="altitude-zone">
-              <div class="altitude-zone__dot" style="background: var(--danger)"></div>
-              <span class="altitude-zone__label">Very High Altitude</span>
-              <span class="altitude-zone__range">11,500–18,000 ft / 3,500–5,500 m</span>
-            </div>
-            <div class="altitude-zone">
-              <div class="altitude-zone__dot" style="background: #8B0000"></div>
-              <span class="altitude-zone__label">Extreme Altitude</span>
-              <span class="altitude-zone__range">&gt; 18,000 ft / 5,500 m</span>
-            </div>
+          <!-- Lead Gate -->
+          <div class="report-gate" id="tz-report-gate" style="display:none;" aria-live="polite">
+            <div class="report-gate__icon">🏔️</div>
+            <div class="report-gate__title">Your zones are ready</div>
+            <div class="report-gate__sub">Enter your name and email to unlock your altitude-adjusted training zones.</div>
+            <form id="tz-gate-form" novalidate style="display:flex; flex-direction:column; gap:12px; max-width:420px; margin:0 auto; text-align:left;">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                <div>
+                  <label class="form-label" for="tz-first-name">First name</label>
+                  <input type="text" id="tz-first-name" class="form-input" placeholder="Jane" required>
+                </div>
+                <div>
+                  <label class="form-label" for="tz-last-name">Last name</label>
+                  <input type="text" id="tz-last-name" class="form-input" placeholder="Smith" required>
+                </div>
+              </div>
+              <div>
+                <label class="form-label" for="tz-email">Email address</label>
+                <input type="email" id="tz-email" class="form-input" placeholder="jane@example.com" required>
+              </div>
+              <button type="submit" class="btn btn--primary" style="width:100%;">Unlock My Zones →</button>
+            </form>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
           </div>
         </div>
 
-        <!-- ===== RESULTS ===== -->
-        <div class="results-panel">
-
-          <!-- Placeholder (shown before calculation) -->
-          <div class="results-placeholder" id="results-placeholder">
-            <div class="results-placeholder__icon">📊</div>
-            <h3>Your results will appear here</h3>
-            <p>Fill in the form and click calculate to see your personalized altitude performance analysis.</p>
-          </div>
-
-          <!-- Results container (populated by JS) -->
-          <div id="results-container"></div>
-
-          <!-- Report Gate (shown after calculation) -->
-          <div class="report-gate" id="report-gate" aria-live="polite">
-            <div class="report-gate__header">
-              <span class="label" style="margin-bottom: 8px; display: block;">Free Deep-Dive Report</span>
-              <h3>Get your complete personalized altitude report</h3>
-              <p>The calculator gives you the headline numbers. Your free report goes deeper.</p>
-            </div>
-
-            <div class="report-gate__features">
-              <div class="report-gate__feature">Personalized week-by-week acclimatization plan</div>
-              <div class="report-gate__feature">Training intensity & zone adjustments for your altitude</div>
-              <div class="report-gate__feature">Altitude-specific nutrition and iron supplementation guidance</div>
-              <div class="report-gate__feature">Sport-specific tactics for race day at elevation</div>
-            </div>
-
-            <form class="report-gate__form" id="report-gate-form" novalidate>
-              <input
-                type="email"
-                id="report-email"
-                class="form-input"
-                placeholder="your@email.com"
-                aria-label="Email address"
-                required
-              >
-              <button type="submit" class="btn btn--primary">Send My Report →</button>
-            </form>
-
-            <div id="report-gate-success" style="display: none; text-align: center; padding: 16px 0;">
-              <div style="font-size: 2rem; margin-bottom: 12px;">🎉</div>
-              <h4 style="margin-bottom: 8px;">Report sent!</h4>
-              <p style="font-size: 0.875rem;">Check your inbox for your personalized altitude performance report. It may take a few minutes to arrive.</p>
-            </div>
-
-            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px;">
-              No spam. Unsubscribe anytime.
-            </p>
-          </div>
-
+        <div style="margin-top: 24px; padding: 16px 20px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+          <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin: 0;">
+            <strong style="color: var(--text-secondary);">Methodology:</strong>
+            Performance reductions are calculated using VO₂ max reduction models (Wehrlin &amp; Hallen, 2006) applied to sport-specific aerobic dependency factors. Zone boundaries use the 5-zone Coggan/Allen model for cycling and equivalent lactate-threshold zones for running. Training volume recommendations are based on ACSM altitude training guidelines.
+          </p>
         </div>
       </div>
 
-      <!-- Methodology note -->
-      <div style="margin-top: 40px; padding: 20px 24px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
-        <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin: 0;">
-          <strong style="color: var(--text-secondary);">Methodology:</strong>
-          Calculations are based on peer-reviewed altitude physiology research including Wehrlin &amp; Hallen (2006),
-          Chapman et al. (1992), and ACSM altitude performance guidelines. VO₂ max reduction estimates assume
-          a linear decline of ~6.9% per 1,000m above 1,000m elevation. Individual responses vary based on
-          genetics, acclimatization history, and health status. These results are for informational purposes
-          and should not replace guidance from a sports medicine professional.
-        </p>
-      </div>
     </div>
   </section>
 
 
-  <!-- ============================================================
-       OTHER TOOLS — Coming Soon
-       ============================================================ -->
-  <section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border);" aria-labelledby="upcoming-heading">
+  <hr class="tool-divider">
+
+
+  <!-- TOOL 3: Nutrition & Hydration Calculator -->
+  <section id="nutrition-calculator" class="tool-section" aria-labelledby="nutr-calc-heading">
     <div class="container">
-      <div class="section-header">
-        <span class="label">Coming Soon</span>
-        <h2 id="upcoming-heading">More tools in development</h2>
-        <p>Sign up below to be notified when new calculators launch.</p>
+
+      <div class="tool-header">
+        <div class="tool-number">03</div>
+        <div>
+          <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); letter-spacing: 0.08em; margin-bottom: 2px;">INSTANT RESULTS</div>
+          <h2 id="nutr-calc-heading" style="font-size: 1.25rem; margin: 0;">Altitude Nutrition &amp; Hydration Calculator</h2>
+        </div>
       </div>
 
-      <div class="grid-3">
+      <div style="max-width: 640px;">
+        <div class="calculator-form">
+          <div class="calculator-form__header">
+            <div class="calculator-form__header-left">
+              <div class="calculator-form__icon">🥗</div>
+              <div>
+                <div class="calculator-form__title">Nutrition Analysis</div>
+                <div class="calculator-form__subtitle">Enter your details below</div>
+              </div>
+            </div>
+            <div class="unit-toggle" id="nutr-unit-toggle" role="group" aria-label="Altitude unit">
+              <button type="button" class="active" data-unit="ft">ft</button>
+              <button type="button" data-unit="m">m</button>
+            </div>
+          </div>
 
-        <div class="tool-card" style="opacity: 0.7;">
-          <div class="tool-card__icon" style="filter: grayscale(0.5);">📅</div>
-          <h3>Acclimatization Planner</h3>
-          <p>Build a day-by-day altitude adaptation schedule around your event date. Eliminate guesswork from your lead-up.</p>
-          <div class="tool-card__footer">
-            <span class="badge badge--muted">In Development</span>
+          <form id="nutrition-form" class="calculator-form__body" novalidate>
+
+            <div class="form-group">
+              <label class="form-label" for="nutr-target-alt">
+                Target altitude <span style="color: var(--danger)">*</span>
+              </label>
+              <div class="input-with-unit">
+                <input type="number" id="nutr-target-alt" class="form-input" placeholder="e.g. 8000" min="0" max="29032" aria-required="true">
+                <span class="input-unit nutr-unit">ft</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="nutr-weight">
+                Body weight <span style="color: var(--danger)">*</span>
+              </label>
+              <div style="display: flex; gap: 8px; align-items: stretch;">
+                <div class="input-with-unit" style="flex: 1;">
+                  <input type="number" id="nutr-weight" class="form-input" placeholder="e.g. 165" min="50" max="400" aria-required="true">
+                  <span class="input-unit nutr-weight-unit">lbs</span>
+                </div>
+                <div class="unit-toggle" id="nutr-weight-toggle" role="group" aria-label="Weight unit" style="flex-shrink: 0;">
+                  <button type="button" class="active" data-weight="lbs">lbs</button>
+                  <button type="button" data-weight="kg">kg</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="nutr-training">Daily training load</label>
+              <select id="nutr-training" class="form-select" aria-label="Training load">
+                <option value="rest">Rest day — no structured training</option>
+                <option value="light">Light — up to 1 hour easy effort</option>
+                <option value="moderate" selected>Moderate — 1–2 hours mixed intensity</option>
+                <option value="heavy">Heavy — 3+ hours or high intensity</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="nutr-temp">Temperature at altitude</label>
+              <select id="nutr-temp" class="form-select" aria-label="Temperature">
+                <option value="cold">Cold — below 40°F / 4°C (high alpine, winter)</option>
+                <option value="moderate" selected>Moderate — 40–70°F / 4–21°C</option>
+                <option value="warm">Warm — above 70°F / 21°C</option>
+              </select>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Cold, dry mountain air significantly increases respiratory fluid loss</p>
+            </div>
+
+            <div id="nutr-error" style="display: none; padding: 10px 14px; background: var(--danger-dim); border: 1px solid rgba(248,81,73,0.3); border-radius: var(--radius); font-size: 0.875rem; color: var(--danger);" role="alert"></div>
+
+            <div class="calculator-form__footer">
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+                Calculate My Nutrition Needs →
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+        <div style="margin-top: 20px; padding: 18px 20px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;">KEY MICRONUTRIENTS AT ALTITUDE</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--warning); font-weight: 700; flex-shrink: 0; font-size: 0.875rem;">Fe</span>
+              <p style="font-size: 0.8125rem; line-height: 1.5; margin: 0;"><strong>Iron</strong> — critical for EPO-driven RBC production. Deficiency nullifies altitude benefits.</p>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--accent); font-weight: 700; flex-shrink: 0; font-size: 0.875rem;">C</span>
+              <p style="font-size: 0.8125rem; line-height: 1.5; margin: 0;"><strong>Vitamin C</strong> — enhances iron absorption by 2–3× when consumed together.</p>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--success); font-weight: 700; flex-shrink: 0; font-size: 0.875rem;">B12</span>
+              <p style="font-size: 0.8125rem; line-height: 1.5; margin: 0;"><strong>B12 &amp; Folate</strong> — co-factors in red blood cell synthesis. Support iron with these.</p>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--text-secondary); font-weight: 700; flex-shrink: 0; font-size: 0.875rem;">E</span>
+              <p style="font-size: 0.8125rem; line-height: 1.5; margin: 0;"><strong>Antioxidants</strong> — altitude increases oxidative stress. Vitamin E and polyphenols help buffer this.</p>
+            </div>
           </div>
         </div>
 
-        <div class="tool-card" style="opacity: 0.7;">
-          <div class="tool-card__icon" style="filter: grayscale(0.5);">💧</div>
-          <h3>Altitude Hydration Calculator</h3>
-          <p>Calculate adjusted daily fluid targets based on altitude, temperature, and training load. Cold, dry air is deceptive.</p>
-          <div class="tool-card__footer">
-            <span class="badge badge--muted">In Development</span>
+        <!-- Results -->
+        <div class="results-panel" style="margin-top: 24px;">
+          <div class="results-placeholder" id="nutr-placeholder">
+            <div class="results-placeholder__icon">🥗</div>
+            <h3>Your nutrition targets will appear here</h3>
+            <p>Enter your altitude, body weight, and training load to get personalized hydration, caloric, and micronutrient targets.</p>
+          </div>
+          <div id="nutr-results-container"></div>
+
+          <!-- Lead Gate -->
+          <div class="report-gate" id="nutr-report-gate" style="display:none;" aria-live="polite">
+            <div class="report-gate__icon">🥗</div>
+            <div class="report-gate__title">Your nutrition targets are ready</div>
+            <div class="report-gate__sub">Enter your name and email to unlock your personalized hydration, caloric, and micronutrient targets.</div>
+            <form id="nutr-gate-form" novalidate style="display:flex; flex-direction:column; gap:12px; max-width:420px; margin:0 auto; text-align:left;">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                <div>
+                  <label class="form-label" for="nutr-first-name">First name</label>
+                  <input type="text" id="nutr-first-name" class="form-input" placeholder="Jane" required>
+                </div>
+                <div>
+                  <label class="form-label" for="nutr-last-name">Last name</label>
+                  <input type="text" id="nutr-last-name" class="form-input" placeholder="Smith" required>
+                </div>
+              </div>
+              <div>
+                <label class="form-label" for="nutr-email">Email address</label>
+                <input type="email" id="nutr-email" class="form-input" placeholder="jane@example.com" required>
+              </div>
+              <button type="submit" class="btn btn--primary" style="width:100%;">Unlock My Results →</button>
+            </form>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">No spam. Unsubscribe anytime.</p>
           </div>
         </div>
 
-        <div class="tool-card" style="opacity: 0.7;">
-          <div class="tool-card__icon" style="filter: grayscale(0.5);">🍽️</div>
-          <h3>Nutrition Needs Estimator</h3>
-          <p>Altitude increases caloric expenditure and alters macro needs. Get personalized nutritional targets for training at elevation.</p>
-          <div class="tool-card__footer">
-            <span class="badge badge--muted">In Development</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="grid-2" style="margin-top: 24px;">
-
-        <div class="tool-card" style="opacity: 0.7;">
-          <div class="tool-card__icon" style="filter: grayscale(0.5);">🏁</div>
-          <h3>Race Time Predictor</h3>
-          <p>Input your sea-level race time and target altitude — get a realistic finish time prediction and pacing strategy for race day.</p>
-          <div class="tool-card__footer">
-            <span class="badge badge--muted">In Development</span>
-          </div>
-        </div>
-
-        <div class="tool-card" style="background: var(--bg-tertiary); border-style: dashed; opacity: 0.5; justify-content: center; align-items: center; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 12px; opacity: 0.5;">+</div>
-          <h3 style="font-size: 1rem; color: var(--text-muted);">More coming soon</h3>
-          <p style="font-size: 0.875rem;">Have a tool idea? We'd love to hear it.</p>
-        </div>
-
-      </div>
-
-      <!-- Notify me form -->
-      <div style="margin-top: 48px; max-width: 480px; margin-left: auto; margin-right: auto; text-align: center;">
-        <p style="margin-bottom: 20px; font-size: 0.9375rem;">Get notified when new tools launch:</p>
-        <form class="email-capture__form section-email-form" novalidate style="justify-content: center;">
-          <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required>
-          <button type="submit" class="btn btn--outline">Notify Me</button>
-        </form>
-        <div class="success-msg mt-12" style="justify-content: center;">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#3FB950"/><path d="M5 8l2 2 4-4" stroke="#0D1117" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          You're on the list — we'll reach out when new tools go live.
+        <div style="margin-top: 24px; padding: 16px 20px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+          <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin: 0;">
+            <strong style="color: var(--text-secondary);">Methodology:</strong>
+            Hydration calculations are based on baseline recommendations (0.5 oz/lb bodyweight) adjusted for altitude-induced respiratory moisture loss (~6% per 1,000m above 1,000m), training load, and temperature. Caloric adjustments reflect altitude-driven BMR increases. Iron recommendations reflect the additional demand for EPO-stimulated erythropoiesis above 1,500m. These are estimates — individual variation is significant. Consult a sports dietitian for clinical guidance.
+          </p>
         </div>
       </div>
 
@@ -398,53 +520,39 @@
   </section>
 
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
+  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__inner">
-
         <div class="footer__brand">
           <a href="index.html" class="footer__logo" aria-label="Altitude Performance Lab home">
             <div class="footer__logo-mark">APL</div>
             <span class="footer__logo-text">Altitude<span>Performance</span>Lab</span>
           </a>
-          <p>
-            Science-backed tools and resources to help athletes understand and conquer
-            altitude's impact on performance.
-          </p>
+          <p>Science-backed tools and resources to help athletes understand and conquer altitude's impact on performance.</p>
           <a href="https://alturaperformance.com" class="footer__powered" target="_blank" rel="noopener">
-            <span class="footer__powered-label">Powered by</span>
-            Altura Performance
+            <span class="footer__powered-label">Powered by</span>Altura Performance
           </a>
         </div>
-
         <div>
           <div class="footer__col-title">Tools</div>
           <ul class="footer__links">
-            <li><a href="calculator/dist/index.html">Altitude Performance Calculator</a></li>
-            <li><a href="calculator/dist/index.html">Acclimatization Planner</a></li>
-            <li><a href="calculator/dist/index.html">Hydration Calculator</a></li>
-            <li><a href="calculator/dist/index.html">Nutrition Estimator</a></li>
+            <li><a href="tools.html#altitude-calculator">Altitude Performance Calculator</a></li>
+            <li><a href="tools.html#zone-adjuster">Training Zone Adjuster</a></li>
+            <li><a href="tools.html#nutrition-calculator">Nutrition &amp; Hydration Calculator</a></li>
           </ul>
         </div>
-
         <div>
           <div class="footer__col-title">Resources</div>
           <ul class="footer__links">
-            <li><a href="resources.html">Acclimatization Guides</a></li>
-            <li><a href="resources.html">Training</a></li>
-            <li><a href="resources.html">Nutrition &amp; Supplements</a></li>
-            <li><a href="resources.html">Science &amp; Research</a></li>
+            <li><a href="resources.html">All Articles</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
           </ul>
         </div>
-
       </div>
-
       <div class="footer__bottom">
         <span class="footer__copyright">© 2026 Altitude Performance Lab. All rights reserved.</span>
-        <span class="footer__copyright">Built for athletes who take altitude seriously.</span>
+        <span class="footer__copyright"><a href="terms.html" style="color: var(--text-muted); text-decoration: none;">Terms of Use</a></span>
       </div>
     </div>
   </footer>

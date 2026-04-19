@@ -273,8 +273,7 @@ export default function App() {
           </a>
           <ul className="site-nav__links">
             <li><a href={`${BASE}index.html`}>Home</a></li>
-            <li><a href={`${BASE}performance.html`}>Performance</a></li>
-            <li><a href={`${BASE}nutrition.html`}>Nutrition</a></li>
+            <li><a href={`${BASE}tools.html`}>Tools</a></li>
             <li><a href={`${BASE}resources.html`}>Resources</a></li>
           </ul>
           <div className="site-nav__right">
@@ -292,8 +291,7 @@ export default function App() {
 
       <div className={`site-nav__mobile${mobileNavOpen ? ' open' : ''}`}>
         <a href={`${BASE}index.html`} onClick={() => setMobileNavOpen(false)}>Home</a>
-        <a href={`${BASE}performance.html`} onClick={() => setMobileNavOpen(false)}>Performance</a>
-        <a href={`${BASE}nutrition.html`} onClick={() => setMobileNavOpen(false)}>Nutrition</a>
+        <a href={`${BASE}tools.html`} onClick={() => setMobileNavOpen(false)}>Tools</a>
         <a href={`${BASE}resources.html`} onClick={() => setMobileNavOpen(false)}>Resources</a>
         <div style={{ padding: '8px 0' }}><UnitToggle units={units} setUnits={handleSetUnits} /></div>
       </div>

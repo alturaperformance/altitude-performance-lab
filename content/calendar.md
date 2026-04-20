@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-19. (93 articles published through 2026-04-19; 16 topics queued as of 2026-04-19)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-20. (94 articles published through 2026-04-20; 15 topics queued as of 2026-04-20)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -113,7 +113,7 @@
 | 91 | epigenetics altitude training | gene expression hypoxia, epigenetic altitude adaptations, heritable altitude response athletes | informational | Epigenetics and Altitude Training: How High Elevation Changes Your Gene Expression | epigenetics-altitude-training-gene-expression.md | PUBLISHED 2026-04-19 |
 | 92 | individual variation EPO altitude | non-responders altitude training, why altitude doesnt work everyone, EPO response predictors | informational | Why Altitude Training Doesn't Work the Same for Everyone: Understanding Individual EPO Response | individual-variation-epo-altitude-non-responders.md | PUBLISHED 2026-04-19 |
 | 93 | continuous glucose monitoring altitude | CGM at altitude, blood sugar high altitude athletes, glucose variability elevation training | informational | Continuous Glucose Monitoring at Altitude: What CGM Data Reveals About Fueling at High Elevation | continuous-glucose-monitoring-altitude-athletes.md | PUBLISHED 2026-04-19 |
-| 94 | lactate testing altitude | blood lactate altitude, lactate threshold elevation, lactate zones altitude training | informational | Lactate Testing at Altitude: How to Set Accurate Training Zones When the Air Gets Thin | lactate-testing-altitude-training-zones.md | QUEUED |
+| 94 | lactate testing altitude | blood lactate altitude, lactate threshold elevation, lactate zones altitude training | informational | Lactate Testing at Altitude: How to Set Accurate Training Zones When the Air Gets Thin | lactate-testing-altitude-training-zones.md | PUBLISHED 2026-04-20 |
 | 95 | power meter altitude training | cycling watts altitude, power output elevation, altitude power adjustment cycling | tool-seeking | Power Meters at Altitude: How Elevation Affects Your Watts (And How to Reset Your Training Zones) | power-meter-altitude-watts-training-zones.md | QUEUED |
 | 96 | VO2 max testing altitude | VO2 max test at elevation, aerobic capacity altitude measurement, maximal oxygen uptake high altitude | informational | VO2 Max Testing at Altitude: How Elevation Affects Results and What the Numbers Mean | vo2-max-testing-altitude-protocol-results.md | QUEUED |
 | 97 | beetroot nitrate altitude | dietary nitrate altitude performance, beet juice elevation, nitric oxide hypoxia athletes | informational | Beetroot and Dietary Nitrates at Altitude: Can They Offset the Performance Hit of Thin Air? | beetroot-nitrate-altitude-performance-athletes.md | QUEUED |
@@ -223,6 +223,7 @@
 | 91 | Epigenetics and Altitude Training: How High Elevation Changes Your Gene Expression | src/articles/epigenetics-altitude-training-gene-expression.md | 2026-04-19 |
 | 92 | Why Altitude Training Doesn't Work the Same for Everyone: Understanding Individual EPO Response | src/articles/individual-variation-epo-altitude-non-responders.md | 2026-04-19 |
 | 93 | Continuous Glucose Monitoring at Altitude: What CGM Data Reveals About Fueling at High Elevation | src/articles/continuous-glucose-monitoring-altitude-athletes.md | 2026-04-19 |
+| 94 | Lactate Testing at Altitude: How to Set Accurate Training Zones When the Air Gets Thin | src/articles/lactate-testing-altitude-training-zones.md | 2026-04-20 |
 | 88 | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | src/articles/eldoret-kenya-altitude-training-rift-valley.md | 2026-04-18 |
 
 ---

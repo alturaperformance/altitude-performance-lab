@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-18. (88 articles published through 2026-04-18; 21 topics queued as of 2026-04-18)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-19. (93 articles published through 2026-04-19; 16 topics queued as of 2026-04-19)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -108,11 +108,11 @@
 | 86 | creatine altitude training | creatine high altitude dehydration, creatine supplementation altitude athletes, creatine hypoxia | informational | Creatine at Altitude: Does It Help Performance — or Increase Dehydration Risk? | creatine-altitude-training-dehydration-risk.md | PUBLISHED 2026-04-18 |
 | 87 | altitude training for MMA fighters | combat sports altitude camp, boxing altitude training, martial arts altitude conditioning | informational | Altitude Training for Combat Sports: How MMA Fighters and Boxers Use Elevation to Build a Gas Tank | altitude-training-mma-combat-sports-boxing.md | PUBLISHED 2026-04-18 |
 | 88 | Eldoret Kenya altitude training | Eldoret altitude training camp, Kenya Rift Valley altitude, distance running Kenya elevation | informational | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | eldoret-kenya-altitude-training-rift-valley.md | PUBLISHED 2026-04-18 |
-| 89 | NSAIDs altitude risk | ibuprofen at altitude, aspirin altitude sickness, anti-inflammatories altitude athletes | informational | NSAIDs at Altitude: Why Ibuprofen and Aspirin Come With Extra Risk at High Elevation | nsaids-ibuprofen-altitude-risk-athletes.md | QUEUED |
-| 90 | genetics of altitude response | EPAS1 gene altitude athletes, altitude training genetics, genetic variation hypoxia response | informational | Genetics of Altitude Response: Why Some Athletes Thrive at Elevation (And Others Struggle) | genetics-altitude-response-epas1-athletes.md | QUEUED |
-| 91 | epigenetics altitude training | gene expression hypoxia, epigenetic altitude adaptations, heritable altitude response athletes | informational | Epigenetics and Altitude Training: How High Elevation Changes Your Gene Expression | epigenetics-altitude-training-gene-expression.md | QUEUED |
-| 92 | individual variation EPO altitude | non-responders altitude training, why altitude doesnt work everyone, EPO response predictors | informational | Why Altitude Training Doesn't Work the Same for Everyone: Understanding Individual EPO Response | individual-variation-epo-altitude-non-responders.md | QUEUED |
-| 93 | continuous glucose monitoring altitude | CGM at altitude, blood sugar high altitude athletes, glucose variability elevation training | informational | Continuous Glucose Monitoring at Altitude: What CGM Data Reveals About Fueling at High Elevation | continuous-glucose-monitoring-altitude-athletes.md | QUEUED |
+| 89 | NSAIDs altitude risk | ibuprofen at altitude, aspirin altitude sickness, anti-inflammatories altitude athletes | informational | NSAIDs at Altitude: Why Ibuprofen and Aspirin Come With Extra Risk at High Elevation | nsaids-ibuprofen-altitude-risk-athletes.md | PUBLISHED 2026-04-19 |
+| 90 | genetics of altitude response | EPAS1 gene altitude athletes, altitude training genetics, genetic variation hypoxia response | informational | Genetics of Altitude Response: Why Some Athletes Thrive at Elevation (And Others Struggle) | genetics-altitude-response-epas1-athletes.md | PUBLISHED 2026-04-19 |
+| 91 | epigenetics altitude training | gene expression hypoxia, epigenetic altitude adaptations, heritable altitude response athletes | informational | Epigenetics and Altitude Training: How High Elevation Changes Your Gene Expression | epigenetics-altitude-training-gene-expression.md | PUBLISHED 2026-04-19 |
+| 92 | individual variation EPO altitude | non-responders altitude training, why altitude doesnt work everyone, EPO response predictors | informational | Why Altitude Training Doesn't Work the Same for Everyone: Understanding Individual EPO Response | individual-variation-epo-altitude-non-responders.md | PUBLISHED 2026-04-19 |
+| 93 | continuous glucose monitoring altitude | CGM at altitude, blood sugar high altitude athletes, glucose variability elevation training | informational | Continuous Glucose Monitoring at Altitude: What CGM Data Reveals About Fueling at High Elevation | continuous-glucose-monitoring-altitude-athletes.md | PUBLISHED 2026-04-19 |
 | 94 | lactate testing altitude | blood lactate altitude, lactate threshold elevation, lactate zones altitude training | informational | Lactate Testing at Altitude: How to Set Accurate Training Zones When the Air Gets Thin | lactate-testing-altitude-training-zones.md | QUEUED |
 | 95 | power meter altitude training | cycling watts altitude, power output elevation, altitude power adjustment cycling | tool-seeking | Power Meters at Altitude: How Elevation Affects Your Watts (And How to Reset Your Training Zones) | power-meter-altitude-watts-training-zones.md | QUEUED |
 | 96 | VO2 max testing altitude | VO2 max test at elevation, aerobic capacity altitude measurement, maximal oxygen uptake high altitude | informational | VO2 Max Testing at Altitude: How Elevation Affects Results and What the Numbers Mean | vo2-max-testing-altitude-protocol-results.md | QUEUED |
@@ -218,6 +218,11 @@
 | 85 | Altitude Training for Paralympic Athletes: Unique Considerations for Adaptive Sport at Elevation | src/articles/altitude-training-paralympic-adaptive-athletes.md | 2026-04-18 |
 | 86 | Creatine at Altitude: Does It Help Performance — or Increase Dehydration Risk? | src/articles/creatine-altitude-training-dehydration-risk.md | 2026-04-18 |
 | 87 | Altitude Training for Combat Sports: How MMA Fighters and Boxers Use Elevation to Build a Gas Tank | src/articles/altitude-training-mma-combat-sports-boxing.md | 2026-04-18 |
+| 89 | NSAIDs at Altitude: Why Ibuprofen and Aspirin Come With Extra Risk at High Elevation | src/articles/nsaids-ibuprofen-altitude-risk-athletes.md | 2026-04-19 |
+| 90 | Genetics of Altitude Response: Why Some Athletes Thrive at Elevation (And Others Struggle) | src/articles/genetics-altitude-response-epas1-athletes.md | 2026-04-19 |
+| 91 | Epigenetics and Altitude Training: How High Elevation Changes Your Gene Expression | src/articles/epigenetics-altitude-training-gene-expression.md | 2026-04-19 |
+| 92 | Why Altitude Training Doesn't Work the Same for Everyone: Understanding Individual EPO Response | src/articles/individual-variation-epo-altitude-non-responders.md | 2026-04-19 |
+| 93 | Continuous Glucose Monitoring at Altitude: What CGM Data Reveals About Fueling at High Elevation | src/articles/continuous-glucose-monitoring-altitude-athletes.md | 2026-04-19 |
 | 88 | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | src/articles/eldoret-kenya-altitude-training-rift-valley.md | 2026-04-18 |
 
 ---

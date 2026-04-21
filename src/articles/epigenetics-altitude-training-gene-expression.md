@@ -1,3 +1,11 @@
+---
+title: "Epigenetics and Altitude Training: How High Elevation Changes Your Gene Expression"
+description: "Altitude training doesn't just stress your physiology — it remodels how your genes are read. Here's what the emerging science of epigenetics reveals about high-elevation adaptation."
+date: 2026-04-19
+category: Training Science
+tags: [articles, altitude training]
+---
+
 # Epigenetics and Altitude Training: How High Elevation Changes Your Gene Expression
 
 Altitude training has long been prized for its measurable physiological effects — elevated EPO, increased red blood cell mass, improved oxygen-carrying capacity. But beneath these well-documented adaptations lies a deeper layer of biology that most coaches and athletes never consider: **epigenetics altitude training**. Emerging research shows that exposure to high elevation doesn't just stress your physiology — it actually remodels the way your genes are read, potentially creating durable changes that persist long after you come back down to sea level.

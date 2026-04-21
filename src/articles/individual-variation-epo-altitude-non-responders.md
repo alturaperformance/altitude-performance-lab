@@ -1,3 +1,11 @@
+---
+title: "Why Altitude Training Doesn't Work the Same for Everyone: Understanding Individual EPO Response"
+description: "Individual variation in EPO response to altitude is enormous. Some athletes thrive; others don't respond. Here's what the research says and how to identify which camp you're in."
+date: 2026-04-19
+category: Training Science
+tags: [articles, altitude training]
+---
+
 # Why Altitude Training Doesn't Work the Same for Everyone: Understanding Individual EPO Response
 
 Altitude training has built a near-mythical reputation in endurance sport — elite Kenyan runners, Tour de France contenders, and Olympic distance swimmers all chase the thin air of elevation blocks to gain a hematological edge. Yet a consistent and inconvenient finding runs through decades of research: **individual variation in EPO response to altitude** is enormous. Some athletes emerge from a three-week camp with dramatically elevated red blood cell mass and a clear performance boost. Others finish the same block with almost nothing to show for it. Understanding why — and what to do about it — is one of the most practically important questions in applied sports physiology.

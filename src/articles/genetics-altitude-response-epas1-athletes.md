@@ -1,3 +1,11 @@
+---
+title: "Genetics of Altitude Response: Why Some Athletes Thrive at Elevation (And Others Struggle)"
+description: "Why do some athletes respond dramatically to altitude training while others barely adapt? The answer is in your genes — here's what EPAS1 and other variants mean for your training."
+date: 2026-04-19
+category: Training Science
+tags: [articles, altitude training]
+---
+
 # Genetics of Altitude Response: Why Some Athletes Thrive at Elevation (And Others Struggle)
 
 Two athletes follow an identical altitude training block — same elevation, same volume, same recovery protocol. One returns sea level with a significantly elevated hemoglobin mass and a new personal best. The other feels flattened for weeks and races slower than before. The difference often comes down to the **genetics of altitude response**: a set of inherited variations that determine how powerfully your body activates its oxygen-sensing machinery when the air gets thin.

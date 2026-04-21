@@ -1,3 +1,11 @@
+---
+title: "Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m"
+description: "Eldoret, Kenya sits at 2,100m in the Rift Valley and has produced more Olympic champions than any location on earth. Here's the physiology, training environment, and practical guide for athletes considering a camp here."
+date: 2026-04-18
+category: Training Destinations
+tags: [articles, altitude training]
+---
+
 # Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m
 
 Eldoret kenya altitude training has shaped more Olympic champions and world record holders than any other single location on earth. Nestled in the Rift Valley highlands of western Kenya at roughly 2,100 meters (6,890 feet) above sea level, Eldoret sits at the center of a distance running culture that defies easy explanation — yet the physiology behind its dominance is increasingly well understood. For serious athletes and coaches seeking to replicate, study, or simply understand what happens when elite humans train at this elevation, Eldoret offers a masterclass in applied altitude science.

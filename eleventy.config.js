@@ -12,11 +12,14 @@ export default function (eleventyConfig) {
 
   // Filters
   eleventyConfig.addFilter("dateISO", (date) => {
-    return new Date(date).toISOString();
+    const parsed = new Date(date);
+    return isNaN(parsed) ? "" : parsed.toISOString();
   });
 
   eleventyConfig.addFilter("dateDisplay", (date) => {
-    return new Date(date).toLocaleDateString("en-US", {
+    const parsed = new Date(date);
+    if (isNaN(parsed)) return "";
+    return parsed.toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
       day: "numeric",

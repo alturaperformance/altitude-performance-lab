@@ -1,3 +1,11 @@
+---
+title: "NSAIDs at Altitude: Why Ibuprofen and Aspirin Come With Extra Risk at High Elevation"
+description: "Reaching for ibuprofen at altitude feels routine — but NSAIDs interact with the same systems altitude stress already pushes to their limits. Here's the risk athletes and coaches need to understand."
+date: 2026-04-20
+category: Health & Safety
+tags: [articles, altitude training]
+---
+
 # NSAIDs at Altitude: Why Ibuprofen and Aspirin Come With Extra Risk at High Elevation
 
 For athletes who train or compete at elevation, reaching for ibuprofen after a hard day in the mountains feels routine. But the **NSAIDs altitude risk** calculus is fundamentally different above 8,000 feet. Non-steroidal anti-inflammatory drugs interact with the same physiological systems that altitude stress pushes to their limits — and that overlap can turn a common painkiller into a genuine hazard. Here is what the science says, and what every serious mountain athlete and coach needs to know before the next expedition or altitude training block.

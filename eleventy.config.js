@@ -33,6 +33,8 @@ export default function (eleventyConfig) {
       .replace(/^-|-$/g, "");
   });
 
+  eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
+
   return {
     dir: {
       input: "src",

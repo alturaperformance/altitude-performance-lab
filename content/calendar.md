@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-21. (95 articles published through 2026-04-21; 14 topics queued as of 2026-04-21)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-23. (97 articles published through 2026-04-23; 12 topics queued as of 2026-04-23)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -115,8 +115,8 @@
 | 93 | continuous glucose monitoring altitude | CGM at altitude, blood sugar high altitude athletes, glucose variability elevation training | informational | Continuous Glucose Monitoring at Altitude: What CGM Data Reveals About Fueling at High Elevation | continuous-glucose-monitoring-altitude-athletes.md | PUBLISHED 2026-04-19 |
 | 94 | lactate testing altitude | blood lactate altitude, lactate threshold elevation, lactate zones altitude training | informational | Lactate Testing at Altitude: How to Set Accurate Training Zones When the Air Gets Thin | lactate-testing-altitude-training-zones.md | PUBLISHED 2026-04-20 |
 | 95 | power meter altitude training | cycling watts altitude, power output elevation, altitude power adjustment cycling | tool-seeking | Power Meters at Altitude: How Elevation Affects Your Watts (And How to Reset Your Training Zones) | power-meter-altitude-watts-training-zones.md | PUBLISHED 2026-04-21 |
-| 96 | VO2 max testing altitude | VO2 max test at elevation, aerobic capacity altitude measurement, maximal oxygen uptake high altitude | informational | VO2 Max Testing at Altitude: How Elevation Affects Results and What the Numbers Mean | vo2-max-testing-altitude-protocol-results.md | QUEUED |
-| 97 | beetroot nitrate altitude | dietary nitrate altitude performance, beet juice elevation, nitric oxide hypoxia athletes | informational | Beetroot and Dietary Nitrates at Altitude: Can They Offset the Performance Hit of Thin Air? | beetroot-nitrate-altitude-performance-athletes.md | QUEUED |
+| 96 | VO2 max testing altitude | VO2 max test at elevation, aerobic capacity altitude measurement, maximal oxygen uptake high altitude | informational | VO2 Max Testing at Altitude: How Elevation Affects Results and What the Numbers Mean | vo2-max-testing-altitude-protocol-results.md | PUBLISHED 2026-04-22 |
+| 97 | beetroot nitrate altitude | dietary nitrate altitude performance, beet juice elevation, nitric oxide hypoxia athletes | informational | Beetroot and Dietary Nitrates at Altitude: Can They Offset the Performance Hit of Thin Air? | beetroot-nitrate-altitude-performance-athletes.md | PUBLISHED 2026-04-23 |
 | 98 | sodium bicarbonate altitude racing | bicarb loading altitude, buffer lactic acid altitude, sodium bicarbonate high altitude performance | informational | Sodium Bicarbonate at Altitude: Does Bicarb Loading Work When the Air Is Thin? | sodium-bicarbonate-bicarb-altitude-racing.md | QUEUED |
 | 99 | beta-alanine altitude training | carnosine altitude, muscle buffering altitude, beta-alanine hypoxic training | informational | Beta-Alanine at Altitude: How This Buffering Supplement Performs in Hypoxic Training | beta-alanine-altitude-hypoxic-training.md | QUEUED |
 | 100 | Livigno Italy altitude training | Livigno training camp Italy, Italian Alps altitude destination, Livigno elevation 1816m | informational | Altitude Training in Livigno: Italy's High-Alpine Training Hub for Cyclists and Endurance Athletes | livigno-italy-altitude-training-camp-guide.md | QUEUED |
@@ -230,6 +230,8 @@
 | 93 | Continuous Glucose Monitoring at Altitude: What CGM Data Reveals About Fueling at High Elevation | src/articles/continuous-glucose-monitoring-altitude-athletes.md | 2026-04-19 |
 | 94 | Lactate Testing at Altitude: How to Set Accurate Training Zones When the Air Gets Thin | src/articles/lactate-testing-altitude-training-zones.md | 2026-04-20 |
 | 95 | Power Meters at Altitude: How Elevation Affects Your Watts (And How to Reset Your Training Zones) | src/articles/power-meter-altitude-watts-training-zones.md | 2026-04-21 |
+| 96 | VO2 Max Testing at Altitude: How Elevation Affects Results and What the Numbers Mean | src/articles/vo2-max-testing-altitude-protocol-results.md | 2026-04-22 |
+| 97 | Beetroot and Dietary Nitrates at Altitude: Can They Offset the Performance Hit of Thin Air? | src/articles/beetroot-nitrate-altitude-performance-athletes.md | 2026-04-23 |
 | 88 | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | src/articles/eldoret-kenya-altitude-training-rift-valley.md | 2026-04-18 |
 
 ---
@@ -346,6 +348,11 @@
 | epigenetics altitude training | genetics-altitude-response-epas1-athletes (QUEUED) | "genetic variation in altitude response" |
 | individual variation EPO altitude | altitude-training-epo-red-blood-cells | "how altitude boosts EPO naturally" |
 | individual variation EPO altitude | genetics-altitude-response-epas1-athletes (QUEUED) | "genetic factors in altitude response" |
+| beetroot nitrate altitude | nutrition-for-altitude-training-athletes | "overall altitude nutrition strategy" |
+| beetroot nitrate altitude | iron-supplementation-altitude-training | "iron and erythropoiesis at altitude" |
+| beetroot nitrate altitude | blood-oxygen-levels-athletes-spo2 | "SpO2 and oxygen saturation monitoring" |
+| beetroot nitrate altitude | altitude-training-epo-red-blood-cells | "EPO and red blood cell production" |
+| beetroot nitrate altitude | hydration-strategy-altitude-athletes | "hydration at altitude" |
 
 ---
 

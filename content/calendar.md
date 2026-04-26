@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-23. (97 articles published through 2026-04-23; 12 topics queued as of 2026-04-23)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-23. (98 articles published through 2026-04-23; 11 topics queued as of 2026-04-23)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -117,7 +117,7 @@
 | 95 | power meter altitude training | cycling watts altitude, power output elevation, altitude power adjustment cycling | tool-seeking | Power Meters at Altitude: How Elevation Affects Your Watts (And How to Reset Your Training Zones) | power-meter-altitude-watts-training-zones.md | PUBLISHED 2026-04-21 |
 | 96 | VO2 max testing altitude | VO2 max test at elevation, aerobic capacity altitude measurement, maximal oxygen uptake high altitude | informational | VO2 Max Testing at Altitude: How Elevation Affects Results and What the Numbers Mean | vo2-max-testing-altitude-protocol-results.md | PUBLISHED 2026-04-22 |
 | 97 | beetroot nitrate altitude | dietary nitrate altitude performance, beet juice elevation, nitric oxide hypoxia athletes | informational | Beetroot and Dietary Nitrates at Altitude: Can They Offset the Performance Hit of Thin Air? | beetroot-nitrate-altitude-performance-athletes.md | PUBLISHED 2026-04-23 |
-| 98 | sodium bicarbonate altitude racing | bicarb loading altitude, buffer lactic acid altitude, sodium bicarbonate high altitude performance | informational | Sodium Bicarbonate at Altitude: Does Bicarb Loading Work When the Air Is Thin? | sodium-bicarbonate-bicarb-altitude-racing.md | QUEUED |
+| 98 | sodium bicarbonate altitude racing | bicarb loading altitude, buffer lactic acid altitude, sodium bicarbonate high altitude performance | informational | Sodium Bicarbonate at Altitude: Does Bicarb Loading Work When the Air Is Thin? | sodium-bicarbonate-bicarb-altitude-racing.md | PUBLISHED 2026-04-23 |
 | 99 | beta-alanine altitude training | carnosine altitude, muscle buffering altitude, beta-alanine hypoxic training | informational | Beta-Alanine at Altitude: How This Buffering Supplement Performs in Hypoxic Training | beta-alanine-altitude-hypoxic-training.md | QUEUED |
 | 100 | Livigno Italy altitude training | Livigno training camp Italy, Italian Alps altitude destination, Livigno elevation 1816m | informational | Altitude Training in Livigno: Italy's High-Alpine Training Hub for Cyclists and Endurance Athletes | livigno-italy-altitude-training-camp-guide.md | QUEUED |
 | 101 | Davos Switzerland altitude training | Davos training camp, Swiss Alps altitude destination, Davos elevation 1560m athletes | informational | Altitude Training in Davos: Inside Switzerland's World-Class High-Altitude Endurance Destination | davos-switzerland-altitude-training-guide.md | QUEUED |
@@ -232,6 +232,7 @@
 | 95 | Power Meters at Altitude: How Elevation Affects Your Watts (And How to Reset Your Training Zones) | src/articles/power-meter-altitude-watts-training-zones.md | 2026-04-21 |
 | 96 | VO2 Max Testing at Altitude: How Elevation Affects Results and What the Numbers Mean | src/articles/vo2-max-testing-altitude-protocol-results.md | 2026-04-22 |
 | 97 | Beetroot and Dietary Nitrates at Altitude: Can They Offset the Performance Hit of Thin Air? | src/articles/beetroot-nitrate-altitude-performance-athletes.md | 2026-04-23 |
+| 98 | Sodium Bicarbonate at Altitude: Does Bicarb Loading Work When the Air Is Thin? | src/articles/sodium-bicarbonate-bicarb-altitude-racing.md | 2026-04-23 |
 | 88 | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | src/articles/eldoret-kenya-altitude-training-rift-valley.md | 2026-04-18 |
 
 ---

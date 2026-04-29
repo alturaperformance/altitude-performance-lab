@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-29. (101 articles published through 2026-04-29; 8 topics queued as of 2026-04-29)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-29. (102 articles published through 2026-04-29; 7 topics queued as of 2026-04-29)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -121,7 +121,7 @@
 | 99 | beta-alanine altitude training | carnosine altitude, muscle buffering altitude, beta-alanine hypoxic training | informational | Beta-Alanine at Altitude: How This Buffering Supplement Performs in Hypoxic Training | beta-alanine-altitude-hypoxic-training.md | PUBLISHED 2026-04-24 |
 | 100 | Livigno Italy altitude training | Livigno training camp Italy, Italian Alps altitude destination, Livigno elevation 1816m | informational | Altitude Training in Livigno: Italy's High-Alpine Training Hub for Cyclists and Endurance Athletes | livigno-italy-altitude-training-camp-guide.md | PUBLISHED 2026-04-28 |
 | 101 | Davos Switzerland altitude training | Davos training camp, Swiss Alps altitude destination, Davos elevation 1560m athletes | informational | Altitude Training in Davos: Inside Switzerland's World-Class High-Altitude Endurance Destination | davos-switzerland-altitude-training-guide.md | PUBLISHED 2026-04-29 |
-| 102 | Colorado Springs altitude training | USOC Colorado Springs altitude, Olympic Training Center elevation, Colorado Springs 1839m athletes | informational | Altitude Training in Colorado Springs: Inside the U.S. Olympic and Paralympic Training Center | colorado-springs-altitude-training-olympic-center.md | QUEUED |
+| 102 | Colorado Springs altitude training | USOC Colorado Springs altitude, Olympic Training Center elevation, Colorado Springs 1839m athletes | informational | Altitude Training in Colorado Springs: Inside the U.S. Olympic and Paralympic Training Center | colorado-springs-altitude-training-olympic-center.md | PUBLISHED 2026-04-29 |
 | 103 | Albuquerque altitude training | Albuquerque New Mexico altitude, Albuquerque elevation 1619m athletes, New Mexico altitude training | informational | Altitude Training in Albuquerque: New Mexico's Underrated High-Altitude Hub for Endurance Athletes | albuquerque-new-mexico-altitude-training-guide.md | QUEUED |
 | 104 | Park City Utah altitude training | Park City elevation 2100m, Utah altitude training, Park City endurance sports altitude | informational | Altitude Training in Park City, Utah: A Hidden Gem for Cyclists, Runners, and Skiers at 7,000 Feet | park-city-utah-altitude-training-guide.md | QUEUED |
 | 105 | visualization at altitude | mental skills altitude camp, sports psychology altitude training, mindfulness high altitude performance | informational | Visualization and Mental Skills at Altitude: How to Use Sports Psychology to Get the Most From Your Camp | visualization-mental-skills-altitude-camp.md | QUEUED |
@@ -237,6 +237,7 @@
 | 88 | Altitude Training in Eldoret: Inside Kenya's Rift Valley Running Mecca at 2,100m | src/articles/eldoret-kenya-altitude-training-rift-valley.md | 2026-04-18 |
 | 100 | Altitude Training in Livigno: Italy's High-Alpine Training Hub for Cyclists and Endurance Athletes | src/articles/livigno-italy-altitude-training-camp-guide.md | 2026-04-28 |
 | 101 | Altitude Training in Davos: Inside Switzerland's World-Class High-Altitude Endurance Destination | src/articles/davos-switzerland-altitude-training-guide.md | 2026-04-29 |
+| 102 | Altitude Training in Colorado Springs: Inside the U.S. Olympic and Paralympic Training Center | src/articles/colorado-springs-altitude-training-olympic-center.md | 2026-04-29 |
 
 ---
 

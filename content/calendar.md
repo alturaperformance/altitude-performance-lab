@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-30. (103 articles published through 2026-04-30; 6 topics queued as of 2026-04-30)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-04-30. (104 articles published through 2026-04-30; 5 topics queued as of 2026-04-30)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -123,7 +123,7 @@
 | 101 | Davos Switzerland altitude training | Davos training camp, Swiss Alps altitude destination, Davos elevation 1560m athletes | informational | Altitude Training in Davos: Inside Switzerland's World-Class High-Altitude Endurance Destination | davos-switzerland-altitude-training-guide.md | PUBLISHED 2026-04-29 |
 | 102 | Colorado Springs altitude training | USOC Colorado Springs altitude, Olympic Training Center elevation, Colorado Springs 1839m athletes | informational | Altitude Training in Colorado Springs: Inside the U.S. Olympic and Paralympic Training Center | colorado-springs-altitude-training-olympic-center.md | PUBLISHED 2026-04-29 |
 | 103 | Albuquerque altitude training | Albuquerque New Mexico altitude, Albuquerque elevation 1619m athletes, New Mexico altitude training | informational | Altitude Training in Albuquerque: New Mexico's Underrated High-Altitude Hub for Endurance Athletes | albuquerque-new-mexico-altitude-training-guide.md | PUBLISHED 2026-04-30 |
-| 104 | Park City Utah altitude training | Park City elevation 2100m, Utah altitude training, Park City endurance sports altitude | informational | Altitude Training in Park City, Utah: A Hidden Gem for Cyclists, Runners, and Skiers at 7,000 Feet | park-city-utah-altitude-training-guide.md | QUEUED |
+| 104 | Park City Utah altitude training | Park City elevation 2100m, Utah altitude training, Park City endurance sports altitude | informational | Altitude Training in Park City, Utah: A Hidden Gem for Cyclists, Runners, and Skiers at 7,000 Feet | park-city-utah-altitude-training-guide.md | PUBLISHED 2026-04-30 |
 | 105 | visualization at altitude | mental skills altitude camp, sports psychology altitude training, mindfulness high altitude performance | informational | Visualization and Mental Skills at Altitude: How to Use Sports Psychology to Get the Most From Your Camp | visualization-mental-skills-altitude-camp.md | QUEUED |
 | 106 | motivation altitude training camp | mental challenges altitude camp, staying motivated elevation training, altitude fatigue psychology | informational | Motivation During Altitude Camps: How to Stay Mentally Sharp When Fatigue and Hypoxia Stack Up | motivation-mental-challenges-altitude-training-camp.md | QUEUED |
 | 107 | Leadville altitude race pacing | Leadville 100 run altitude, high altitude ultramarathon pacing, Leadville Trail 100 strategy | informational | Racing Leadville at Altitude: Pacing Strategy, Acclimatization, and What the Data Says About 10,000 Feet | leadville-100-altitude-race-pacing-strategy.md | QUEUED |
@@ -239,6 +239,7 @@
 | 101 | Altitude Training in Davos: Inside Switzerland's World-Class High-Altitude Endurance Destination | src/articles/davos-switzerland-altitude-training-guide.md | 2026-04-29 |
 | 102 | Altitude Training in Colorado Springs: Inside the U.S. Olympic and Paralympic Training Center | src/articles/colorado-springs-altitude-training-olympic-center.md | 2026-04-29 |
 | 103 | Altitude Training in Albuquerque: New Mexico's Underrated High-Altitude Hub for Endurance Athletes | src/articles/albuquerque-new-mexico-altitude-training-guide.md | 2026-04-30 |
+| 104 | Altitude Training in Park City, Utah: A Hidden Gem for Cyclists, Runners, and Skiers at 7,000 Feet | src/articles/park-city-utah-altitude-training-guide.md | 2026-04-30 |
 
 ---
 

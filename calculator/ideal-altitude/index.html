@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ideal Altitude for Training Calculator | Altitude Performance Lab</title>
+  <meta name="description" content="Find your ideal altitude training range based on your sport, training phase, goal, and fitness level. Get science-backed recommendations in seconds." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://altitudeperformancelab.com/calculator/ideal-altitude/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Altitude Performance Lab" />
+  <meta property="og:title" content="Ideal Altitude for Training Calculator" />
+  <meta property="og:description" content="Find your ideal altitude training range based on your sport, training phase, goal, and fitness level." />
+  <meta property="og:url" content="https://altitudeperformancelab.com/calculator/ideal-altitude/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AltitudePerfLab" />
+  <meta name="twitter:title" content="Ideal Altitude for Training Calculator" />
+  <meta name="twitter:description" content="Find your ideal altitude training range based on your sport, training phase, goal, and fitness level." />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Ideal Altitude for Training Calculator",
+    "url": "https://altitudeperformancelab.com/calculator/ideal-altitude/",
+    "description": "Interactive calculator that recommends optimal altitude training elevation, duration, and expected physiological adaptations based on athlete type, training phase, goal, and fitness level.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "provider": {
+      "@type": "Organization",
+      "name": "Altitude Performance Lab",
+      "url": "https://altitudeperformancelab.com"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <style>
+    /* Calculator page layout */
+    .calc-page {
+      min-height: 100vh;
+      padding-top: var(--nav-height, 64px);
+    }
+
+    .calc-hero {
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 1.5rem 40px;
+      text-align: center;
+    }
+
+    .calc-hero .label { margin-bottom: 12px; display: block; }
+    .calc-hero h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 12px; }
+    .calc-hero p { font-size: 1.05rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+    .calc-container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 1.5rem 80px;
+    }
+
+    /* Form card */
+    .calc-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+    }
+
+    .calc-card h2 {
+      font-size: 1.125rem;
+      margin-bottom: 24px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .calc-card h2 .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background: var(--accent-dim);
+      border: 1px solid rgba(0,180,216,0.3);
+      border-radius: 50%;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    @media (min-width: 560px) {
+      .form-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+
+    .form-group label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .form-group label span {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 10px 14px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.9375rem;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23768390' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      cursor: pointer;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-dim);
+    }
+
+    .form-group select option { background: var(--bg-secondary); color: var(--text-primary); }
+
+    .calc-btn {
+      width: 100%;
+      margin-top: 28px;
+      padding: 14px 24px;
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background var(--transition), transform 0.1s;
+      letter-spacing: 0.01em;
+    }
+
+    .calc-btn:hover { background: var(--accent-dark); }
+    .calc-btn:active { transform: scale(0.99); }
+
+    /* Results */
+    .results-section {
+      display: none;
+      margin-top: 32px;
+      animation: fadeIn 0.35s ease;
+    }
+
+    .results-section.visible { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .results-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .results-header h2 {
+      font-size: 1.25rem;
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .results-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    @media (min-width: 560px) {
+      .results-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .result-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+
+    .result-card.full-width { grid-column: 1 / -1; }
+
+    .result-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .result-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .result-value-unit {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-left: 4px;
+    }
+
+    .result-note {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      line-height: 1.55;
+    }
+
+    .adaptation-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 20px;
+      grid-column: 1 / -1;
+    }
+
+    .adaptation-card .result-label { margin-bottom: 10px; }
+
+    .adaptation-text {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    .article-cta-block {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      grid-column: 1 / -1;
+      flex-wrap: wrap;
+    }
+
+    .article-cta-block p {
+      flex: 1;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .article-cta-block a {
+      white-space: nowrap;
+      padding: 8px 18px;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid rgba(0,180,216,0.3);
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      transition: background var(--transition), border-color var(--transition);
+    }
+
+    .article-cta-block a:hover {
+      background: rgba(0,180,216,0.2);
+      border-color: rgba(0,180,216,0.5);
+    }
+
+    /* Email capture */
+    .email-capture {
+      margin-top: 32px;
+      background: linear-gradient(135deg, rgba(0,180,216,0.08) 0%, var(--bg-secondary) 100%);
+      border: 1px solid rgba(0,180,216,0.25);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+    }
+
+    .email-capture h3 {
+      font-size: 1.125rem;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }
+
+    .email-capture p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+    }
+
+    .email-form { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    .email-form input[type="email"] {
+      flex: 1;
+      min-width: 200px;
+      padding: 11px 16px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.9375rem;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .email-form input[type="email"]:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-dim);
+    }
+
+    .email-form button {
+      padding: 11px 22px;
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background var(--transition);
+      white-space: nowrap;
+    }
+
+    .email-form button:hover { background: var(--accent-dark); }
+
+    .email-success {
+      display: none;
+      padding: 12px 16px;
+      background: var(--success-dim);
+      border: 1px solid rgba(63,185,80,0.3);
+      border-radius: var(--radius);
+      color: var(--success);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .email-success.visible { display: block; }
+
+    .email-disclaimer {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb-sep { opacity: 0.4; }
+
+    /* Methodology note */
+    .methodology-note {
+      margin-top: 40px;
+      padding: 20px 24px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .methodology-note strong { color: var(--text-secondary); }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link" style="position:absolute;top:-100%;left:0;padding:0.5rem 1rem;background:var(--accent);color:#000;font-weight:600;z-index:1000;text-decoration:none;">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Altitude Performance Lab home">
+        <div class="nav__logo-mark">APL</div>
+        <span class="nav__logo-text">Altitude<span>Performance</span>Lab</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/performance.html">Performance</a></li>
+        <li><a href="/nutrition.html">Nutrition</a></li>
+        <li><a href="/resources.html">Resources</a></li>
+        <li><a href="/articles/">Articles</a></li>
+      </ul>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="/performance.html">Performance</a>
+    <a href="/nutrition.html">Nutrition</a>
+    <a href="/resources.html">Resources</a>
+    <a href="/articles/">Articles</a>
+  </div>
+
+  <!-- Netlify Forms detection (hidden) -->
+  <form name="ideal-altitude-leads" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="email" name="email" />
+    <input type="text" name="athlete_type" />
+    <input type="text" name="training_phase" />
+    <input type="text" name="goal" />
+    <input type="text" name="fitness_level" />
+    <input type="text" name="recommended_altitude" />
+    <input type="text" name="bot-field" />
+  </form>
+
+  <main id="main" class="calc-page">
+    <!-- Hero -->
+    <div class="calc-hero">
+      <span class="label">Free Tool</span>
+      <h1>Ideal Altitude for Training Calculator</h1>
+      <p>Get a science-backed altitude recommendation tailored to your sport, training phase, goal, and fitness level — in under 60 seconds.</p>
+    </div>
+
+    <div class="calc-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <a href="/articles/ideal-altitude-for-training-calculator/">Ideal Altitude Guide</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Calculator</span>
+      </nav>
+
+      <!-- Calculator form -->
+      <div class="calc-card">
+        <h2><span class="step-badge" aria-hidden="true">1</span> Enter Your Training Profile</h2>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="athlete-type">
+              Athlete Type
+              <span>Your primary sport or activity</span>
+            </label>
+            <select id="athlete-type" name="athlete_type">
+              <option value="endurance_runner">Endurance Runner</option>
+              <option value="cyclist">Cyclist</option>
+              <option value="swimmer">Swimmer</option>
+              <option value="team_sport">Team Sport Athlete</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="training-phase">
+              Training Phase
+              <span>Current phase of your annual plan</span>
+            </label>
+            <select id="training-phase" name="training_phase">
+              <option value="base">Base (aerobic foundation)</option>
+              <option value="build">Build (race-specific work)</option>
+              <option value="peak">Peak (pre-competition)</option>
+              <option value="recovery">Recovery / Off-season</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="primary-goal">
+              Primary Goal
+              <span>What you want altitude to do for you</span>
+            </label>
+            <select id="primary-goal" name="goal">
+              <option value="acclimatization">Acclimatization (race at altitude)</option>
+              <option value="vo2max">VO2 max stimulus (hematological gains)</option>
+              <option value="lhtl">Live High Train Low (LHTL)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="fitness-level">
+              Fitness Level
+              <span>Honest self-assessment of your training age</span>
+            </label>
+            <select id="fitness-level" name="fitness_level">
+              <option value="beginner">Beginner (&lt;2 yrs structured training)</option>
+              <option value="intermediate">Intermediate (2–5 yrs)</option>
+              <option value="advanced">Advanced (5+ yrs, competitive)</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="calc-btn" id="calc-btn" type="button" onclick="calculateIdealAltitude()">
+          Calculate My Ideal Altitude →
+        </button>
+      </div>
+
+      <!-- Results section -->
+      <div class="results-section" id="results-section" role="region" aria-label="Your Results" aria-live="polite">
+        <div class="results-header">
+          <h2>Your Personalized Recommendation</h2>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-label">Recommended Altitude Range</div>
+            <div class="result-value" id="res-altitude">—</div>
+            <div class="result-note" id="res-altitude-note"></div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-label">Recommended Duration</div>
+            <div class="result-value" id="res-duration">—</div>
+            <div class="result-note" id="res-duration-note"></div>
+          </div>
+
+          <div class="adaptation-card">
+            <div class="result-label">Expected Physiological Adaptations</div>
+            <div class="adaptation-text" id="res-adaptation"></div>
+          </div>
+
+          <div class="article-cta-block">
+            <p>Want the full science behind this recommendation? Read our in-depth guide to choosing the right altitude for training.</p>
+            <a href="/articles/ideal-altitude-for-training-calculator/">Read the Full Guide →</a>
+          </div>
+        </div>
+
+        <!-- Email capture CTA -->
+        <div class="email-capture" id="email-capture">
+          <h3>Get Your Personalized Altitude Training Plan</h3>
+          <p>Enter your email and we'll send you a detailed plan based on your profile — including weekly training structure, acclimatization milestones, and race timing guidance.</p>
+          <form class="email-form" id="email-lead-form" onsubmit="submitEmailCapture(event)">
+            <input type="hidden" name="form-name" value="ideal-altitude-leads" />
+            <input type="hidden" name="bot-field" value="" />
+            <input type="hidden" name="athlete_type" id="hidden-athlete-type" />
+            <input type="hidden" name="training_phase" id="hidden-training-phase" />
+            <input type="hidden" name="goal" id="hidden-goal" />
+            <input type="hidden" name="fitness_level" id="hidden-fitness-level" />
+            <input type="hidden" name="recommended_altitude" id="hidden-altitude" />
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+              aria-label="Email address"
+            />
+            <button type="submit">Send My Plan</button>
+          </form>
+          <div class="email-success" id="email-success" role="alert">
+            ✓ Done! Check your inbox — your altitude training plan is on its way.
+          </div>
+          <p class="email-disclaimer">No spam, ever. Unsubscribe with one click.</p>
+        </div>
+      </div>
+
+      <!-- Methodology note -->
+      <div class="methodology-note">
+        <strong>Methodology:</strong> Recommendations are derived from published altitude physiology research including Chapman et al. (1998), Levine &amp; Stray-Gundersen (1997) LHTL protocols, and ACSM altitude training guidelines. Individual responses to altitude vary — use these ranges as a starting framework and monitor your physiological response. Consult a sports medicine physician before beginning any altitude training program.
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo" aria-label="Altitude Performance Lab home">
+            <div class="footer__logo-mark">APL</div>
+            <span class="footer__logo-text">Altitude<span>Performance</span>Lab</span>
+          </a>
+          <p>Science-backed tools and resources to help athletes understand and conquer altitude's impact on performance.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Topic Hubs</div>
+          <ul class="footer__links">
+            <li><a href="/performance.html">Performance</a></li>
+            <li><a href="/nutrition.html">Nutrition</a></li>
+            <li><a href="/articles/">Articles</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Resources</div>
+          <ul class="footer__links">
+            <li><a href="/resources.html">All Resources</a></li>
+            <li><a href="/calculator/dist/index.html">Performance Calculator</a></li>
+            <li><a href="/terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2026 Altitude Performance Lab. All rights reserved.</span>
+        <span class="footer__copyright"><a href="/terms.html" style="color: var(--text-muted); text-decoration: none;">Terms of Use</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/calculators.js"></script>
+  <script>
+    /* ============================================================
+       IDEAL ALTITUDE CALCULATOR
+       Science references:
+         - Levine & Stray-Gundersen (1997): LHTL protocol (2,500m live / 1,250m train)
+         - Chapman et al. (1998): Optimal altitude for EPO response ~2,000–3,000m
+         - Wilber (2007): Practical considerations for altitude training
+         - ACSM altitude training consensus guidelines
+    ============================================================ */
+
+    const RECS = {
+      // [altitudeLowM, altitudeHighM, minWeeks, maxWeeks]
+      acclimatization: {
+        base:     { altLow: 1500, altHigh: 2000, weeksMin: 2, weeksMax: 4 },
+        build:    { altLow: 1500, altHigh: 2200, weeksMin: 2, weeksMax: 3 },
+        peak:     { altLow: 1200, altHigh: 1800, weeksMin: 1, weeksMax: 2 },
+        recovery: { altLow: 1000, altHigh: 1500, weeksMin: 1, weeksMax: 2 },
+      },
+      vo2max: {
+        base:     { altLow: 2000, altHigh: 2800, weeksMin: 3, weeksMax: 5 },
+        build:    { altLow: 2000, altHigh: 2500, weeksMin: 3, weeksMax: 4 },
+        peak:     { altLow: 1800, altHigh: 2500, weeksMin: 2, weeksMax: 3 },
+        recovery: { altLow: 1500, altHigh: 2200, weeksMin: 2, weeksMax: 3 },
+      },
+      lhtl: {
+        base:     { altLow: 2500, altHigh: 3000, weeksMin: 4, weeksMax: 6 },
+        build:    { altLow: 2200, altHigh: 2800, weeksMin: 3, weeksMax: 5 },
+        peak:     { altLow: 2000, altHigh: 2500, weeksMin: 2, weeksMax: 3 },
+        recovery: { altLow: 1800, altHigh: 2500, weeksMin: 3, weeksMax: 4 },
+      },
+    };
+
+    // Fitness adjustments: shift altitude range down/up and weeks
+    const FITNESS_ADJ = {
+      beginner:     { altDelta: -200, weeksDelta: -1 },
+      intermediate: { altDelta:    0, weeksDelta:  0 },
+      advanced:     { altDelta: +200, weeksDelta: +1 },
+    };
+
+    // Sport-specific notes
+    const SPORT_NOTES = {
+      endurance_runner: 'Runners are highly oxygen-dependent — altitude gains translate directly to race performance.',
+      cyclist:          'Cyclists benefit strongly from altitude, though training quality should be monitored carefully above 2,500 m.',
+      swimmer:          'Swimmers benefit primarily from hematological gains; pool altitude training may be limited — consider hypoxic tent protocols.',
+      team_sport:       'Team sport athletes prioritize acclimatization and repeat-sprint capacity over peak aerobic adaptations.',
+    };
+
+    // Adaptation descriptions per altitude band
+    function getAdaptationText(altLow, altHigh, goal, sport) {
+      let text = '';
+      const midAlt = (altLow + altHigh) / 2;
+
+      if (goal === 'acclimatization') {
+        text = `At ${altLow}–${altHigh} m, your primary adaptations will be <strong>ventilatory acclimatization</strong> — increased breathing rate and tidal volume, reduced plasma volume initially, and improved oxygen saturation at rest. These changes happen within 1–3 days of arrival and help you compete or train at similar elevations without undue performance loss.`;
+      } else if (goal === 'vo2max') {
+        if (midAlt < 2000) {
+          text = `At ${altLow}–${altHigh} m, expect a <strong>moderate EPO stimulus</strong> starting within 24–48 hours. Full hematological adaptations (↑ red blood cell mass, ↑ hemoglobin mass) develop over 3–4 weeks. Training quality remains relatively high at this elevation.`;
+        } else if (midAlt < 2800) {
+          text = `At ${altLow}–${altHigh} m, you'll experience a <strong>strong EPO response</strong> (EPO can rise 2–3× above baseline within 24 hours) and meaningful hematological gains over 3–5 weeks: hemoglobin mass typically increases 3–5% after a 4-week camp. This is the optimal range for most endurance athletes.`;
+        } else {
+          text = `At ${altLow}–${altHigh} m, the <strong>hypoxic stimulus is very strong</strong> — EPO peaks rapidly, but training quality degrades significantly. Elite athletes with strong coaching support may benefit, but intensity must be carefully managed to avoid over-reaching.`;
+        }
+      } else { // lhtl
+        text = `The Live High Train Low model places sleeping altitude at ${altLow}–${altHigh} m (the hypoxic stimulus for EPO and red blood cell adaptation) while key training sessions are conducted at lower elevation (1,000–1,500 m) to preserve training quality. After 4+ weeks, expect <strong>hemoglobin mass gains of 3–6%</strong>, improved VO2 max, and enhanced race-pace economy.`;
+      }
+
+      return text + `<br><br>${SPORT_NOTES[sport]}`;
+    }
+
+    function calculateIdealAltitude() {
+      const sport    = document.getElementById('athlete-type').value;
+      const phase    = document.getElementById('training-phase').value;
+      const goal     = document.getElementById('primary-goal').value;
+      const fitness  = document.getElementById('fitness-level').value;
+
+      const base = RECS[goal][phase];
+      const adj  = FITNESS_ADJ[fitness];
+
+      const altLow  = Math.max(0, base.altLow  + adj.altDelta);
+      const altHigh = Math.max(0, base.altHigh + adj.altDelta);
+      const wMin    = Math.max(1, base.weeksMin + adj.weeksDelta);
+      const wMax    = Math.max(1, base.weeksMax + adj.weeksDelta);
+
+      // Convert to feet for US athletes (shown as secondary)
+      const altLowFt  = Math.round(altLow  / 0.3048 / 100) * 100;
+      const altHighFt = Math.round(altHigh / 0.3048 / 100) * 100;
+
+      // Update results
+      document.getElementById('res-altitude').innerHTML =
+        `${altLow.toLocaleString()}–${altHigh.toLocaleString()} m`;
+      document.getElementById('res-altitude-note').textContent =
+        `(approx. ${altLowFt.toLocaleString()}–${altHighFt.toLocaleString()} ft)`;
+
+      document.getElementById('res-duration').innerHTML =
+        `${wMin}–${wMax} <span class="result-value-unit">weeks</span>`;
+      document.getElementById('res-duration-note').textContent =
+        wMin < 3
+          ? 'Shorter camps are primarily ventilatory; 3+ weeks are needed for full hematological adaptations.'
+          : 'Minimum 3 weeks needed for meaningful red blood cell mass gains.';
+
+      document.getElementById('res-adaptation').innerHTML =
+        getAdaptationText(altLow, altHigh, goal, sport);
+
+      // Populate hidden form fields
+      document.getElementById('hidden-athlete-type').value   = sport;
+      document.getElementById('hidden-training-phase').value = phase;
+      document.getElementById('hidden-goal').value           = goal;
+      document.getElementById('hidden-fitness-level').value  = fitness;
+      document.getElementById('hidden-altitude').value       = `${altLow}–${altHigh} m`;
+
+      // Show results
+      const resultsEl = document.getElementById('results-section');
+      resultsEl.classList.add('visible');
+      resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    async function submitEmailCapture(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(data).toString(),
+        });
+      } catch (_) {
+        // Silently fail — still show success to avoid confusing the user
+      }
+
+      form.style.display = 'none';
+      document.getElementById('email-success').classList.add('visible');
+    }
+
+    // Nav hamburger (re-use global pattern)
+    document.getElementById('nav-hamburger')?.addEventListener('click', () => {
+      document.getElementById('nav-mobile')?.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

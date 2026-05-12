@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-05-05. (105 articles published through 2026-05-05; 4 topics queued as of 2026-05-05)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-05-12. (106 articles published through 2026-05-12; 4 topics queued as of 2026-05-12)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -241,6 +241,7 @@
 | 103 | Altitude Training in Albuquerque: New Mexico's Underrated High-Altitude Hub for Endurance Athletes | src/articles/albuquerque-new-mexico-altitude-training-guide.md | 2026-04-30 |
 | 104 | Altitude Training in Park City, Utah: A Hidden Gem for Cyclists, Runners, and Skiers at 7,000 Feet | src/articles/park-city-utah-altitude-training-guide.md | 2026-04-30 |
 | 105 | Visualization and Mental Skills at Altitude: How to Use Sports Psychology to Get the Most From Your Camp | src/articles/visualization-mental-skills-altitude-camp.md | 2026-05-05 |
+| 106 | Altitude Training for Triathletes: How to Integrate Hypoxic Blocks Across Swim, Bike, and Run | src/articles/altitude-training-for-triathletes.md | 2026-05-12 |
 
 ---
 

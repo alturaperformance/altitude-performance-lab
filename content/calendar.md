@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-05-12. (106 articles published through 2026-05-12; 4 topics queued as of 2026-05-12)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-05-13. (107 articles published through 2026-05-13; 3 topics queued as of 2026-05-13)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -125,7 +125,7 @@
 | 103 | Albuquerque altitude training | Albuquerque New Mexico altitude, Albuquerque elevation 1619m athletes, New Mexico altitude training | informational | Altitude Training in Albuquerque: New Mexico's Underrated High-Altitude Hub for Endurance Athletes | albuquerque-new-mexico-altitude-training-guide.md | PUBLISHED 2026-04-30 |
 | 104 | Park City Utah altitude training | Park City elevation 2100m, Utah altitude training, Park City endurance sports altitude | informational | Altitude Training in Park City, Utah: A Hidden Gem for Cyclists, Runners, and Skiers at 7,000 Feet | park-city-utah-altitude-training-guide.md | PUBLISHED 2026-04-30 |
 | 105 | visualization at altitude | mental skills altitude camp, sports psychology altitude training, mindfulness high altitude performance | informational | Visualization and Mental Skills at Altitude: How to Use Sports Psychology to Get the Most From Your Camp | visualization-mental-skills-altitude-camp.md | PUBLISHED 2026-05-05 |
-| 106 | motivation altitude training camp | mental challenges altitude camp, staying motivated elevation training, altitude fatigue psychology | informational | Motivation During Altitude Camps: How to Stay Mentally Sharp When Fatigue and Hypoxia Stack Up | motivation-mental-challenges-altitude-training-camp.md | QUEUED |
+| 106 | motivation altitude training camp | mental challenges altitude camp, staying motivated elevation training, altitude fatigue psychology | informational | Motivation During Altitude Camps: How to Stay Mentally Sharp When Fatigue and Hypoxia Stack Up | motivation-mental-challenges-altitude-training-camp.md | PUBLISHED 2026-05-13 |
 | 107 | Leadville altitude race pacing | Leadville 100 run altitude, high altitude ultramarathon pacing, Leadville Trail 100 strategy | informational | Racing Leadville at Altitude: Pacing Strategy, Acclimatization, and What the Data Says About 10,000 Feet | leadville-100-altitude-race-pacing-strategy.md | QUEUED |
 | 108 | red light therapy altitude recovery | photobiomodulation altitude, LLLT altitude camp recovery, red light mitochondria hypoxia | informational | Red Light Therapy at Altitude: Can Photobiomodulation Stack With Hypoxic Training Adaptations? | red-light-therapy-photobiomodulation-altitude-recovery.md | QUEUED |
 | 109 | altitude course records physiology | fastest times altitude races, altitude world records, hypoxic course records athletics | informational | Altitude Course Records and the Physiology Behind Them: Why Some Records Are Set High and Some Aren't | altitude-course-records-physiology-athletics.md | QUEUED |
@@ -242,6 +242,7 @@
 | 104 | Altitude Training in Park City, Utah: A Hidden Gem for Cyclists, Runners, and Skiers at 7,000 Feet | src/articles/park-city-utah-altitude-training-guide.md | 2026-04-30 |
 | 105 | Visualization and Mental Skills at Altitude: How to Use Sports Psychology to Get the Most From Your Camp | src/articles/visualization-mental-skills-altitude-camp.md | 2026-05-05 |
 | 106 | Altitude Training for Triathletes: How to Integrate Hypoxic Blocks Across Swim, Bike, and Run | src/articles/altitude-training-for-triathletes.md | 2026-05-12 |
+| 107 | Motivation During Altitude Camps: How to Stay Mentally Sharp When Fatigue and Hypoxia Stack Up | src/articles/motivation-mental-challenges-altitude-training-camp.md | 2026-05-13 |
 
 ---
 

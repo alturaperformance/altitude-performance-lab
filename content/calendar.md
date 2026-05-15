@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-05-13. (108 articles published through 2026-05-13; 2 topics queued as of 2026-05-13)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-05-15. (109 articles published through 2026-05-15; 2 topics queued as of 2026-05-15)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -127,7 +127,8 @@
 | 105 | visualization at altitude | mental skills altitude camp, sports psychology altitude training, mindfulness high altitude performance | informational | Visualization and Mental Skills at Altitude: How to Use Sports Psychology to Get the Most From Your Camp | visualization-mental-skills-altitude-camp.md | PUBLISHED 2026-05-05 |
 | 106 | motivation altitude training camp | mental challenges altitude camp, staying motivated elevation training, altitude fatigue psychology | informational | Motivation During Altitude Camps: How to Stay Mentally Sharp When Fatigue and Hypoxia Stack Up | motivation-mental-challenges-altitude-training-camp.md | PUBLISHED 2026-05-13 |
 | 107 | Leadville altitude race pacing | Leadville 100 run altitude, high altitude ultramarathon pacing, Leadville Trail 100 strategy | informational | Racing Leadville at Altitude: Pacing Strategy, Acclimatization, and What the Data Says About 10,000 Feet | leadville-100-altitude-race-pacing-strategy.md | PUBLISHED 2026-05-13 |
-| 108 | red light therapy altitude recovery | photobiomodulation altitude, LLLT altitude camp recovery, red light mitochondria hypoxia | informational | Red Light Therapy at Altitude: Can Photobiomodulation Stack With Hypoxic Training Adaptations? | red-light-therapy-photobiomodulation-altitude-recovery.md | QUEUED |
+| 108 | nutrition for altitude training | eating at high altitude, altitude training diet, calorie needs at altitude, hydration altitude athletes, altitude training macros | informational | Nutrition and Hydration Strategies for Altitude Training: What to Eat and Drink Above 8,000 Feet | nutrition-hydration-strategies-altitude-training.md | PUBLISHED 2026-05-15 |
+| 108b | red light therapy altitude recovery | photobiomodulation altitude, LLLT altitude camp recovery, red light mitochondria hypoxia | informational | Red Light Therapy at Altitude: Can Photobiomodulation Stack With Hypoxic Training Adaptations? | red-light-therapy-photobiomodulation-altitude-recovery.md | QUEUED |
 | 109 | altitude course records physiology | fastest times altitude races, altitude world records, hypoxic course records athletics | informational | Altitude Course Records and the Physiology Behind Them: Why Some Records Are Set High and Some Aren't | altitude-course-records-physiology-athletics.md | QUEUED |
 
 ---
@@ -244,6 +245,7 @@
 | 106 | Altitude Training for Triathletes: How to Integrate Hypoxic Blocks Across Swim, Bike, and Run | src/articles/altitude-training-for-triathletes.md | 2026-05-12 |
 | 107 | Motivation During Altitude Camps: How to Stay Mentally Sharp When Fatigue and Hypoxia Stack Up | src/articles/motivation-mental-challenges-altitude-training-camp.md | 2026-05-13 |
 | 108 | Racing Leadville at Altitude: Pacing Strategy, Acclimatization, and What the Data Says About 10,000 Feet | src/articles/leadville-100-altitude-race-pacing-strategy.md | 2026-05-13 |
+| 109 | Nutrition and Hydration Strategies for Altitude Training: What to Eat and Drink Above 8,000 Feet | src/articles/nutrition-hydration-strategies-altitude-training.md | 2026-05-15 |
 
 ---
 

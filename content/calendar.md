@@ -1,6 +1,6 @@
 # AltitudePerformanceLab.com — Content Calendar
 
-> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-05-15. (110 articles published through 2026-05-15; 1 topic queued as of 2026-05-15)
+> Maintained by the SEO Agent. Machine-readable. Last updated: 2026-05-17. (111 articles published through 2026-05-17; 0 topics queued as of 2026-05-17)
 > Status values: QUEUED | IN_PROGRESS | PUBLISHED
 
 ## Legend
@@ -129,7 +129,7 @@
 | 107 | Leadville altitude race pacing | Leadville 100 run altitude, high altitude ultramarathon pacing, Leadville Trail 100 strategy | informational | Racing Leadville at Altitude: Pacing Strategy, Acclimatization, and What the Data Says About 10,000 Feet | leadville-100-altitude-race-pacing-strategy.md | PUBLISHED 2026-05-13 |
 | 108 | nutrition for altitude training | eating at high altitude, altitude training diet, calorie needs at altitude, hydration altitude athletes, altitude training macros | informational | Nutrition and Hydration Strategies for Altitude Training: What to Eat and Drink Above 8,000 Feet | nutrition-hydration-strategies-altitude-training.md | PUBLISHED 2026-05-15 |
 | 108b | red light therapy altitude recovery | photobiomodulation altitude, LLLT altitude camp recovery, red light mitochondria hypoxia | informational | Red Light Therapy at Altitude: Can Photobiomodulation Stack With Hypoxic Training Adaptations? | red-light-therapy-photobiomodulation-altitude-recovery.md | PUBLISHED 2026-05-15 |
-| 109 | altitude course records physiology | fastest times altitude races, altitude world records, hypoxic course records athletics | informational | Altitude Course Records and the Physiology Behind Them: Why Some Records Are Set High and Some Aren't | altitude-course-records-physiology-athletics.md | QUEUED |
+| 109 | altitude course records physiology | fastest times altitude races, altitude world records, hypoxic course records athletics | informational | Altitude Course Records and the Physiology Behind Them: Why Some Records Are Set High and Some Aren't | altitude-course-records-physiology-athletics.md | PUBLISHED 2026-05-17 |
 
 ---
 
@@ -247,6 +247,7 @@
 | 108 | Racing Leadville at Altitude: Pacing Strategy, Acclimatization, and What the Data Says About 10,000 Feet | src/articles/leadville-100-altitude-race-pacing-strategy.md | 2026-05-13 |
 | 109 | Nutrition and Hydration Strategies for Altitude Training: What to Eat and Drink Above 8,000 Feet | src/articles/nutrition-hydration-strategies-altitude-training.md | 2026-05-15 |
 | 110 | Red Light Therapy at Altitude: Can Photobiomodulation Stack With Hypoxic Training Adaptations? | src/articles/red-light-therapy-photobiomodulation-altitude-recovery.md | 2026-05-15 |
+| 111 | Altitude Course Records and the Physiology Behind Them: Why Some Records Are Set High and Some Aren't | src/articles/altitude-course-records-physiology-athletics.md | 2026-05-17 |
 
 ---
 
